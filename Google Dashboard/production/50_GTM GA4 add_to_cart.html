@@ -1,0 +1,3203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Google Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- bootstrap-progressbar -->
+  <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- PNotify -->
+  <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+  <!-- Datatables -->
+  <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    .jwstyle1 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 500;
+    }
+
+    .jwstyle2 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 400;
+    }
+
+    .jwstyle3 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 300;
+    }
+
+    .jwstyle4 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 200;
+    }
+
+    .jwstyle5 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 100;
+    }
+
+    .jwstyle6 {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+  </style>
+
+
+
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container" style="min-width:1903px">
+      <div class="col-md-3 left_col" style="position:fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="index.html" class="site_title"><i class="glyphicon glyphicon-object-align-bottom"
+                style="border: 0px" ; "border-radius:0%"></i> <span>Dashboard</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/youtube/Admin22.gif" alt="img" class="img-circle profile_img"
+                style="height:6rem; width:7rem;">
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>Administrator</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3 class="jwstyle1" style="font-size:1.3rem;">Google Tag Manager</h3>
+              <ul class="nav side-menu">
+                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GTM 계정 생성 <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="50_GTM Account Creation.html" class="jwstyle1">GTM 신규 계정 생성</a></li>
+                  </ul>
+                </li>
+                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GA구성 태그 <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="50_GTM UA_Configuration Tag Setting.html" class="jwstyle1">GA3 웹스트림 구현</a></li>
+                    <li><a href="50_GTM Configuration Tag Setting.html" class="jwstyle1">GA4 웹스트림 구현</a></li>
+                  </ul>
+                </li>
+                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GA4 이벤트 태그 <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="50_GTM GA4 page_view.html" class="jwstyle1">GA4 페이지뷰 이벤트 구현</a></li>
+                    <li><a href="50_GTM GA4 Click Event.html" class="jwstyle1">GA4 클릭 이벤트 구현</a></li>
+                    <li><a href="50_GTM GA4 Search JavaScript Event.html" class="jwstyle1">GA4 검색 이벤트 구현(맞춤변수)</a></li>
+                    <li><a href="50_GTM GA4 Search HTML Event.html" class="jwstyle1">GA4 검색 이벤트 구현(HTML)</a></li>
+                    <li><a href="50_GTM GA4 Search dataLayer Event.html" class="jwstyle1">GA4 검색 이벤트 구현(dLayer)</a></li>
+                  </ul>
+                </li>
+                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GA4 전자상거래 태그 <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="50_GTM GA4 view_item_list.html" class="jwstyle1">GA4 View Item List 이벤트 구현</a></li>
+                    <li><a href="50_GTM GA4 view_item.html" class="jwstyle1">GA4 View Item 이벤트 구현</a></li>
+                    <li><a href="50_GTM GA4 add_to_cart.html" class="jwstyle1">GA4 Add To Cart 이벤트 구현</a></li>
+                    <li><a href="50_GTM GA4 Purchase.html" class="jwstyle1">GA4 Purchase 이벤트 구현</a></li>
+                  </ul>
+                </li>
+                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GA4 맞춤 HTML 태그 <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="page_404.html" class="jwstyle1">GA4 HTML View Item List 구현</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 HTML View Item 구현</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 HTML Add To Cart 구현</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 HTML Purchase 구현</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu_section">
+              <h3>Google Analytics</h3>
+              <ul class="nav side-menu">
+                <li><a class="jwstyle1"><i class="fa fa-area-chart"></i> GA 계정 생성 <span
+                      class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="50_GA3 Creative Account.html" class="jwstyle1">GA 3/4 계정 생성 가이드</a></li>
+                  </ul>
+                </li>
+                <li><a class="jwstyle1"><i class="fa fa-area-chart"></i> GA4 초기 세팅<span
+                      class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="50_GA3 upgrade.html" class="jwstyle1">GA3 > GA4 업그레이드</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA3 > GA4 전환 추적 스크립트</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 웹 전환 추적 스크립트</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 AOS 전환 추적 스크립트</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 iOS 전환 추적 스크립트</a></li>
+                  </ul>
+                </li>
+                <li><a class="jwstyle1"><i class="fa fa-area-chart"></i> GA4 운영 세팅<span
+                      class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="page_404.html" class="jwstyle1">GA4 이벤트 설정</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 목표 설정</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 잠재고객 설정</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 보고서 설정</a></li>
+                    <li><a href="page_404.html" class="jwstyle1">GA4 전자상거래 설정</a></li>
+                  </ul>
+                </li>
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="images/youtube/Admin.png" alt="">Admin
+                  <span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="javascript:;"> Profile</a></li>
+                  <li>
+                    <a href="javascript:;">
+                      <span class="badge bg-red pull-right">50%</span>
+                      <span>Settings</span>
+                    </a>
+                  </li>
+                  <li><a href="javascript:;">Help</a></li>
+                  <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="text-center">
+                      <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="row">
+
+          <div class="page-title">
+            <div class="title_left" style="padding-bottom:1rem; padding-top:1rem">
+              <h3 class="jwstyle1"><span class="fa fa-check" aria-hidden="true"></span> add_to_cart 이벤트 구현 > Summary
+              </h3>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+
+
+          <!-- 정의 -->
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2 class="jwstyle1">add_to_cart 이벤트 구현</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+
+                <div class="bs-example" data-example-id="simple-jumbotron">
+                  <div class="jumbotron">
+                    <h1 class="jwstyle1">GTM - GA4 전자상거래 add_to_cart 구현 가이드</h1>
+                    <p><span class="jwstyle1">GA4 전자상거래 전환 중 "장바구니 담기" 전환추적에</span> <span class="jwstyle3">대한 설명이 포함되어
+                        있습니다</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+          <!-- 주요포인트 -->
+
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Process 1</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-caret-square-o-right"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:3.3rem;">1. 변수 구성</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">변수 구성 단계</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Process 2</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-caret-square-o-right"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:3.3rem;">2. 태그 구성</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">태그 구성 단계</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Process 3</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-caret-square-o-right"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:3.3rem;">3. 트리거 구성</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">트리거 구성 단계</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Process 4</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-caret-square-o-right"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:3.3rem;">4. 태그 최종 게시(웹사이트 배포)</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">작업 완료된 태그 최종 게시</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+
+
+          <!-- 예시코드 -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3 class="jwstyle1"><span class="fa fa-check" aria-hidden="true"></span> GTM - GA4 전자상거래 add_to_cart 이벤트
+                구현 > 예시 코드
+              </h3>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom:5rem;">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>예시 코드</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron"
+                        style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">예시 코드</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 예시 코드 설명</div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+
+
+                  <!-- 6번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="col-md-6 col-lg-6 col-sm-6" style="border-right:1px solid #EEEEEE; padding-left:0rem;">
+
+
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:5rem; display:flex; background-color:#EEEEEE; flex-direction:column; justify-content:center; align-items:center;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:2rem">전자상거래 구매추적 코드 예시</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:auto">
+                                <img style="width: 100%; display: block;"
+                                  src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_code.jpg"
+                                  alt="image">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing_footer" style="padding:2.7rem; border-top:0px solid #ccc; margin-top:0.5rem;">
+                      </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-md-6 col-lg-6 col-sm-6" style="padding-right:0rem;">
+
+                      <!-- <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin:0rem; margin-bottom:0.5rem; height:3.999rem; display:flex; justify-content:center; align-items:center; font-size:2rem;">표준 사이즈</h2>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin:0rem; margin-bottom:0.5rem; height:3.999rem; display:flex; justify-content:center; align-items:center; font-size:2rem;">값</h2>
+                          </div>
+                        </div> -->
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; background-color:#EEEEEE; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle1" aria-hidden="true" style="font-size:2rem">Key</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; background-color:#EEEEEE; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle1" aria-hidden="true" style="font-size:2rem">값 유형</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; background-color:#EEEEEE; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle1" aria-hidden="true" style="font-size:2rem">필수</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; background-color:#EEEEEE; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle1" aria-hidden="true" style="font-size:2rem">설명</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">id</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">텍스트</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">*예</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; flex-direction:column; justify-content:center;">
+                                  <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex;">제품
+                                    ID 또는 SKU(예: P67890)</span>
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex;">* ID
+                                    또는 name 중 하나를 설정해야 한다(예: P67890)</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">name</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">텍스트</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">*예</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; flex-direction:column; justify-content:center;">
+                                  <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex;">제품의
+                                    이름</span>
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex;">* ID
+                                    또는 name 중 하나를 설정해야 한다(예: P67890)</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">brand</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">텍스트</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">제품과 연결된 브랜드(예:
+                                    xexymix).</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">category</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">텍스트</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; flex-direction:column; justify-content:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex;">제품이
+                                    속한 카테고리(예: 의류).구분 기호로/를 사용하여</span>
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex;"> 계층
+                                    구조를 최대
+                                    5개 수준(예: 의류/남성/티셔츠)으로 지정</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">variant</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">텍스트</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">제품의 옵션(예:
+                                    블랙)</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">price</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">숫자</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">제품의 가격</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">quantity</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">정수</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">아니요</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">제품의 수량(예: 2)</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">coupon</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">텍스트</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">아니요</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">제품과 연결된 쿠폰 코드(예:
+                                    SUMMER_SALE13)</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">position</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">정수</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">목록 또는 컬렉션에서 제품의
+                                    위치(예: 2).</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <!-- <span class="fa fa-code" aria-hidden="true" style="font-size:3rem"></span> -->
+                                  <span class="jwstyle3" aria-hidden="true"
+                                    style="font-size:1.5rem">list_position</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">정수</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:5rem; display:flex; justify-content:left; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem">목록 또는 컬렉션에서 제품의
+                                    위치(예: 2)</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-12 col-lg-12 col-sm-12"
+                      style="padding-right:0rem; padding-left:0rem; padding-top:0.5rem;">
+
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:5rem; display:flex; background-color:#EEEEEE; flex-direction:column; justify-content:center; align-items:center;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:2rem">코드 삽입 시 유의사항</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-6 col-sm-12 col-xs-12"
+                        style="border-right:1px solid #EEEEEE; padding-left:0rem;">
+                        <ul class="messages">
+                          <li style="padding-bottom:0px; position:relative">
+                            <i class="fa fa-cc-visa" style="font-size:4rem;
+                                          height:4.5rem;
+                                          width: 4.5rem;
+                                          float: left;
+                                          display: inline-block;
+                                          transform:translate(40%, 50%);"></i>
+                            <!-- <div class="message_date">
+                                  <h3 class="date text-info">FROM 2021</h3>
+                                  <p class="month">AVAILABLE NOW</p>
+                                </div> -->
+                            <div class="message_wrapper"
+                              style="margin-left:8rem; padding-left:0.5rem; margin-right:0rem;">
+                              <!-- <h4 class="heading">4,000만원</h4> -->
+                              <h4 class="heading">
+                                <span class="jwstyle1" style="font-size:2rem">거래별 동적 가치 할당</span>&nbsp&nbsp
+                                <span class="jwstyle3" style="font-size:1.5rem">Dynamic Value Allocation</span>
+                              </h4>
+                              <blockquote class="message">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  각 매개변수는 결제 완료페이지에서 해당하는 값이 할당되어야 함</span>
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                    거래발생시, 각각의 거래 정보가 이벤트 내 매개변수에 동적으로 할당되도록 코드
+                                    구현 필요 </span></p>
+                              </blockquote>
+                              <br />
+                              <!-- <p class="url">
+                                          <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                          <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                                        </p> -->
+                            </div>
+                          </li>
+
+
+
+                          <li style="padding-bottom:0px; padding-top:1.5rem; position:relative">
+                            <i class="glyphicon glyphicon-tags" style="font-size:4rem;
+                                          height:4.5rem;
+                                          width: 4.5rem;
+                                          float: left;
+                                          display: inline-block;
+                                          transform:translate(40%, 40%);"></i>
+                            <!-- <div class="message_date">
+                                  <h3 class="date text-info">FROM 2021</h3>
+                                  <p class="month">AVAILABLE NOW</p>
+                                </div> -->
+                            <div class="message_wrapper"
+                              style="margin-left:8rem; padding-left:0.5rem; margin-right:0rem;">
+                              <!-- <h4 class="heading">4,000만원</h4> -->
+                              <h4 class="heading">
+                                <span class="jwstyle1" style="font-size:2rem">단일 거래정보, 복수 제품정보</span>&nbsp&nbsp
+                                <span class="jwstyle3" style="font-size:1.5rem">Single transaction information,
+                                  multiple product information</span>
+                              </h4>
+                              <blockquote class="message">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  1번의 이벤트(add_to_Cart)에 제품이 여러 개인 경우, items코드는 여러번 호출되어야 함</span>
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                    좌측 예시코드에 한글로 써 둔 결과값은 실제 거래 발생 시 거래에서 해당하는
+                                    정보를 가져와야 함</span></p>
+                              </blockquote>
+                              <br />
+                              <!-- <p class="url">
+                                          <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                          <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                                        </p> -->
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+
+
+                      <div class="col-md-6 col-sm-12 col-xs-12" style=" padding-right:0rem;">
+                        <ul class="messages">
+
+                          <li style="padding-bottom:0px; padding-top:1.5rem; position:relative">
+                            <i class="fa fa-database" style="font-size:5rem;
+                                          height:4.5rem;
+                                          width: 4.5rem;
+                                          float: left;
+                                          display: inline-block;
+                                          transform:translate(50%, 30%);"></i>
+                            <!-- <div class="message_date">
+                                  <h3 class="date text-info">FROM 2021</h3>
+                                  <p class="month">AVAILABLE NOW</p>
+                                </div> -->
+                            <div class="message_wrapper"
+                              style="margin-left:8rem; padding-left:0.5rem; margin-right:0rem;">
+                              <!-- <h4 class="heading">4,000만원</h4> -->
+                              <h4 class="heading">
+                                <span class="jwstyle1" style="font-size:2rem">필수 매개변수</span>&nbsp&nbsp
+                                <span class="jwstyle3" style="font-size:1.5rem">Required parameters</span>
+                              </h4>
+                              <blockquote class="message">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  매개변수는 몇 개를 선택하여 사용 가능하지만, 필수 매개변수는 반드시 구현되어야 함</span>
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                    id, name은 필수 매개변수</span></p>
+                              </blockquote>
+                              <br />
+                              <!-- <p class="url">
+                                          <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                          <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                                        </p> -->
+                            </div>
+                          </li>
+
+                          <li style="padding-bottom:0px; padding-top:1.5rem; position:relative">
+                            <i class="fa fa-code" style="font-size:4rem;
+                                          height:4.5rem;
+                                          width: 4.5rem;
+                                          float: left;
+                                          display: inline-block;
+                                          transform:translate(50%, 50%);"></i>
+                            <!-- <div class="message_date">
+                                  <h3 class="date text-info">FROM 2021</h3>
+                                  <p class="month">AVAILABLE NOW</p>
+                                </div> -->
+                            <div class="message_wrapper"
+                              style="margin-left:8rem; padding-left:0.5rem; margin-right:0rem;">
+                              <!-- <h4 class="heading">4,000만원</h4> -->
+                              <h4 class="heading">
+                                <span class="jwstyle1" style="font-size:2rem">GTM - add_to_cart 개발 가이드
+                                  문서</span>&nbsp&nbsp
+                                <span class="jwstyle3" style="font-size:1.5rem">Guide Document</span>
+                              </h4>
+                              <blockquote class="message"
+                                style="height:5.1481rem; display:flex; justify-content:left; align-items:center;">
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                    https://developers.google.com/analytics/devguides/collection/gtagjs/enhanced-ecommerce</span>
+                                </p>
+                              </blockquote>
+                              <br />
+                              <!-- <p class="url">
+                                          <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                          <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                                        </p> -->
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- Process1 -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3 class="jwstyle1"><span class="fa fa-check" aria-hidden="true"></span> GTM - GA4 전자상거래 add_to_cart 이벤트
+                구현 >
+                Setting Process</h3>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom:5rem;">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Process 1</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron"
+                        style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">1. 변수 구성</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 변수 구성 단계</div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+
+
+                  <!-- 1번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  01</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_01.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_02.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">변수 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> [변수]를 클릭</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> [새로 만들기]를 클릭</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">변수 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp3번 :</span> 변수 이름을 지정. 전자상거래 정보 중 제품정보는
+                              Ecommerce.items를 많이 사용</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp4번 :</span> [변수 구성]을 클릭</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- 2번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  02</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_03.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_04.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">변수 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> 변수 유형에서 [데이터 영역 변수]를
+                              선택</span><br />
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">변수 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 데이터 영역 변수 이름에
+                              [ecommerce.purchase.items]를 입력.</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp3번 :</span> [저장]을 클릭</span><br />
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- 3번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  03</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_05.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">변수 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> 위와같이 변수 목록에 추가되면 제대로 생성된
+                              것이다</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom:5rem;">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Process 2</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron"
+                        style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">2. 태그 구성</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 태그 구성 단계</div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+
+
+
+                  <!-- 4번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  04</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_06.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_07.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> 태그 탭 선택</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 새로만들기를 클릭하면 오른쪽에서 태그 생성창이
+                              열림</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp3번 :</span> 태그 이름 작성. 구글에서 지정한 공식 이벤트 이름인
+                              add_to_cart로 지정.</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp4번 :</span> [태그 구성]을 클릭하면 다시 한번 오른쪽에서 태그
+                              목록이 열림</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- 5번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  05</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_08.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_09.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> Google 애널리틱스 : GA4 이벤트
+                              선택</span><br />
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 태그 유형에는 '[Google 애널리틱스 : GA4
+                              이벤트]'가 제대로 선택됬는지 확인</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp3번 :</span> 구성 태그에는 '[GA4]측정 ID태그'를
+                              선택(GA4의
+                              측정ID를 불러오는 태그)</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp4번 :</span> 이벤트 이름에는 'add_to_cart'를
+                              입력(소문자로만). 구글에서 지정해준 이벤트 이름</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp5번 :</span> [이벤트 매개변수]를 클릭해서 추가 메뉴를
+                              확장</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- 6번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  06</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_10.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_11.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> [이벤트 매개변수]를 클릭해서 추가 메뉴를
+                              확장</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 매개변수 이름에 첫 번째로 [items]를
+                              입력</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp3번 :</span> [값]에서 우측 '+' 버튼을 클릭하여 세팅창으로
+                              이동</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp4번 :</span> 미리 생성해둔 데이터 영역 변수 [GA4]
+                              Ecommerce.items를 선택</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- 7번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  07</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_12.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> 상단 이미지와 같이 세팅되면 올바르게 진행된
+                              것</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom:5rem;">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Process 3</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron"
+                        style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">3. 트리거 구성</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 트리거 구성 단계</div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+
+
+                  <!-- 6번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  06</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_13.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_14.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">트리거 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> [트리거]를 클릭하면 오른족에 트리거 유형을 선택할
+                              수 있는 창이 열림</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">트리거 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 트리거 선택에서 [+]를 클릭</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- 7번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  07</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_15.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_16.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">트리거 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> 트리거 이름을 입력. add_to_Cart 태그와
+                              일관성을
+                              유지하기 위해 [GA4] add_to_cart Trigger로 입력함</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> [트리거 구성]을 클릭한다</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">트리거 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp3번 :</span> 트리거 유형에서 [맞춤 이벤트]를 선택</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- 8번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  07</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_17.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_18.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">트리거 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> 트리거 유형이 [맞춤 이벤트]로 제대로 세팅되었는지
+                              확인</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 이벤트 이름으로는
+                              [add_to_cart]입력</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp3번 :</span> 이 트리거는 [모든 맞춤 이벤트]에만 실행되어야만
+                              함</span><br />
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">트리거 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i><span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp5번 :</span> 네모칸과 같이 세팅이 완료되었다면 정상적으로 진행 된
+                              것</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i><span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp6번 :</span> 저장 버튼을 선택하고 완료</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- 9번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  07</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_19.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_GA4 Ecommerce/add_to_cart/GTM_GA4 add_to_cart_20.jpg"
+                                    alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">트리거 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> 저장중 이라는 화면 뜸</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">트리거 구성&nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 네모칸과 같이 세팅이 완료되었다면 정상적으로 진행 된
+                              것</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+          <!-- 태그 게시 -->
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Process 4</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron"
+                        style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">4. 태그 최종 게시(웹사이트 배포)</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 작업 완료된 태그 최종 게시
+                        </div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+
+
+                  <!-- 5번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  08</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_9.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_10.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">최종 게시 전 테스트 및 디버깅 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp조금 전 생성한 태그가
+                              작업공간의 변경사항에 추가 된 것을 확인</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp이상 없을 경우
+                              미리보기 클릭</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">최종 게시 전 테스트 및 디버깅 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp구글 태그 매니저
+                              컨테이너 스크립트가 삽입된 홈페이지 URL을 삽입</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp[connect]를
+                              클릭하면 홈페이지가 열리면서 미리보기 모드와 연결 됨</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 6번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  09</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_11.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_12.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">최종 게시 전 테스트 및 디버깅 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp연결이 완료되면
+                              팝업창이 Connected로 내용이 변경 됨</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbspContinuned를
+                              클릭하여 테스트 실행</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">최종 게시 전 테스트 및 디버깅 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp미리보기 화면에서
+                              [Tags Fired] 영역에 설정해둔 태그들이 보인다면 제대로 작동하는 것</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp의도한 대로 조건에
+                              맞게 태그가 Fired 되는지도 체크</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- 7번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  10</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_13.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_14.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 배포 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp실제로 웹 사이트에
+                              가상 태그를 배포하는 작업</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp구글 태그 매니저 메인
+                              화면에 접속하여 [제출]을 클릭</span>
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 배포 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> 구글 태그 매니저는 협업으로 많이 활용하기에 해당
+                              작업을 누가 했는지 표식을 남김. 대체로 날짜와 작업자 이름 기입</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 버전 설명에는 배포한 태그명을 작성. 또는 편의대로
+                              설명을 추가해도 무방</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp3번 :</span> [게시]를 클릭하면 모든 과정이 완료되고 가상 태그가
+                              웹 사이트에 구현</span><br />
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- 8번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  11</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_15.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_16.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 배포 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp듣는 사람이 없는 것
+                              처럼 노래를 부른다면 태그가 올바르게 배포되고 있는 것</span><br />
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 배포 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp배포가 완료되었으며
+                              배포된 버전에 대한 설명 화면이 노출 됨</span><br />
+
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- 9번 항목 -->
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom:2rem;">
+                    <div class="col-sm-1" style="padding-left:0rem;">
+                      <div class="weather-icon">
+                        <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li
+                              style="width:100%; height:50rem; display:flex; justify-content:center; align-items:center; border:5px solid #eee;">
+                              <div class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; font-weight:300;">
+                                Process<div class="jwstyle1" aria-hidden="true"
+                                  style="font-size:3rem; font-weight:800;">
+                                  12</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-11 col-sm-11 col-xs-11" style="padding-left:0rem; padding-right:0rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_17.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;"
+                                    src="images/guide/GTM/GTM_Congfiguration Tag_18.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-right:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 배포 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp1번 :</span> [게시]한 후에는 작업공간의 변경사항이
+                              초기화</span><br />
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span
+                                class="jwstyle1" style="font-size:1.5rem">&nbsp2번 :</span> 방금 게시한 버전의 번호와 작업자 이메일, 게시 날짜
+                              등이 표시 됨</span><br />
+                          </blockquote>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0rem; padding-left:0.5rem;">
+                        <ul class="stats-overview"
+                          style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                          <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                            <span style="width:100%;">
+                              <span class="name jwstyle1" style="font-size:2rem;">태그 배포 &nbsp; </span>
+                              <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                            </span>
+                          </blockquote>
+                        </ul>
+
+                        <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #ccc;">
+                          <blockquote class="blockquote-reverse"
+                            style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; padding-left:2rem; text-align:left; border-left:5px solid #eee;">
+                            <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> &nbsp배포가 완료되었으며
+                              배포된 태그는 태그 탭에 목록형으로 노출</span><br />
+
+                          </blockquote>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Copyright 2022. JungWook KIM. All rights reserved
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <div id="custom_notifications" class="custom-notifications dsp_none">
+    <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+    </ul>
+    <div class="clearfix"></div>
+    <div id="notif-group" class="tabbed_notifications"></div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- PNotify -->
+  <!-- <script src="../vendors/pnotify/dist/pnotify.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script> -->
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+
+
+  <!-- Datatables -->
+  <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="../vendors/jszip/dist/jszip.min.js"></script>
+  <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+
+
+</body>
+
+</html>
