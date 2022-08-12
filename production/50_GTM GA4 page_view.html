@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Google Dashboard</title>
+  <title>Google Dashboard(미전팀)</title>
 
   <!-- Bootstrap -->
   <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -84,7 +84,7 @@
         <div class="left_col scroll-view">
           <div class="navbar nav_title" style="border: 0;">
             <a href="index.html" class="site_title"><i class="glyphicon glyphicon-object-align-bottom"
-                style="border: 0px" ; "border-radius:0%"></i> <span>Dashboard</span></a>
+                style="border: 0px" ; "border-radius:0%"></i> <span>Dashboard(GMP)</span></a>
           </div>
 
           <div class="clearfix"></div>
@@ -92,8 +92,8 @@
           <!-- menu profile quick info -->
           <div class="profile clearfix">
             <div class="profile_pic">
-              <img src="images/youtube/Admin22.gif" alt="img" class="img-circle profile_img"
-                style="height:6rem; width:7rem;">
+              <img src="images/Youtube/Admin22.gif" alt="img" class="img-circle profile_img"
+                style="height:7rem; width:7rem;">
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
@@ -211,25 +211,19 @@
 
             <ul class="nav navbar-nav navbar-right">
               <li class="">
-                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
-                  aria-expanded="false">
-                  <img src="images/youtube/Admin.png" alt="">Admin
-                  <span class=" fa fa-angle-down"></span>
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false";">
+                  <img src="images/Youtube/Ads logo.png" alt="">Go To Google Ads Dashboard &nbsp<span class=" fa fa-angle-down"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-usermenu pull-right">
-                  <li><a href="javascript:;"> Profile</a></li>
-                  <li>
-                    <a href="javascript:;">
-                      <span class="badge bg-red pull-right">50%</span>
-                      <span>Settings</span>
-                    </a>
-                  </li>
-                  <li><a href="javascript:;">Help</a></li>
-                  <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  <li><a href="04_Youtube Bumper Ads.html"><i class="fa fa-sign-out pull-right"></i> YouTube Dashboard</a></li>
+                  <li><a href="16_GDN Image.html"><i class="fa fa-sign-out pull-right"></i> GDN Dashboard</a></li>
+                  <li><a href="page_404.html" style="color:tomato"><i class="fa fa-sign-out pull-right"></i> App Campaign Dashboard</a></li>
+                  <li><a href="page_404.html" style="color:tomato"><i class="fa fa-sign-out pull-right"></i> DA Discovery Dashboard</a></li>
+                  <li><a href="page_404.html" style="color:tomato"><i class="fa fa-sign-out pull-right"></i> PMax Dashboard</a></li>
                 </ul>
               </li>
 
-              <li role="presentation" class="dropdown">
+              <!-- <li role="presentation" class="dropdown">
                 <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                   <i class="fa fa-envelope-o"></i>
                   <span class="badge bg-green">6</span>
@@ -292,7 +286,7 @@
                     </div>
                   </li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>
@@ -305,7 +299,7 @@
 
           <div class="page-title">
             <div class="title_left" style="padding-bottom:1rem; padding-top:1rem">
-              <h3 class="jwstyle1"><span class="fa fa-check" aria-hidden="true"></span> GTM - GA4 view_item 이벤트 구현 >
+              <h3 class="jwstyle1"><span class="fa fa-check" aria-hidden="true"></span> GA4 Page_view 이벤트 구현 >
                 Summary</h3>
             </div>
           </div>
@@ -319,7 +313,7 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
               <div class="x_title">
-                <h2 class="jwstyle1">GA4 view_item 이벤트 구현</h2>
+                <h2 class="jwstyle1">GA4 Page_view 이벤트 구현</h2>
                 <ul class="nav navbar-right panel_toolbox">
                   <li><a class="close-link"><i class="fa fa-close"></i></a>
                   </li>
@@ -333,9 +327,7 @@
                 <div class="bs-example" data-example-id="simple-jumbotron">
                   <div class="jumbotron">
                     <h1 class="jwstyle1">GTM - GA4 "페이지 조회" 이벤트추적 구현 가이드</h1>
-                    <p><span class="jwstyle1">GA4 전자상거래 전환 중 "제품 상세 정보 조회" 전환추적에</span> <span class="jwstyle3">대한 설명이
-                        포함되어
-                        있습니다</span></p>
+                    <p><span class="jwstyle3">GA4에서 페이지 조회 이벤트를 추적 가능하도록</span> <span class="jwstyle1"> GTM 에서 이벤트 태그와 트리거를 생성하는 방법에 대해 안내되어 있습니다</span></p>
                   </div>
                 </div>
               </div>
@@ -457,9 +449,7 @@
           <!-- 예시코드 -->
           <div class="page-title" style="margin-top:6rem">
             <div class="title_left">
-              <h3 class="jwstyle1"><span class="fa fa-check" aria-hidden="true"></span> GTM - GA4 view_item 이벤트 구현 >
-                변수/트리거 세팅
-              </h3>
+              <h3 class="jwstyle1"><span class="fa fa-check" aria-hidden="true"></span> GA4 Page_view 이벤트 구현 > URL의 구조</h3>
             </div>
           </div>
 
@@ -467,7 +457,7 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel tile">
               <div class="x_title">
-                <h2>Page Path 변수</h2>
+                <h2 class="jwstyle1">URL 구조</h2>
                 <ul class="nav navbar-right panel_toolbox">
                   <li><a class="close-link"><i class="fa fa-close"></i></a>
                   </li>
@@ -486,10 +476,9 @@
                       <div class="jumbotron"
                         style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
                         <div class="jwstyle3" style="font-size:1.5rem">Page view Trigger</div>
-                        <div class="jwstyle1" style="font-size:2.5rem">3가지 Page view 트리거의 작동방식</div>
+                        <div class="jwstyle1" style="font-size:2.5rem">URL 기본 구조에 대한 이해</div>
                         <br>
-                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> Pageview /
-                          DOM-ready / Window loaded
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> Domain / Path / Parameter / Fragment
                         </div>
                       </div>
                     </div>
@@ -512,7 +501,7 @@
                               <ul class="bs-glyphicons-list">
                                 <li style="width:100%; height:auto">
                                   <img style="width: 100%; display: block;"
-                                    src="images/guide/GTM/GTM_GA4 Event/Page view/domain.jpg" alt="image">
+                                    src="images/Guide/GTM/GTM_GA4 Event/Page view/domain.jpg" alt="image">
                                 </li>
                               </ul>
                             </div>
@@ -528,7 +517,7 @@
                               style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
                               <div style="text-align:center;">
                                 <div style="width:100%;">
-                                  <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">페이지뷰 변수 종류 1</div>
+                                  <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">URL 구성요소 - Domain</div>
                                 </div>
                               </div>
                             </ul>
@@ -541,7 +530,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/domain1.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/domain1.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -592,6 +581,17 @@
                             </ul>
 
 
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem; margin-top:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:3rem; display:flex; justify-content:left; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                                  <h5 class="jwstyle1">'music.naver.com' 의 상세 도메인 구분 예시</h5>
+                                </li>
+                              </ul>
+                            </div>
+
+
                             <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px dotted #e8e8e8;">
                               <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:center;">
                                 <div class="jwstyle3" style="font-size:1.5rem">
@@ -609,7 +609,7 @@
                       </div>
 
 
-                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:1rem; padding-right:0.5rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0.5rem;">
                         <div class="" style="width:100%;">
 
                           <div style="padding-bottom:0.5rem;">
@@ -617,7 +617,7 @@
                               style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
                               <div style="text-align:center;">
                                 <div style="width:100%;">
-                                  <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">페이지뷰 변수 종류 1</div>
+                                  <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">URL 구성요소 - Path</div>
                                 </div>
                               </div>
                             </ul>
@@ -630,7 +630,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/domain2.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/domain2.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -668,7 +668,7 @@
                             
 
                             <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px dotted #e8e8e8;">
-                              <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:center;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:center; height:10.8250rem">
                                 <div class="jwstyle3" style="font-size:1.5rem">
                                   <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span class="jwstyle1" style="font-size:1.5rem">구조 :</span> 파일 경로는 도메인 뒤 '/'부분에 해당하며, 파일 경로와 파일 명으로 이루어짐</div>
                                   <p>
@@ -679,8 +679,21 @@
                               </blockquote>
                             </ul>
 
+
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem; margin-top:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:3rem; display:flex; justify-content:left; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                                  <h5 class="jwstyle1">'/listen/top100.nhn' 의 상세 경로 구분 예시</h5>
+                                </li>
+                              </ul>
+                            </div>
+
+
+
                             <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px dotted #e8e8e8;">
-                              <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:center;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:center; height:10.8250rem;">
                                 <div class="jwstyle3" style="font-size:1.5rem">
                                   <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span class="jwstyle1" style="font-size:1.5rem">예시1 :</span> music.naver.com/listen/top100.nhn에서, 파일 경로는 '/listen/top100.nhn'</div>
                                   <p>
@@ -696,7 +709,7 @@
                       <div class="clearfix"></div>
 
 
-                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:1rem; padding-right:0.5rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-right:0.5rem; margin-top:6rem;">
                         <div class="" style="width:100%;">
 
                           <div style="padding-bottom:0.5rem;">
@@ -704,7 +717,7 @@
                               style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
                               <div style="text-align:center;">
                                 <div style="width:100%;">
-                                  <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">페이지뷰 변수 종류 1</div>
+                                  <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">URL 구성요소 - Parameter</div>
                                 </div>
                               </div>
                             </ul>
@@ -717,7 +730,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/domain3.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/domain3.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -747,7 +760,7 @@
                           <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
                             <ul class="stats-overview" style="padding-left:0rem; padding-top:0rem; border-bottom:1px dotted #e8e8e8; border-top:0px dotted #ccc;">
                               <blockquote
-                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:7.3188rem;">
                                 <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span class="jwstyle1" style="font-size:1.5rem">정의 :</span> 파라미터는 쿼리 스트링이라고도 하며, 정보에 따라서 페이지의 콘텐츠가 가변적일 수 있을 때 사용하거나
                                    한 페이지 url을 상황에 따라 구분하기 위한 추가정보의 용도로 사용할 수 있음</div>
                               </blockquote>
@@ -831,7 +844,7 @@
 
 
 
-                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:1rem; padding-right:0.5rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0.5rem; margin-top:6rem;">
                         <div class="" style="width:100%;">
 
                           <div style="padding-bottom:0.5rem;">
@@ -839,7 +852,7 @@
                               style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
                               <div style="text-align:center;">
                                 <div style="width:100%;">
-                                  <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">페이지뷰 변수 종류 1</div>
+                                  <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">URL 구성요소 - Fragment</div>
                                 </div>
                               </div>
                             </ul>
@@ -852,7 +865,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/domain4.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/domain4.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -883,8 +896,8 @@
                             <ul class="stats-overview" style="padding-left:0rem; padding-top:0rem; border-bottom:1px dotted #e8e8e8; border-top:0px dotted #ccc;">
                               <blockquote
                                 style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
-                                <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span class="jwstyle1" style="font-size:1.5rem">정의 :</span> 페이지의 특정 요소를 지시하는 기능을 가짐. 해시태그로 이동을 원하는 요소의 id를 링크로 연결하면, 스크롤 이동없이 바로 해당 위치로 이동                                  
-                                <br/>이러한 기능은, 여러 콘텐츠가 나열 된 페이지의 특정 위치 정보를 사용자에게 함께 전달하고자 할 때 유용하게 쓰임</div>
+                                <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span class="jwstyle1" style="font-size:1.5rem">정의 :</span> 페이지의 특정 요소를 지시하는 기능을 가짐. 해시태그로 이동을 원하는 요소의 id를 링크로 연결하면, 스크롤 이동없이 바로 해당 위치로 이동</div>                                  
+                                <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> 이러한 기능은, 여러 콘텐츠가 나열 된 페이지의 특정 위치 정보를 사용자에게 함께 전달하고자 할 때 유용하게 쓰임</div>
                               </blockquote>
                             </ul>
                             
@@ -901,8 +914,21 @@
                               </blockquote>
                             </ul>
 
+
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem; margin-top:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:3rem; display:flex; justify-content:left; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                                  <h5 class="jwstyle1">Fragment를 활용해 원하는 요소로 이동하는 경우 - content 영역</h5>
+                                </li>
+                              </ul>
+                            </div>
+
+                            
+
                             <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px dotted #e8e8e8;">
-                              <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:center;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:center; height:14.0312rem;">
                                 <div class="jwstyle3" style="font-size:1.5rem">
                                   <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span class="jwstyle1" style="font-size:1.5rem">예시1 :</span> http://music.naver.com/listen/top100.nhn?domain=OVERSEA&duration=1h#content 에서, Fragment는 '#content'</div>
                                   <p>
@@ -912,8 +938,19 @@
                               </blockquote>
                             </ul>
 
+
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem; margin-top:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:3rem; display:flex; justify-content:left; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                                  <h5 class="jwstyle1">Fragment를 활용해 원하는 요소로 이동하는 경우 - Portfolio 영역</h5>
+                                </li>
+                              </ul>
+                            </div>
+
                             <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px dotted #e8e8e8;">
-                              <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:center;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.5rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; display:flex; justify-content:left; align-items:top; height:16.2375rem;">
                                 <div class="jwstyle3" style="font-size:1.5rem">
                                   <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-stop"></i> <span class="jwstyle1" style="font-size:1.5rem">예시2 :</span> http://www.kinoz.com/#portfolio  에서, Fragment는 '#portfolio'</div>
                                   <p>
@@ -943,7 +980,7 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel tile">
               <div class="x_title">
-                <h2>Page Path 변수</h2>
+                <h2 class="jwstyle1">Page View Variable</h2>
                 <ul class="nav navbar-right panel_toolbox">
                   <li><a class="close-link"><i class="fa fa-close"></i></a>
                   </li>
@@ -961,11 +998,10 @@
                     <div class="bs-example" data-example-id="simple-jumbotron">
                       <div class="jumbotron"
                         style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
-                        <div class="jwstyle3" style="font-size:1.5rem">Page view Trigger</div>
-                        <div class="jwstyle1" style="font-size:2.5rem">3가지 Page view 트리거의 작동방식</div>
+                        <div class="jwstyle3" style="font-size:1.5rem">Page view Variable</div>
+                        <div class="jwstyle1" style="font-size:2.5rem">4가지 Page view 변수 안내</div>
                         <br>
-                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> Pageview /
-                          DOM-ready / Window loaded
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> Page Path / Page Hostname / Page URL / Page Referrer
                         </div>
                       </div>
                     </div>
@@ -1102,7 +1138,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/Page Path_example.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/Page Path_example.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -1235,7 +1271,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/Page Hostname_example.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/Page Hostname_example.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -1249,7 +1285,7 @@
 
 
 
-                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:1rem; padding-right:0.5rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:1rem; padding-right:0.5rem;  margin-top:6rem;">
                         <div class="" style="width:100%;">
 
                           <div style="padding-bottom:0.5rem;">
@@ -1372,7 +1408,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/Page URL_example.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/Page URL_example.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -1383,7 +1419,7 @@
                       </div>
 
 
-                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:1rem; padding-right:0.5rem;">
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:1rem; padding-right:0.5rem; margin-top:6rem;">
                         <div class="" style="width:100%;">
 
                           <div style="padding-bottom:0.5rem;">
@@ -1507,7 +1543,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/Page Referrer_example.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/Page Referrer_example.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -1533,7 +1569,7 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel tile">
               <div class="x_title">
-                <h2>Trigger Order</h2>
+                <h2 class="jwstyle1">Trigger Order</h2>
                 <ul class="nav navbar-right panel_toolbox">
                   <li><a class="close-link"><i class="fa fa-close"></i></a>
                   </li>
@@ -1586,7 +1622,7 @@
                               <ul class="bs-glyphicons-list">
                                 <li style="width:100%; height:auto">
                                   <img style="width: 100%; display: block;"
-                                    src="images/guide/GTM/GTM_GA4 Event/Page view/GTM Trigger Order.jpg" alt="image">
+                                    src="images/Guide/GTM/GTM_GA4 Event/Page view/GTM Trigger Order.jpg alt="image">
                                 </li>
                               </ul>
                             </div>
@@ -1880,7 +1916,7 @@
                                   <ul class="bs-glyphicons-list">
                                     <li style="width:100%; height:auto">
                                       <img style="width: 100%; display: block;"
-                                        src="images/guide/GTM/GTM_GA4 Event/Page view/The DOM.jpg" alt="image">
+                                        src="images/Guide/GTM/GTM_GA4 Event/Page view/The DOM.jpg" alt="image">
                                     </li>
                                   </ul>
                                 </div>
@@ -1985,7 +2021,7 @@
                               <ul class="bs-glyphicons-list">
                                 <li style="width:100%; height:auto">
                                   <img style="width: 100%; display: block;"
-                                    src="images/guide/GTM/GTM_GA4 Event/Page view/Event_list_1.jpg" alt="image">
+                                    src="images/Guide/GTM/GTM_GA4 Event/Page view/Event_list_1.jpg" alt="image">
                                 </li>
                               </ul>
                             </div>
@@ -2048,7 +2084,7 @@
                               <ul class="bs-glyphicons-list">
                                 <li style="width:100%; height:auto">
                                   <img style="width: 100%; display: block;"
-                                    src="images/guide/GTM/GTM_GA4 Event/Page view/Event_list_2.jpg" alt="image">
+                                    src="images/Guide/GTM/GTM_GA4 Event/Page view/Event_list_2.jpg" alt="image">
                                 </li>
                               </ul>
                             </div>
