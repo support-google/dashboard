@@ -120,10 +120,20 @@
                     <li><a href="50_GTM Configuration Tag Setting.html" class="jwstyle1">GA4 웹스트림 구현</a></li>
                   </ul>
                 </li>
-                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GA4 이벤트 태그 <span class="fa fa-chevron-down"></span></a>
+                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GA4 페이지뷰 이벤트 태그 <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="50_GTM GA4 page_view.html" class="jwstyle1">GA4 페이지뷰 이벤트 구현</a></li>
+                    <li><a href="50_GTM GA4 page_view_1.html" class="jwstyle1">GA4 단일 페이지뷰 이벤트 구현</a></li>
+                    <li><a href="50_GTM GA4 page_view_2.html" class="jwstyle1">GA4 복수 페이지뷰 이벤트 구현</a></li>
+                    <li><a href="50_GTM GA4 page_view_3.html" class="jwstyle1">GA4 UTM 페이지뷰 이벤트 구현</a></li>
+                  </ul>
+                </li>
+                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GA4 클릭 이벤트 태그 <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
                     <li><a href="50_GTM GA4 Click Event.html" class="jwstyle1">GA4 클릭 이벤트 구현</a></li>
+                  </ul>
+                </li>
+                <li><a class="jwstyle1"><i class="fa fa-tags"></i> GA4 검색 이벤트 태그 <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
                     <li><a href="50_GTM GA4 Search JavaScript Event.html" class="jwstyle1">GA4 검색 이벤트 구현(맞춤변수)</a></li>
                     <li><a href="50_GTM GA4 Search HTML Event.html" class="jwstyle1">GA4 검색 이벤트 구현(HTML)</a></li>
                     <li><a href="50_GTM GA4 Search dataLayer Event.html" class="jwstyle1">GA4 검색 이벤트 구현(dLayer)</a></li>
@@ -326,8 +336,8 @@
 
                 <div class="bs-example" data-example-id="simple-jumbotron">
                   <div class="jumbotron">
-                    <h1 class="jwstyle1">GTM - GA4 "페이지 조회" 이벤트추적 구현 가이드</h1>
-                    <p><span class="jwstyle3">GA4에서 페이지 조회 이벤트를 추적 가능하도록</span> <span class="jwstyle1"> GTM 에서 이벤트 태그와 트리거를 생성하는 방법에 대해 안내되어 있습니다</span></p>
+                    <h1 class="jwstyle1">GTM - GA4 "복수 페이지 조회" 이벤트추적 구현 가이드</h1>
+                    <p><span class="jwstyle3">GA4에서 복수 페이지 조회 이벤트를 추적 가능하도록</span> <span class="jwstyle1"> GTM 에서 이벤트 태그와 트리거를 생성하는 방법에 대해 안내되어 있습니다</span></p>
                   </div>
                 </div>
               </div>
@@ -339,35 +349,10 @@
 
           <!-- 주요포인트 -->
 
-          <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="col-md-4 col-sm-4 col-xs-4">
             <div class="x_panel tile">
               <div class="x_title">
                 <h2>Process 1</h2>
-                <ul class="nav navbar-right panel_toolbox">
-                  <li><a class="close-link"><i class="fa fa-close"></i></a>
-                  </li>
-                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                  </li>
-                </ul>
-                <div class="clearfix"></div>
-              </div>
-              <div class="x_content">
-                <div class="tile-stats" style="border:0px">
-                  <div class="icon"><i class="fa fa-caret-square-o-right"></i>
-                  </div>
-                  <div class="count jwstyle3" style="font-size:3.3rem;">1. 변수 구성</div>
-
-                  <h3 class="jwstyle1" style="font-size:2rem;">변수 구성 단계</h3>
-                  <p>Lorem ipsum psdea itgum rixt.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-3 col-xs-3">
-            <div class="x_panel tile">
-              <div class="x_title">
-                <h2>Process 2</h2>
                 <ul class="nav navbar-right panel_toolbox">
                   <li><a class="close-link"><i class="fa fa-close"></i></a>
                   </li>
@@ -389,10 +374,10 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="col-md-4 col-sm-4 col-xs-4">
             <div class="x_panel tile">
               <div class="x_title">
-                <h2>Process 3</h2>
+                <h2>Process 2</h2>
                 <ul class="nav navbar-right panel_toolbox">
                   <li><a class="close-link"><i class="fa fa-close"></i></a>
                   </li>
@@ -414,10 +399,10 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="col-md-4 col-sm-4 col-xs-4">
             <div class="x_panel tile">
               <div class="x_title">
-                <h2>Process 4</h2>
+                <h2>Process 3</h2>
                 <ul class="nav navbar-right panel_toolbox">
                   <li><a class="close-link"><i class="fa fa-close"></i></a>
                   </li>
