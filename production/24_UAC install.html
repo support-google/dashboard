@@ -908,7 +908,6 @@
 
 
 
-
           <!-- 게재위치 -->
           <div class="page-title" style="margin-top:6rem">
             <div class="title_left">
@@ -945,132 +944,144 @@
                 </div>
 
 
-                <div class="row" style="margin-bottom:3rem;">
-                  <div class="col-md-4 col-sm-4 col-xs-4" style="margin-bottom:5rem;">
-                    <div class="dashboard-widget-content">
-                      <!-- <ul class="quick-list">
-                        <li><i class="fa fa-calendar-o"></i><a href="#">Settings</a>
-                        </li>
-                        <li><i class="fa fa-bars"></i><a href="#">Subscription</a>
-                        </li>
-                        <li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
-                        <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a>
-                        </li>
-                        <li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
-                        <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a>
-                        </li>
-                        <li><i class="fa fa-area-chart"></i><a href="#">Logout</a>
-                        </li>
-                      </ul> -->
-                
-                      <div class="sidebar-widget">
-                        <h4>Profile Completion</h4>
-                        <canvas width="150" height="80" id="chart_gauge_01" class="" style="width: 160px; height: 100px;"></canvas>
-                        <div class="goal-wrapper">
-                          <span id="gauge-text" class="gauge-value pull-left">0</span>
-                          <span class="gauge-value pull-left">%</span>
-                          <span id="goal-text" class="goal-value pull-right">100%</span>
-                        </div>
-                      </div>
+             
+                <div class="col-md-3 col-sm-3 col-xs-3">                
+                  <div class="col-md-12 col-sm-12 col-xs-12"  style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                    <h4 class="jwstyle1">신규 설치 집중</h4>
+                    <canvas id="chart_gauge_01" width="350px" height="175px"></canvas>
+                    <div class=" goal-wrapper" style="width:350px;">
+                      <span id="gauge-text" class="gauge-value pull-left">In-app Activity</span>
+                      <span class="gauge-value pull-left"></span>
+                      <span id="goal-text" class="goal-value pull-right">Install Volume</span>
                     </div>
-                  </div>
-                  <div class="clearfix"></div>
-
-
-
-
-
-                  <div class="col-sm-2" style="padding-right:0rem;">
-                    <div class="weather-icon">
-                      <div class="bs-glyphicons" style="margin-bottom:0rem;">
-                        <ul class="bs-glyphicons-list">
-                          <li style="width:100%; height:13.3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
-                            <span class="fa fa-youtube-play" aria-hidden="true" style="font-size:5rem"></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="col-sm-8">
-                    <ul class="stats-overview" style="padding-left:0rem; padding-top:0rem; border-top:px solid #EEEEEE;">
-                      <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
-                        <span style="width:100%;">
-                          <span class="name jwstyle1" style="font-size:2rem;">광고 에셋 &nbsp; </span>
-                          <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">비즈니스에 유의미한 전환 및 전환가치 설정</span> -->
-                        </span>
-                      </blockquote>
-                    </ul>
-
-                    <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0rem;">
-                      <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
-                        <div class="row" style="disply:flex flex-direction:row">
-                          <div class="col-sm-6" style="border-right:1px solid #EEEEEE;">
-                            <p>
-                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">이미지(필수) :</span> 가로모드 이미지 1개/정사각형 이미지 1개 필수</div>
-                            </p>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">가로모드(1.91:1) :</span> 600X314 ~ 1200X628 / 최대5.12MB</div>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">정사각형(1:1) :</span> 300X300 ~ 1200X1200 / 최대5.12MB</div>
-
-                            <br />
-                            <p>
-                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">텍스트(필수) :</span> 광고제목 / 긴 광고제목 / 설명</div>
-                            </p>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">광고제목 :</span> 최대 5개 / 15자(영문기준 30자)</div>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">긴 광고제목 :</span> 최대 1개 / 45자(영문기준 90자)</div>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">설명 :</span> 최대 5개 / 45자(영문기준 90자)</div>
-
-                          </div>
-                          <div class="col-sm-6">
-                            <p>
-                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">로고(선택) :</span> 가로모드 로고/정사각형 로고</div>
-                            </p>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">가로모드(4:1) :</span> 512X128(최소) / 1200X300(권장) / 최대5.12MB</div>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">정사각형(1:1) :</span> 128X128(최소) / 1200X1200(권장) / 최대5.12MB</div>
-
-                            <br />
-                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">동영상(선택) :</span> Youtube 동영상 URL 삽입</div>
-
-                          </div>
-                        </div>
-                      </blockquote>
-                    </ul>
-                  </div>
-
-
-                  <!-- <div class="col-sm-2" style="padding-right:0rem;">
-                    <div class="weather-icon">
-                      <div class="bs-glyphicons" style="margin-bottom:0rem;">
-                        <ul class="bs-glyphicons-list">
-                          <li style="width:100%; height:13.3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
-                            <span class="fa fa-youtube-play" aria-hidden="true" style="font-size:5rem"></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div> -->
-
-                  <div class="col-sm-2">
-                    <ul class="stats-overview" style="padding-left:0rem; padding-top:0rem; border-top:px solid #EEEEEE;">
-                      <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
-                        <span style="width:100%;">
-                          <span class="name jwstyle1" style="font-size:2rem;">노출 형식 &nbsp; </span>
-                          <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">비즈니스에 유의미한 전환 및 전환가치 설정</span> -->
-                        </span>
-                      </blockquote>
-                    </ul>
-
-                    <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE;  padding-bottom:1rem; margin-bottom:0rem;">
-                      <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; min-height:22.7rem;">
-                        <p>
-                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 반응형 광고 형식</div>
-                        </p>
-                      </blockquote>
-                    </ul>
                   </div>
                 </div>
+
+
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <ul class="stats-overview" style="padding-left:0rem; padding-top:0rem; border-top:px solid #EEEEEE;">
+                      <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                        <span style="width:100%;">
+                          <span class="name jwstyle1" style="font-size:2rem;">광고 개요 &nbsp; </span>
+                          <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">비즈니스에 유의미한 전환 및 전환가치 설정</span> -->
+                        </span>
+                      </blockquote>
+                    </ul>
+                    
+  
+                    <ul class="stats-overview" style="padding-left:0rem; border-bottom:0px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0rem;">
+                      <blockquote style="margin-bottom:0rem; padding-right:0rem; text-align:left;">
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">KPI :</span> 설치 볼륨 극대화</div>
+                          <p>
+                          <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> 과거 설치 데이터를 기반으로 설치를 극대화하기 위한 입찰전략운영</div>
+                          <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> 다른 액션들은 무시, “설치“ 데이터만을 극대화 하기 위한 최적화방식</div>
+                          </p>
+                      </blockquote>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-md-3 col-sm-3 col-xs-3" style="padding-right:0.5rem;">
+                  <div class="bs-glyphicons" style="margin-bottom:1rem; margin-top:0rem;">
+                    <ul class="bs-glyphicons-list">
+                      <li
+                        style="width:100%; height:3rem; display:flex; justify-content:left; align-items:center; border:1px solid #f9f9f9;  ">
+                        <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                        <h5 class="jwstyle1">캠페인 핵심 목표</h5>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0rem;">
+                    <blockquote style="margin-bottom:0rem; padding-right:0rem; text-align:left;">
+                          <div class="jwstyle1" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 설치 수량</div>
+                          <p>
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-square-o"></i> &nbsp인앱 액션(X)</div>
+                          </p>
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-square-o"></i> &nbsp인앱 액션 가치(X)</div>
+                    </blockquote>
+                  </ul>
+                </div>
+
+
+
+                <div class="col-md-3 col-sm-3 col-xs-3" style="padding-right:0.5rem; padding-left:0.5rem;">
+                  <div class="bs-glyphicons" style="margin-bottom:1rem; margin-top:0rem;">
+                    <ul class="bs-glyphicons-list">
+                      <li
+                        style="width:100%; height:3rem; display:flex; justify-content:left; align-items:center; border:1px solid #f9f9f9;  ">
+                        <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                        <h5 class="jwstyle1">설치 수량 추적 방식</h5>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0rem;">
+                    <blockquote style="margin-bottom:0rem; padding-right:0rem; text-align:left;">
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">install :</span> 구글 플레이 연동 필요</div>
+                          <p>
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">First open :</span> Third Party Tracking Toll 연동 필요</div>
+                          </p>
+                    </blockquote>
+                  </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0.5rem;">
+                  <div class="bs-glyphicons" style="margin-bottom:1rem; margin-top:0rem;">
+                    <ul class="bs-glyphicons-list">
+                      <li
+                        style="width:100%; height:3rem; display:flex; justify-content:left; align-items:center; border:1px solid #f9f9f9;  ">
+                        <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                        <h5 class="jwstyle1">타겟팅 사용자 옵션</h5>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0rem;">
+                    <blockquote style="margin-bottom:0rem; padding-right:0rem; text-align:left;">
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 모든 사용자</div>
+                          <p>
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-square-o"></i> &nbsp인앱 액션을 취할 가능성이 높은 사용자</div>
+                          </p>
+                    </blockquote>
+                  </ul>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+          <!-- 게재위치 -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Smart Display Campaign > Placement</h3>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Campaign Setting Guide</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
                 <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+
 
 
 
@@ -1104,7 +1115,7 @@
                   </div>
 
 
-                  <div class="col-sm-8">
+                  <div class="col-sm-10">
                     <ul class="stats-overview" style="padding-left:0rem; padding-top:0rem; border-top:px solid #EEEEEE;">
                       <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
                         <span style="width:100%;">
@@ -1119,64 +1130,46 @@
                         <div class="row" style="disply:flex flex-direction:row">
                           <div class="col-sm-6" style="border-right:1px solid #EEEEEE;">
                             <p>
-                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">이미지(필수) :</span> 가로모드 이미지 1개/정사각형 이미지 1개 필수</div>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">이미지(선택) :</span> 최대 20개</div>
                             </p>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">가로모드(1.91:1) :</span> 600X314 ~ 1200X628 / 최대5.12MB</div>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">정사각형(1:1) :</span> 300X300 ~ 1200X1200 / 최대5.12MB</div>
-
-                            <br />
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">가로모드(1.91:1) :</span> 200X200(최소) 1200x1200(권장) / 최대5MB</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">정사각형(1:1) :</span> 600X314(최소) 1200x628(권장) / 최대5MB</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">세로모드(4:5) :</span> 320X400(최소) 1200x1500(권장) / 최대5MB</div>
+                            <br/>
                             <p>
-                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">텍스트(필수) :</span> 광고제목 / 긴 광고제목 / 설명</div>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">HTML(선택) :</span> 최대 20개</div>
                             </p>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">광고제목 :</span> 최대 5개 / 15자(영문기준 30자)</div>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">긴 광고제목 :</span> 최대 1개 / 45자(영문기준 90자)</div>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">설명 :</span> 최대 5개 / 45자(영문기준 90자)</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">소재 :</span> https://support.google.com/google-ads/answer/9948381?hl=ko</div>
+                            <br/>
+                            <p>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">동영상(선택) :</span> 최대 20개</div>
+                            </p>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">소재 :</span> Youtube 동영상 URL 삽입</div>
+
+
 
                           </div>
-                          <div class="col-sm-6">
+                          <div class="col-sm-6">                            
                             <p>
-                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">로고(선택) :</span> 가로모드 로고/정사각형 로고</div>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">광고제목(필수) :</span> 2개이상 / 최대 5개</div>
                             </p>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">가로모드(4:1) :</span> 512X128(최소) / 1200X300(권장) / 최대5.12MB</div>
-                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">정사각형(1:1) :</span> 128X128(최소) / 1200X1200(권장) / 최대5.12MB</div>
-
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">의미 :</span> 광고 제목은 사용자의 눈길을 광고로 집중시키며 다른 애셋과 함께 사용할 수 있는 단어나 구문</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">텍스트 제한 :</span> 각 광고제목은 30자(영문 기준) 이하여야 함</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">최소 갯수 :</span> 다른 애셋과 조합할 수 있는 광고 제목을 2개 이상 입력(최대 5개)</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">호환성 :</span> 광고 제목이 그 자체로 의미가 있고 다른 에셋과 조합할 수 있는지 검토</div>
                             <br />
-                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">동영상(선택) :</span> Youtube 동영상 URL 삽입</div>
+                            <p>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">설명(필수) :</span> 1개이상 / 최대 5개</div>
+                            </p>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">의미 :</span> 설명은 사용자가 앱과 상호작용하도록 유도하는 단어나 구문이며 다른 애셋과 함께 사용할 수 있음</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">텍스트 제한 :</span> 각 설명은 영문 기준 90자 이하여야 함</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">최소 객수 :</span> 다른 애셋과 연결할 수 있는 고유한 설명을 1개 이상 입력(최대 5개)</div>
+                            <div class="jwstyle3" style="font-size:1.5rem">&nbsp&nbsp&nbsp<i class="fa fa-plus"></i> <span class="jwstyle1" style="font-size:1.5rem">호환성 :</span> 각 설명이 그 자체로 의미가 있고 다른 애셋과 연결될 수 있는지 검토</div>
+                           
+
 
                           </div>
                         </div>
-                      </blockquote>
-                    </ul>
-                  </div>
-
-
-                  <!-- <div class="col-sm-2" style="padding-right:0rem;">
-                    <div class="weather-icon">
-                      <div class="bs-glyphicons" style="margin-bottom:0rem;">
-                        <ul class="bs-glyphicons-list">
-                          <li style="width:100%; height:13.3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
-                            <span class="fa fa-youtube-play" aria-hidden="true" style="font-size:5rem"></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div> -->
-
-                  <div class="col-sm-2">
-                    <ul class="stats-overview" style="padding-left:0rem; padding-top:0rem; border-top:px solid #EEEEEE;">
-                      <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
-                        <span style="width:100%;">
-                          <span class="name jwstyle1" style="font-size:2rem;">노출 형식 &nbsp; </span>
-                          <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">비즈니스에 유의미한 전환 및 전환가치 설정</span> -->
-                        </span>
-                      </blockquote>
-                    </ul>
-
-                    <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE;  padding-bottom:1rem; margin-bottom:0rem;">
-                      <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; min-height:22.7rem;">
-                        <p>
-                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 반응형 광고 형식</div>
-                        </p>
                       </blockquote>
                     </ul>
                   </div>
@@ -4726,7 +4719,7 @@
   <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script> -->
 
   <!-- Custom Theme Scripts -->
-  <script src="../build/js/custom_instream.js"></script>
+  <script src="../build/js/custom_UAC_install.js"></script>
 
 
   <!-- Datatables -->
