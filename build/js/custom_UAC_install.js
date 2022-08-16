@@ -772,9 +772,9 @@ if (typeof NProgress != 'undefined') {
 		
 		if ($('#gauge-text').length){ 
 		
-			chart_gauge_01.maxValue = 6000;
+			chart_gauge_01.maxValue = 10000;
 			chart_gauge_01.animationSpeed = 32;
-			chart_gauge_01.set(5500);
+			chart_gauge_01.set(8500);
 			// chart_gauge_01.setTextField(document.getElementById("gauge-text"));
 		
 		}
@@ -789,10 +789,10 @@ if (typeof NProgress != 'undefined') {
 		
 		if ($('#gauge-text2').length){
 			
-			chart_gauge_02.maxValue = 9000;
+			chart_gauge_02.maxValue = 10000;
 			chart_gauge_02.animationSpeed = 32;
-			chart_gauge_02.set(2400);
-			chart_gauge_02.setTextField(document.getElementById("gauge-text2"));
+			chart_gauge_02.set(8500);
+			// chart_gauge_02.setTextField(document.getElementById("gauge-text2"));
 		
 		}
 	
