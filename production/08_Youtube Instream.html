@@ -69,6 +69,42 @@
     .jwstyle6 {
       font-family: 'Nanum Gothic', sans-serif;
     }
+
+
+
+  /* 좌측 스크롤바 */
+
+  .class {
+    width:100px; height: 100px; overflow-y: auto; border: 1px solid #000;} 
+
+
+   
+    .left_col::-webkit-scrollbar { 
+    width: 0.1px; /*스크롤바의 너비*/ } 
+
+    .left_col::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/} 
+
+    .left_col::-webkit-scrollbar-track { 
+    background-color: #222e3c; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}
+
+
+
+  /* 우측 스크롤바 */
+    ::-webkit-scrollbar { 
+    width: 5px; /*스크롤바의 너비*/} 
+
+    ::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/}
+
+    ::-webkit-scrollbar-track { 
+    background-color: #F7F7F7; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}   
   </style>
 
 
@@ -104,36 +140,36 @@
           <!-- sidebar menu -->
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
-              <h3 class="jwstyle1">Youtube</h3>
+              <h3>Youtube</h3>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-youtube-play" class="jwstyle1"></i> Acution - Awareness <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-youtube-play"></i> Acution - Awareness <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="04_Youtube Bumper Ads.html" class="jwstyle1">Bumper Ad</a></li>
-                    <li><a href="05_Trueview for Reach.html" class="jwstyle1">Trueview for Reach</a></li>
-                    <li><a href="06_Non-Skippable Ad.html" class="jwstyle1">Non-Skippable Ad</a></li>
-                    <li><a href="07_Video Reach Campaign.html" class="jwstyle1">Video Reach Campaign</a></li>
+                    <li><a href="04_Youtube Bumper Ads.html">Bumper Ad</a></li>
+                    <li><a href="05_Trueview for Reach.html">Trueview for Reach</a></li>
+                    <li><a href="06_Non-Skippable Ad.html">Non-Skippable Ad</a></li>
+                    <li><a href="07_Video Reach Campaign.html">Video Reach Campaign</a></li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-youtube-play" class="jwstyle1"></i> Acution - Consideration <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-youtube-play"></i> Acution - Consideration <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="08_Youtube Instream.html" class="jwstyle1">Trueview Instream</a></li>
-                    <li><a href="09_Infeed Video ads.html" class="jwstyle1">Infeed Video Ads</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">Video Ads Sequencing</a></li>
+                    <li><a href="08_Youtube Instream.html">Trueview Instream</a></li>
+                    <li><a href="09_Infeed Video ads.html">Infeed Video Ads</a></li>
+                    <li><a href="page_404.html">Video Ads Sequencing</a></li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-youtube-play" class="jwstyle1"></i> Acution - Action <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-youtube-play"></i> Acution - Action <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="11_Video Action Campaign.html" class="jwstyle1">Video Action Campaign</a></li>
-                    <li><a href="12_VAC_Sitelink Extension.html" class="jwstyle1">VAC sitelink Extension</a></li>
-                    <li><a href="13_VAC with Product Feeds.html" class="jwstyle1">VAC with Product Feeds</a></li>
-                    <li><a href="14_VAC Lead Form Extension.html" class="jwstyle1">VAC with Lead Form Extension</a></li>
-                    <li><a href="15_App Deep-linking on VAC.html" class="jwstyle1">App Deeplinking on VAC</a></li>
+                    <li><a href="11_Video Action Campaign.html">Video Action Campaign</a></li>
+                    <li><a href="12_VAC_Sitelink Extension.html">VAC sitelink Extension</a></li>
+                    <li><a href="13_VAC with Product Feeds.html">VAC with Product Feeds</a></li>
+                    <li><a href="14_VAC Lead Form Extension.html">VAC with Lead Form Extension</a></li>
+                    <li><a href="15_App Deep-linking on VAC.html">App Deeplinking on VAC</a></li>
                   </ul>
                 </li>  
-                <li><a><i class="fa fa-youtube-play" class="jwstyle1"></i> Reservation <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-youtube-play"></i> Reservation <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="01_Youtube CPM Masthead.html" class="jwstyle1">Masthead</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">Youtube Select</a></li>
+                    <li><a href="01_Youtube CPM Masthead.html">Masthead</a></li>
+                    <li><a href="page_404.html">Youtube Select</a></li>
                   </ul>
                 </li>            
               </ul>
@@ -141,26 +177,26 @@
 
 
             <div class="menu_section">
-              <h3 class="jwstyle1">GDN</h3>
+              <h3>GDN</h3>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-list-alt" class="jwstyle1"></i> GDN <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-list-alt"></i> GDN <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="16_GDN Image.html" class="jwstyle1">Image Display Campaign</a></li>
-                    <li><a href="17_GDN Responsive Display.html" class="jwstyle1">Responsive Display Campaign</a></li>
-                    <li><a href="18_GDN Smart Display Campaign.html" class="jwstyle1">Smart Display Campaign</a></li>
+                    <li><a href="16_GDN Image.html">Image Display Campaign</a></li>
+                    <li><a href="17_GDN Responsive Display.html">Responsive Display Campaign</a></li>
+                    <li><a href="18_GDN Smart Display Campaign.html">Smart Display Campaign</a></li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-list-alt" class="jwstyle1"></i> GDN Optimization<span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-list-alt"></i> GDN Optimization<span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="20_GDN Optimization Conv.html" class="jwstyle1">Conversion Tracking</a></li>
-                    <li><a href="21_GDN Bidding Strategy.html" class="jwstyle1">Bidding Strategy</a></li>
-                    <li><a href="22_GDN Campaign Structure.html" class="jwstyle1">Campaign structure</a></li>
-                    <li><a href="23_GDN Creative.html" class="jwstyle1">Creative Type</a></li>
+                    <li><a href="20_GDN Optimization Conv.html">Conversion Tracking</a></li>
+                    <li><a href="21_GDN Bidding Strategy.html">Bidding Strategy</a></li>
+                    <li><a href="22_GDN Campaign Structure.html">Campaign structure</a></li>
+                    <li><a href="23_GDN Creative.html">Creative Type</a></li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-list-alt" class="jwstyle1"></i> GDN Targeting<span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-list-alt"></i> GDN Targeting<span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="page_404.html" class="jwstyle1">Targeting</a></li>
+                    <li><a href="page_404.html">Targeting</a></li>
                   </ul>
                 </li>                               
                 <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
@@ -168,22 +204,22 @@
             </div>
 
             <div class="menu_section">
-              <h3 class="jwstyle1" style="color:tomato">APP Campaign</h3>
+              <h3>APP Campaign</h3>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-download"></i> UAC <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-download"></i> App Campaign <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="24_UAC install.html" class="jwstyle1">UAC for install</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">UAC for install Advanced</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">UAC for Actions</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">UAC for Value</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">UAC Engagement</a></li>
+                    <li><a href="24_UAC install.html">AC for install</a></li>
+                    <li><a href="page_404.html">AC for install Advanced</a></li>
+                    <li><a href="page_404.html">AC for Actions</a></li>
+                    <li><a href="page_404.html">AC for Value</a></li>
+                    <li><a href="page_404.html">AC Engagement</a></li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-download"></i> UAC Setting Guide<span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-download"></i> AC Setting Guide<span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="page_404.html" class="jwstyle1">Play Store 연동가이드</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">Third Party 연동가이드</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">SDK Event 연동가이드</a></li>
+                    <li><a href="29_AC_Ads_Play Mapping Guide.html">Play Store Mapping</a></li>
+                    <li><a href="30_AC_3rd Party Mapping guide.html">Third Party Mapping</a></li>
+                    <li><a href="31_AC_Action Mapping Guide.html">SDK Event Mapping</a></li>
                   </ul>
                 </li>                                            
                 <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
@@ -191,12 +227,12 @@
             </div>
 
             <div class="menu_section">
-              <h3 class="jwstyle1" style="color:tomato">DA Discovery</h3>
+              <h3 style="color:tomato">DA Discovery</h3>
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-asterisk"></i> DA Discovery <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="page_404.html" class="jwstyle1">DA Discovery</a></li>
-                    <li><a href="page_404.html" class="jwstyle1">Optimization</a></li>
+                    <li><a href="page_404.html">DA Discovery</a></li>
+                    <li><a href="page_404.html">Optimization</a></li>
                   </ul>
                 </li>                                                          
                 <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
@@ -206,7 +242,7 @@
           <!-- /sidebar menu -->
 
           <!-- /menu footer buttons -->
-          <div class="sidebar-footer hidden-small">
+          <!-- <div class="sidebar-footer hidden-small">
             <a data-toggle="tooltip" data-placement="top" title="Settings">
               <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
             </a>
@@ -219,7 +255,7 @@
             <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
               <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
             </a>
-          </div>
+          </div> -->
           <!-- /menu footer buttons -->
         </div>
       </div>
