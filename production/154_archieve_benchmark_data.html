@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Google Dashboard(미전팀)</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- bootstrap-progressbar -->
+  <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- PNotify -->
+  <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+  <!-- Datatables -->
+  <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    .jwstyle1 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 500;
+    }
+
+    .jwstyle2 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 400;
+    }
+
+    .jwstyle3 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 300;
+    }
+
+    .jwstyle4 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 200;
+    }
+
+    .jwstyle5 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 100;
+    }
+
+    .jwstyle6 {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
+  
+  
+      
+  /* 좌측 스크롤바 */
+
+  .class {
+    width:100px; height: 100px; overflow-y: auto; border: 1px solid #000;} 
+
+
+   
+    .left_col::-webkit-scrollbar { 
+    width: 0.1px; /*스크롤바의 너비*/ } 
+
+    .left_col::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/} 
+
+    .left_col::-webkit-scrollbar-track { 
+    background-color: #222e3c; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}
+
+
+
+  /* 우측 스크롤바 */
+    ::-webkit-scrollbar { 
+    width: 5px; /*스크롤바의 너비*/} 
+
+    ::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/}
+
+    ::-webkit-scrollbar-track { 
+    background-color: #F7F7F7; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}   
+  </style>
+
+
+
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container" style="min-width:1903px">
+      <div class="col-md-3 left_col" style="height:100%; overflow:auto; position:fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="40_Archieve_Product Guide.html" class="site_title"><i class="glyphicon glyphicon-folder-open" style="border: 0px" ; "border-radius:0%"></i> <span>Archieve</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/Youtube/google logo.gif" alt="img" class="img-circle profile_img" style="height:7rem; width:7rem;">
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>Administrator</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Archieve</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="glyphicon glyphicon-folder-open"></i> &nbsp&nbsp&nbspArchieve <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a class="jwstyle1" href="150_archieve_product_guide.html">상품소개서</a></li>
+                    <li><a class="jwstyle1" href="151_archieve_setting_guide.html">세팅가이드</a></li>
+                    <li><a class="jwstyle1" href="152_archieve_key_policy_guide.html">주요 정책 가이드</a></li>
+                    <li><a class="jwstyle1" href="153_archieve_monthly_update.html">월별 신규 업데이트</a></li>
+                    <li><a class="jwstyle1" href="154_archieve_benchmark_data.html">벤치마크 데이터</a></li>
+                  </ul>
+                </li>                         
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <!-- <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div> -->
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu" style="height:5.7rem;">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/GA logo.png" alt="">GA Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="100_ga3_creative_account.html"><i class="fa fa-sign-out pull-right"></i> GA계정 생성</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 초기 세팅(작업중)</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 운영 세팅(작업중)</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false";">
+                  <img src="images/Youtube/GTM logo.png" alt="">GTM Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="50_gtm_account_creation.html"><i class="fa fa-sign-out pull-right"></i> GTM 계정 생성</a></li>
+                  <li><a href="51_gtm_ua_configuration_tag_setting.html"><i class="fa fa-sign-out pull-right"></i> GA 구성 태그</a></li>
+                  <li><a href="53_gtm_ga4_page_view_1.html"><i class="fa fa-sign-out pull-right"></i> GA4 이벤트 태그</a></li>
+                  <li><a href="60_gtm_ga4_view_item_list.html"><i class="fa fa-sign-out pull-right"></i> GA4 전자상거래 태그</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 맞춤 HTML 태그</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false";">
+                  <img src="images/Youtube/Ads logo.png" alt="">Google Ads Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="01_youtube_bumper_ads.html"><i class="fa fa-sign-out pull-right"></i> YouTube Dashboard</a></li>
+                  <li><a href="15_gdn_image.html"><i class="fa fa-sign-out pull-right"></i> GDN Dashboard</a></li>
+                  <li><a href="22_ac_install.html"><i class="fa fa-sign-out pull-right"></i> App Campaign Dashboard</a></li>
+                  <li><a href="page_404.html" style="color:tomato"><i class="fa fa-sign-out pull-right"></i> DA Discovery Dashboard</a></li>
+                  <li><a href="page_404.html" style="color:tomato"><i class="fa fa-sign-out pull-right"></i> PMax Dashboard</a></li>
+                </ul>
+              </li>
+
+              <!-- <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="text-center">
+                      <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="row">
+          <div class="page-title">
+
+
+
+            <!-- CPM마스트헤드 집행데이터 -->
+
+            <div class="page-title" style="margin-top:6rem">
+              <div class="title_left">
+                <h3><span class="fa fa-check" aria-hidden="true"></span> ARCHIEVE</h3>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2 class="jwstyle1">Google Ads 업종별 벤치마크 데이터</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="bs-example" data-example-id="simple-jumbotron">
+                        <div class="jumbotron"
+                          style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                          <!-- <div class="jwstyle3" style="font-size:1.5rem">저장소</div> -->
+                          <div class="jwstyle1" style="font-size:2.5rem">Google Ads 업종별 벤치마크 데이터</div>
+                          <br>
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 벤치마크 데이터</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="text-muted font-13 m-b-30">
+                    DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>
+                  </p>
+                  <table id="datatable" class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th> No. </th>
+                        <th> 해당 년 </th>
+                        <th> 해당 월 </th>
+                        <th> 카테고리 </th>
+                        <th> 파일 명 </th>
+                        <th> 다운로드 </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> 01 </td>
+                          <td> 2021년 </td>
+                          <td> 06월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(21년 _06월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1SLP8W2Cp5IArpW0KDLKdvuE9u-8knyAy/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 02 </td>
+                          <td> 2021년 </td>
+                          <td> 07월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(21년_07월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1BZJLyhRfMqQPKqf3ZhBvjx5wknJjZlKh/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 03 </td>
+                          <td> 2021년 </td>
+                          <td> 08월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(21년_08월) </td>
+                          <td> <a href="https://drive.google.com/file/d/17Bl22Uygq-bf8DMs6CSjmzpRFJwTb3Ms/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 04 </td>
+                          <td> 2021년 </td>
+                          <td> 09월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(21년_09월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1AZX1_Uq9myEMVwdfs3tJ4SGaWKibqlGz/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 05 </td>
+                          <td> 2021년 </td>
+                          <td> 10월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(21년_10월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1Sq-i_s1ykK3ui2V84FmYPz3x4PnluhPK/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 06 </td>
+                          <td> 2021년 </td>
+                          <td> 11월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(21년_11월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1uu0ykFOJB4sGBW7mIwlCv72DAEKOL8Gs/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 07 </td>
+                          <td> 2021년 </td>
+                          <td> 12월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(21년_12월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1yahu8hJVFGqqeWUCnIn32jOEVpTS5oNA/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 08 </td>
+                          <td> 2022년 </td>
+                          <td> 02월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(22년_02월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1FeqTCWNxIPiN0thruYv0TgJibibJkwaW/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 09 </td>
+                          <td> 2022년 </td>
+                          <td> 03월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(22년_03월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1FeqTCWNxIPiN0thruYv0TgJibibJkwaW/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 10 </td>
+                          <td> 2022년 </td>
+                          <td> 04월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(22년_04월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1kxS5ggyIs507ojO1etyW_4I7MOySP0H4/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 11 </td>
+                          <td> 2022년 </td>
+                          <td> 05월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(22년_05월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1JS3BgtzsP3_WudrbdngKKqBj07RIWjZr/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 12 </td>
+                          <td> 2022년 </td>
+                          <td> 06월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(22년_06월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1zSJT0MDeXlxQ5b3P8doxhIEc1KR6uAak/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 13 </td>
+                          <td> 2022년 </td>
+                          <td> 07월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(22년_07월) </td>
+                          <td> <a href="https://drive.google.com/file/d/16l7QlKcSsyxdiQ8q0W1glc90RVqWITCH/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 14 </td>
+                          <td> 2022년 </td>
+                          <td> 08월 </td>
+                          <td> 업종별 벤치마크 데이터 </td>
+                          <td> 업종별 벤치마크 데이터(22년_08월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1tw3J4NP2tr5aql7hePlbMqG-o-GCmq7l/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+
+
+
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2 class="jwstyle1">Google Ads 월별 상품 벤치마크 데이터</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="bs-example" data-example-id="simple-jumbotron">
+                        <div class="jumbotron"
+                          style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                          <!-- <div class="jwstyle3" style="font-size:1.5rem">예약형 상품 가이드</div> -->
+                          <div class="jwstyle1" style="font-size:2.5rem">Google Ads 월별 상품 벤치마크 데이터</div>
+                          <br>
+                          <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 벤치마크 데이터</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="text-muted font-13 m-b-30">
+                    This example shows FixedHeader being styling by the Bootstrap CSS framework.
+                  </p>
+                  <table id="datatable-fixed-header" class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th> No. </th>
+                        <th> 해당 년 </th>
+                        <th> 해당 월 </th>
+                        <th> 카테고리 </th>
+                        <th> 파일 명 </th>
+                        <th> 다운로드 </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> 01 </td>
+                          <td> 2021년 </td>
+                          <td> 06월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(21년 _06월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1SLP8W2Cp5IArpW0KDLKdvuE9u-8knyAy/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 02 </td>
+                          <td> 2021년 </td>
+                          <td> 07월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(21년_07월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1BZJLyhRfMqQPKqf3ZhBvjx5wknJjZlKh/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 03 </td>
+                          <td> 2021년 </td>
+                          <td> 08월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(21년_08월) </td>
+                          <td> <a href="https://drive.google.com/file/d/17Bl22Uygq-bf8DMs6CSjmzpRFJwTb3Ms/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 04 </td>
+                          <td> 2021년 </td>
+                          <td> 09월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(21년_09월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1AZX1_Uq9myEMVwdfs3tJ4SGaWKibqlGz/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 05 </td>
+                          <td> 2021년 </td>
+                          <td> 10월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(21년_10월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1Sq-i_s1ykK3ui2V84FmYPz3x4PnluhPK/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 06 </td>
+                          <td> 2021년 </td>
+                          <td> 11월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(21년_11월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1uu0ykFOJB4sGBW7mIwlCv72DAEKOL8Gs/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 07 </td>
+                          <td> 2021년 </td>
+                          <td> 12월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(21년_12월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1yahu8hJVFGqqeWUCnIn32jOEVpTS5oNA/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 08 </td>
+                          <td> 2022년 </td>
+                          <td> 02월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(22년_02월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1FeqTCWNxIPiN0thruYv0TgJibibJkwaW/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 09 </td>
+                          <td> 2022년 </td>
+                          <td> 03월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(22년_03월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1FeqTCWNxIPiN0thruYv0TgJibibJkwaW/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 10 </td>
+                          <td> 2022년 </td>
+                          <td> 04월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(22년_04월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1kxS5ggyIs507ojO1etyW_4I7MOySP0H4/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 11 </td>
+                          <td> 2022년 </td>
+                          <td> 05월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(22년_05월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1JS3BgtzsP3_WudrbdngKKqBj07RIWjZr/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 12 </td>
+                          <td> 2022년 </td>
+                          <td> 06월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(22년_06월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1zSJT0MDeXlxQ5b3P8doxhIEc1KR6uAak/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 13 </td>
+                          <td> 2022년 </td>
+                          <td> 07월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(22년_07월) </td>
+                          <td> <a href="https://drive.google.com/file/d/16l7QlKcSsyxdiQ8q0W1glc90RVqWITCH/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                        <tr>
+                          <td> 14 </td>
+                          <td> 2022년 </td>
+                          <td> 08월 </td>
+                          <td> 월별 벤치마크 데이터(추세) </td>
+                          <td> 월별 벤치마크 데이터(22년_08월) </td>
+                          <td> <a href="https://drive.google.com/file/d/1tw3J4NP2tr5aql7hePlbMqG-o-GCmq7l/view?usp=sharing"><i
+                                class="glyphicon glyphicon-folder-open" style="font-size:1.5rem;"></i></a> </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">Copyright 2022. JungWook KIM. All rights reserved</a>
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+
+    </div>
+  </div>
+
+
+
+  <div id="custom_notifications" class="custom-notifications dsp_none">
+    <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+    </ul>
+    <div class="clearfix"></div>
+    <div id="notif-group" class="tabbed_notifications"></div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- PNotify -->
+  <!-- <script src="../vendors/pnotify/dist/pnotify.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script> -->
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+
+
+  <!-- Datatables -->
+  <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="../vendors/jszip/dist/jszip.min.js"></script>
+  <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+
+
+</body>
+
+</html>

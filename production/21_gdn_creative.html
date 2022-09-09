@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dashboard(미전팀)</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- bootstrap-progressbar -->
+  <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- PNotify -->
+  <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+  <!-- Datatables -->
+  <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    .jwstyle1 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 500;
+    }
+
+    .jwstyle2 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 400;
+    }
+
+    .jwstyle3 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 300;
+    }
+
+    .jwstyle4 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 200;
+    }
+
+    .jwstyle5 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 100;
+    }
+
+    .jwstyle6 {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
+
+
+  /* 좌측 스크롤바 */
+    .class {
+    width:100px; height: 100px; overflow-y: auto; border: 1px solid #000;} 
+
+
+   
+    .left_col::-webkit-scrollbar { 
+    width: 0.1px; /*스크롤바의 너비*/ } 
+
+    .left_col::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/} 
+
+    .left_col::-webkit-scrollbar-track { 
+    background-color: #222e3c; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}
+
+
+
+  /* 우측 스크롤바 */
+    ::-webkit-scrollbar { 
+    width: 5px; /*스크롤바의 너비*/} 
+
+    ::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/}
+
+    ::-webkit-scrollbar-track { 
+    background-color: #F7F7F7; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}   
+  </style>
+
+
+
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container" style="min-width:1903px">
+      <div class="col-md-3 left_col" style="height:100%; overflow:auto; position:fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="04_Youtube Bumper Ads.html" class="site_title"><i class="glyphicon glyphicon-object-align-bottom"
+                style="border: 0px" ; "border-radius:0%"></i> <span>Dashboard(Ads)</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/Youtube/google logo.gif" alt="img" class="img-circle profile_img"
+                style="height:7rem; width:7rem;">
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>Administrator</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Youtube</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Awareness <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="01_youtube_bumper_ads.html">Bumper Ad</a></li>
+                    <li><a href="02_trueview_for_reach.html">Trueview for Reach</a></li>
+                    <li><a href="03_non-skippable_ad.html">Non-Skippable Ad</a></li>
+                    <li><a href="04_video_reach_campaign.html">Video Reach Campaign</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Consideration <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="05_youtube_instream.html">Trueview Instream</a></li>
+                    <li><a href="06_Infeed_video_ads.html">Infeed Video Ads</a></li>
+                    <li><a href="page_404.html">Video Ads Sequencing</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Action <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="08_video_action_campaign.html">Video Action Campaign</a></li>
+                    <li><a href="09_vac_sitelink_extension.html">VAC sitelink Extension</a></li>
+                    <li><a href="10_vac_with_product_feeds.html">VAC with Product Feeds</a></li>
+                    <li><a href="11_vac_lead_form_extension.html">VAC with Lead Form Extension</a></li>
+                    <li><a href="12_app_deep-linking_on_vac.html">App Deeplinking on VAC</a></li>
+                  </ul>
+                </li>  
+                <li><a><i class="fa fa-youtube-play"></i> Reservation <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="13_youtube_cpm_masthead.html">Masthead</a></li>
+                    <li><a href="page_404.html">Youtube Select</a></li>
+                  </ul>
+                </li>            
+              </ul>
+            </div>
+
+
+            <div class="menu_section">
+              <h3>GDN</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-list-alt"></i> GDN <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="15_gdn_image.html">Image Display Campaign</a></li>
+                    <li><a href="16_gdn_responsive_display.html">Responsive Display Campaign</a></li>
+                    <li><a href="17_gdn_smart_display_campaign.html">Smart Display Campaign</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-list-alt"></i> GDN Optimization<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="18_gdn_optimization_conv.html">Conversion Tracking</a></li>
+                    <li><a href="19_gdn_bidding_strategy.html">Bidding Strategy</a></li>
+                    <li><a href="20_gdn_campaign_structure.html">Campaign structure</a></li>
+                    <li><a href="21_gdn_creative.html">Creative Type</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-list-alt"></i> GDN Targeting<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="page_404.html">Targeting</a></li>
+                  </ul>
+                </li>                               
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+
+            <div class="menu_section">
+              <h3>APP Campaign</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-download"></i> App Campaign <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="22_ac_install.html">AC for install</a></li>
+                    <li><a href="23_ac_install_advanced.html">AC for install Advanced</a></li>
+                    <li><a href="24_ac_for_actions.html">AC for Actions</a></li>
+                    <li><a href="page_404.html">AC for Value</a></li>
+                    <li><a href="page_404.html">AC Engagement</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-download"></i> AC Setting Guide<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="25_ac_ads_play_mapping_guide.html">Play Store Mapping</a></li>
+                    <li><a href="26_ac_3rd_party_mapping_guide.html">Third Party Mapping</a></li>
+                    <li><a href="27_ac_action_mapping_guide.html">SDK Event Mapping</a></li>
+                  </ul>
+                </li>                                            
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+
+            <div class="menu_section">
+              <h3 style="color:tomato">DA Discovery</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-asterisk"></i> DA Discovery <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="page_404.html">DA Discovery</a></li>
+                    <li><a href="page_404.html">Optimization</a></li>
+                  </ul>
+                </li>                                                          
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <!-- <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div> -->
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/GA logo.png" alt="">GA Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="100_ga3_creative_account.html"><i class="fa fa-sign-out pull-right"></i> GA계정 생성</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 초기 세팅(작업중)</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 운영 세팅(작업중)</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false";">
+                  <img src="images/Youtube/GTM logo.png" alt="">GTM Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="50_gtm_account_creation.html"><i class="fa fa-sign-out pull-right"></i> GTM 계정 생성</a></li>
+                  <li><a href="51_gtm_ua_configuration_tag_setting.html"><i class="fa fa-sign-out pull-right"></i> GA 구성 태그</a></li>
+                  <li><a href="53_gtm_ga4_page_view_1.html"><i class="fa fa-sign-out pull-right"></i> GA4 이벤트 태그</a></li>
+                  <li><a href="60_gtm_ga4_view_item_list.html"><i class="fa fa-sign-out pull-right"></i> GA4 전자상거래 태그</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 맞춤 HTML 태그</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/380.png" alt="">Archieve &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="150_archieve_product_guide.html"><i class="fa fa-sign-out pull-right"></i> 상품소개서</a></li>
+                  <li><a href="151_archieve_setting_guide.html"><i class="fa fa-sign-out pull-right"></i> 세팅가이드</a></li>                  
+                  <li><a href="152_archieve_key_policy_guide.html"><i class="fa fa-sign-out pull-right"></i> 주요 정책 가이드</a></li>
+                  <li><a href="153_archieve_monthly_update.html"><i class="fa fa-sign-out pull-right"></i> 월별 신규 업데이트</a></li>
+                  <li><a href="154_archieve_benchmark_data.html"><i class="fa fa-sign-out pull-right"></i> 벤치마크 데이터</a></li>
+                </ul>
+              </li>
+
+              <!-- <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="text-center">
+                      <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left" style="padding-bottom:1rem; padding-top:1rem">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Creative Type > Summary</h3>
+            </div>
+
+            <!-- <div class="title_right">
+              <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="clearfix"></div>
+
+
+
+          <!-- 정의 -->
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Creative Type</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+
+                <div class="bs-example" data-example-id="simple-jumbotron">
+                  <div class="jumbotron">
+                    <h1 class="jwstyle1" style="font-weight:bold">GDN 캠페인의 광고 소재 유형</h1>
+                    <p><span class="jwstyle1">반응형 광고 + 이미지 광고 + 텍스트 광고</span> <span class="jwstyle3">포맷을 모두 등록 권장</span><br />
+                      <span class="jwstyle3">반응형 광고는 고정형 이미지 광고 보다</span> <span class="jwstyle1">약 15% 더 높은 도달률을 보임</span><br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="clearfix"></div>
+
+
+
+          <!-- 주요포인트 -->
+
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Creative Type > Main Setting Process</h3>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Process 1</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-image"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:2.5rem;">1. 고정형 이미지 소재의 5가지 대표 사이즈를 포함하여 등록</div>
+                  <h3 class="jwstyle1" style="font-size:2rem;">300 X 250 / 320 X 100 / 320 X 50 / 120 X 600 / 728 X 90</h3>
+                  <!-- <h3 class="jwstyle1" style="font-size:2rem;">웹페이지 방문부터 최종 전환까지의 모든 마이크로 전환 추적 권장</h3> -->
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Process 2</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-file-o"></i></div>
+                  <div class="count jwstyle3" style="font-size:2.5rem;">2. 반응형 + 이미지 + 텍스트 소재 유형을 모두 등록</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">고정형 이미지만 등록할 때 보다 50% 더 높은 전환수를 기대해볼수 있음</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+          <!-- 알고리즘 -->
+
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Creative Type > Image Asset Size</h3>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile" style="min-height:62.5rem">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                  <div class="x_title">
+                    <h2>Main Asset Size</h2>
+                    <!-- <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul> -->
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="x_title">
+                    <h2>High-Definition(HD) sizes</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="x_content">
+                <div class="row">
+                  <div class="col-md-8 col-sm-8 col-xs-8" style="border-right:2px dotted #EEEEEE">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">고정형 이미지 소재의 5가지 대표 사이즈를 포함하여 등록</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 대표 사이즈의 경우 GDN 인벤토리의 95%를 차지하므로 반드시 세팅 필요</div>
+                          </div>
+                        </div>
+                        <p></p>
+                      </div>
+                    </div>
+
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1rem; padding-bottom:0rem;"></div>
+
+                    <div class="">
+                      <div class="col-md-3 col-sm-3 col-xs-3" style="padding-right:0rem; padding-left:0rem;">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                          <ul
+                            style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color:#26B99A; width:100%; height:41rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                            <div style="width:100%;">
+                              <div class="name jwstyle1" style="font-size:2rem; color:white; display:flex; justify-content:center; align-items:center;">300</div>
+                              <div class="name jwstyle1" style="font-size:2rem; color:white; display:flex; justify-content:center; align-items:center;">X</div>
+                              <div class="name jwstyle1" style="font-size:2rem; color:white; display:flex; justify-content:center; align-items:center;">250</div>
+                            </div>
+                          </ul>
+                        </div>
+
+                      </div>
+
+                      <div class="col-md-2 col-sm-2 col-xs-2" style="padding-right:0rem; padding-left:0rem;">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                          <ul
+                            style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color:#EEEEEE; width:100%; height:41rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                            <div style="width:100%;">
+                              <div class="name jwstyle1" style="font-size:2rem; display:flex; justify-content:center; align-items:center;">120</div>
+                              <div class="name jwstyle1" style="font-size:2rem; display:flex; justify-content:center; align-items:center;">X</div>
+                              <div class="name jwstyle1" style="font-size:2rem; display:flex; justify-content:center; align-items:center;">600</div>
+                            </div>
+                          </ul>
+                        </div>
+
+                      </div>
+
+                      <div class="col-md-7 col-sm-7 col-xs-7" style="padding-right:0rem; padding-left:0rem;">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                          <ul
+                            style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color:white; width:100%; height:13rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                            <div style="width:100%;">
+                              <div class="name jwstyle1" style="font-size:1.5rem; color:#73879C; display:flex; justify-content:center; align-items:center;"></div>
+                            </div>
+                          </ul>
+                        </div>
+
+                      </div>
+
+                      <div class="col-md-7 col-sm-7 col-xs-7" style="padding-right:0rem; padding-left:0rem;">
+
+                        <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                          <ul
+                            style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color:#26B99A; width:100%; height:19rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                            <div style="width:100%;">
+                              <div class="name jwstyle1" style="font-size:2rem; color:white; display:flex; justify-content:center; align-items:center;">320</div>
+                              <div class="name jwstyle1" style="font-size:2rem; color:white; display:flex; justify-content:center; align-items:center;">X</div>
+                              <div class="name jwstyle1" style="font-size:2rem; color:white; display:flex; justify-content:center; align-items:center;">100</div>
+                            </div>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-7 col-sm-7 col-xs-7" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                          <ul
+                            style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color:white; width:100%; height:14.5rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                            <div style="width:100%;">
+                              <div class="name jwstyle1" style="font-size:1.5rem; color:#73879C; display:flex; justify-content:center; align-items:center;"></div>
+                            </div>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                          <ul
+                            style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color:#EEEEEE; width:100%; height:4rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                            <div style="width:100%;">
+                              <div class="name jwstyle1" style="font-size:2rem; display:flex; justify-content:center; align-items:center;">320 X 50</div>
+                            </div>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                          <ul
+                            style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color:white; width:100%; height:4rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                            <div style="width:100%;">
+                              <div class="name jwstyle1" style="font-size:1.5rem; color:#73879C; display:flex; justify-content:center; align-items:center;"></div>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-md-7 col-sm-7 col-xs-7" style="padding-right:0rem; padding-left:0rem;">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem; margin-bottom:0.5rem;">
+                          <ul
+                            style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color:#73879C; width:100%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                            <div style="width:100%;">
+                              <div class="name jwstyle1" style="font-size:2rem; color:white; display:flex; justify-content:center; align-items:center;">728 X 90</div>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div id="glyphicons" class="page-header" style="margin-top:0.5rem; margin-bottom:1rem; padding-bottom:0rem;"></div>
+                    <div class="pricing_footer" style="padding:1.5rem; border-top:0px solid #ccc; height:4.3rem;"></div>
+                  </div>
+
+
+
+                  <!-- 고해상도 이미지 -->
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:2rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">고해상도 이미지 사이즈</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 고해상도(HD) 기기에는 두 배 크기의 이미지 업로드 가능</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row" style="margin-bottom:1.5rem;">
+                      <div class="col-sm-4" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:13rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle1" style="font-size:5rem">X2</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-sm-8">
+                        <div class="weather-text">
+
+                          <ul class="messages" style="margin-bottom:0rem;">
+                            <li style="padding-bottom:0px; padding-top:0rem; border-bottom:0rem;">
+                              <div class="message_wrapper" style="padding-left:0rem; margin-right:0rem; margin-left:0rem;">
+                                <h4 class="heading"><span class="jwstyle1" style="font-size:2rem">두 배 크기의 이미지 업로드 가능</span></h4>
+                                <blockquote class="message" style="min-height:5.5rem;"><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 대표사이즈는 두 배 크기의 이미지 활용 가능</span><br />
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 고해상도 기기에는 더 선명한 이미지로 노출</span><br />
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 300X250 크기의 광고 슬롯은 600X500 크기의 이미지로 더 선명한 광고를 게재할 수 있음</span>
+                                </blockquote>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:0rem; padding-bottom:0rem;"></div>
+
+                    <div class="weather-text">
+                      <ul class="messages" style="margin-bottom:0rem;">
+                        <li style="padding-bottom:0px; padding-top:0rem; border-bottom:0rem;">
+                          <div class="message_wrapper" style="padding-left:0rem; margin-right:0rem; margin-left:0rem;">
+                            <h4 class="heading" style="margin-top:1.5rem; margin-bottom:1.5rem;"><span class="jwstyle1" style="font-size:2rem">고해상도 HD 이미지 사이즈 안내 </span></h4>
+                            <blockquote class="message" style="min-height:5.5rem;"><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 좌/우 X2배 사이즈 이미지만 활용 가능</span><br />
+                              <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 대표 5종 이미지만 지원</span>
+                            </blockquote>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+
+
+                    <div class="row">
+                      <div class="col-sm-3" style="padding-right:0rem;">
+                        <div class="daily-weather">
+                          <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:1.5rem;">유형</h2>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="fa fa-image (alias)" aria-hidden="true" style="font-size:2rem"></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="fa fa-image (alias)" aria-hidden="true" style="font-size:2rem"></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="fa fa-image (alias)" aria-hidden="true" style="font-size:2rem"></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="fa fa-file-image-o" aria-hidden="true" style="font-size:2rem"></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="fa fa-image (alias)" aria-hidden="true" style="font-size:2rem"></span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3" style="padding-right:0rem; padding-left:0.5rem;">
+                        <div class="daily-weather">
+                          <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:1.5rem;">타입</h2>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">가로형 이미지</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">가로형 이미지</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">가로형 이미지</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">세로형 이미지</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">가로형 이미지</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3" style="padding-right:0rem; padding-left:0.5rem;">
+                        <div class="daily-weather">
+                          <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:1.5rem;">표준 사이즈</h2>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">300 X 250</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">320 X 100</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">320 X 50</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">120 X 600</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                <span class="jwstyle3" style="font-size:1.5rem">728 X 90</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3" style="padding-left:0.5rem;">
+                        <div class="daily-weather">
+                          <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:1.5rem;">고해상도 사이즈</h2>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; padding-left:0rem; padding-right:0rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem">600 X 500</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; padding-left:0rem; padding-right:0rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem">640 X 200</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; padding-left:0rem; padding-right:0rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem">640 X 100</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; padding-left:0rem; padding-right:0rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem">240 X 1,200</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; padding-left:0rem; padding-right:0rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem">1,456 X 180</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1rem; padding-bottom:0rem;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+          <!-- 이미지+반응형 복합세팅 -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Creative Type > Image Asset Size</h3>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Campaign Setting Guide</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">고해상도 이미지 사이즈</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> App Deep-linking 기능을 지원하는 상품</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="" style="display:flex; flex-direction:row;">
+
+                  <!-- <div class="row"> -->
+                  <div class="col-md-5 col-sm-5 col-xs-5">
+                    <div class="row" style="margin-bottom:1.5rem;">
+
+                      <div class="col-sm-5" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:auto">
+                                <img style="width:100%; height:19.7rem; display: block;" src="images/GDN/GDN_Cre_1.jpg" alt="image">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-sm-7">
+                        <div class="weather-text">
+                          <ul class="messages" style="margin-bottom:0rem;">
+                            <li style="padding-bottom:0px; padding-top:0rem; border-bottom:0rem;">
+                              <div class="message_wrapper" style="padding-left:0rem; margin-right:0rem; margin-left:0rem;">
+
+                                <h4 class="heading" style="margin-bottom:1.5rem;">
+                                  <span class="jwstyle1" style="font-size:2rem">이미지 광고</span>
+                                </h4>
+
+                                <blockquote class="message" style="min-height:5.5rem;">
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 이미지 형태로 나가는 광고</span><br />
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 사용 가능한 에셋 : 이미지</span><br />
+                                </blockquote>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-sm-4" style="padding-left:0rem; padding-right:0.5rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Image</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="fa fa-image (alias)" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- <div class="col-sm-4" style="padding-left:0rem; padding-right:0.5rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Video</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="fa fa-shopping-cart" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Text</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="fa fa-shopping-cart" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+
+                      </div>
+                    </div>
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1.5rem; padding-bottom:0rem;"></div>
+
+                    <div class="row" style="margin-bottom:1.5rem;">
+                      <div class="col-sm-5" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:auto">
+                                <img style="width:100%; height:19.7rem; display: block;" src="images/GDN/GDN_Cre_2.jpg" alt="image">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-7">
+                        <div class="weather-text">
+                          <ul class="messages" style="margin-bottom:0rem;">
+                            <li style="padding-bottom:0px; padding-top:0rem; border-bottom:0rem;">
+                              <div class="message_wrapper" style="padding-left:0rem; margin-right:0rem; margin-left:0rem;">
+
+                                <h4 class="heading" style="margin-bottom:1.5rem;">
+                                  <span class="jwstyle1" style="font-size:2rem">반응형 광고</span>
+                                </h4>
+
+                                <blockquote class="message" style="min-height:5.5rem;">
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 반응형(조합형) 형태로 나가는 광고</span><br />
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 사용 가능한 에셋 : 이미지 + 동영상 + 텍스트</span><br />
+                                </blockquote>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-sm-4" style="padding-left:0rem; padding-right:0.5rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Image</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="fa fa-image (alias)" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding-left:0rem; padding-right:0.5rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Video</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="fa fa-youtube" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Text</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="glyphicon glyphicon-text-size" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1.5rem; padding-bottom:0rem;"></div>
+
+                    <div class="row" style="margin-bottom:1.5rem;">
+                      <div class="col-sm-5" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:auto">
+                                <img style="width:100%; height:19.7rem; display: block;" src="images/GDN/GDN_Cre_3.jpg" alt="image">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-7">
+                        <div class="weather-text">
+                          <ul class="messages" style="margin-bottom:0rem;">
+                            <li style="padding-bottom:0px; padding-top:0rem; border-bottom:0rem;">
+                              <div class="message_wrapper" style="padding-left:0rem; margin-right:0rem; margin-left:0rem;">
+
+                                <h4 class="heading" style="margin-bottom:1.5rem;">
+                                  <span class="jwstyle1" style="font-size:2rem">텍스트 광고(확장형 포함)</span>
+                                </h4>
+
+                                <blockquote class="message" style="min-height:5.5rem;"><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 텍스트 형태로 나가는 광고</span><br />
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 사용 가능한 에셋 : 텍스트</span><br />
+                                </blockquote>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- <div class="col-sm-4" style="padding-left:0rem; padding-right:0.5rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Image</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="fa fa-shopping-cart" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <!-- <div class="col-sm-4" style="padding-left:0rem; padding-right:0.5rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Video</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="fa fa-shopping-cart" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <div class="col-sm-4" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="daily-weather">
+                            <h2 class="day jwstyle1" style="margin-bottom:0.5rem; margin-top:2.6rem;">Text</h2>
+                            <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:7rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                  <span class="glyphicon glyphicon-text-size" aria-hidden="true" style="font-size:4rem"></span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1.5rem; padding-bottom:0rem;"></div>
+                  </div>
+                  <!-- </div> -->
+
+
+                  <!-- <div class="row"> -->
+
+
+                  <div class="col-sm-1" style="padding-right:0.5rem;">
+                    <div class="row" style="margin-bottom:0rem;">
+                      <div class="col-sm-12" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:21.8rem; display:flex; justify-content:center; align-items:center; background-color:white;">
+                                <span class="fa fa-arrow-right" aria-hidden="true" style="font-size:5rem;"></span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-bottom:0rem;">
+                      <div class="col-sm-12" style="padding-right:0.5rem;">
+
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem; margin-bottom:1.7rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8.5rem; display:flex; justify-content:center; align-items:center; background-color:white;">
+                                <span class="fa fa-arrow-right" aria-hidden="true" style="font-size:5rem; transform: rotate(315deg)"></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0rem; margin-bottom:1.7rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8.5rem; display:flex; justify-content:center; align-items:center; background-color:white;">
+                                <span class="fa fa-arrow-right" aria-hidden="true" style="font-size:5rem"></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="bs-glyphicons" style="margin-bottom:0rem; margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8.5rem; display:flex; justify-content:center; align-items:center; background-color:white;">
+                                <span class="fa fa-arrow-right" aria-hidden="true" style="font-size:5rem; transform: rotate(45deg)"></span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-bottom:2.4rem;">
+                      <div class="col-sm-12" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:20rem; display:flex; justify-content:center; align-items:center; background-color:white">
+                                <span class="fa fa-arrow-right" aria-hidden="true" style="font-size:5rem"></span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1.5rem; padding-bottom:0rem;"></div>
+                  </div>
+                  <!-- </div> -->
+
+
+
+                  <!-- <div class="row"> -->
+
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="row" style="margin-bottom:1.5rem;">
+
+
+                      <div class="col-sm-4" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:auto">
+                                <img style="width:100%; height:19.7rem; display: block;" src="images/GDN/GDN_Asset_1.jpg" alt="image">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-sm-8">
+                        <div class="weather-text">
+                          <ul class="messages" style="margin-bottom:0rem;">
+                            <li style="padding-bottom:0px; padding-top:0rem; border-bottom:0rem;">
+                              <div class="message_wrapper" style="padding-left:0rem; margin-right:0rem; margin-left:0rem;">
+                                <h4 class="heading" style="margin-bottom:1.5rem;">
+                                  <span class="jwstyle1" style="font-size:2rem">이미지 인벤토리</span>
+                                </h4>
+                                <blockquote class="message" style="min-height:5.5rem;">
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 이미지 지면은 이미지 광고와 반응형광고로 노출이 가능한 게재지면</span><br />
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 업로드형 이미지 광고 + 반응형 광고 + SDC 광고 상품 노출이 가능한 지면</span><br />
+                                </blockquote>
+
+                                <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem;">
+                                  <ul
+                                    style="padding-top:0rem; padding-bottom:0rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; margin-top:5rem; background-color:#26B99A; color:white; width:90%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                                    <div>
+                                      <div class="name jwstyle1" style="font-size:2rem; display:flex; justify-content:center; align-items:center;">GDN 지면의 70%</div>
+                                    </div>
+                                  </ul>
+                                </div>
+
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1.5rem; padding-bottom:0rem;"></div>
+
+
+
+
+                    <div class="row" style="margin-bottom:1.5rem;">
+                      <div class="col-sm-4" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:auto">
+                                <img style="width:100%; height:19.6rem; display: block;" src="images/GDN/GDN_Asset_2.jpg" alt="image">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-sm-8">
+                        <div class="weather-text">
+                          <ul class="messages" style="margin-bottom:0rem;">
+                            <li style="padding-bottom:0px; padding-top:0rem; border-bottom:0rem;">
+                              <div class="message_wrapper" style="padding-left:0rem; margin-right:0rem; margin-left:0rem;">
+                                <h4 class="heading" style="margin-bottom:1.5rem;">
+                                  <span class="jwstyle1" style="font-size:2rem">네이티브 인벤토리</span>
+                                </h4>
+                                <blockquote class="message" style="min-height:5.5rem;">
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 네이티브 지면은 반응형 광고로만 운영이 가능한 지면</span><br />
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 반응형 광고 + SDC 광고 상품 노출이 가능한 지면</span><br />
+                                </blockquote>
+
+                                <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem;">
+                                  <ul
+                                    style="padding-top:0rem; padding-bottom:0rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; margin-top:5rem; background-color:#26B99A; color:white; width:50%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                                    <div>
+                                      <div class="name jwstyle1" style="font-size:2rem; display:flex; justify-content:center; align-items:center;">GDN 지면의 25%</div>
+                                    </div>
+                                  </ul>
+                                </div>
+
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1.5rem; padding-bottom:0rem;"></div>
+
+                    <div class="row" style="margin-bottom:1.5rem;">
+                      <div class="col-sm-4" style="padding-right:0.5rem;">
+                        <div class="weather-icon">
+                          <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:auto">
+                                <img style="width: 100%; height:19.5rem; display: block;" src="images/GDN/GDN_Asset_3.jpg" alt="image">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-sm-8">
+                        <div class="weather-text">
+                          <ul class="messages" style="margin-bottom:0rem;">
+                            <li style="padding-bottom:0px; padding-top:0rem; border-bottom:0rem;">
+                              <div class="message_wrapper" style="padding-left:0rem; margin-right:0rem; margin-left:0rem;">
+                                <h4 class="heading" style="margin-bottom:1.5rem;">
+                                  <span class="jwstyle1" style="font-size:2rem">텍스트 Only 인벤토리</span>
+                                </h4>
+                                <blockquote class="message" style="min-height:5.5rem;">
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 텍스트 인벤토리는 텍스트 광고와 반응형 광고로 노출이 가능한 지면</span><br />
+                                  <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-plus"></i> 검색광고(디스플레이 네트워크 옵션을 활성화) + 반응형 광고 + SDC 광고 상품 노출이 가능한 지면</span><br />
+                                </blockquote>
+
+                                <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem;">
+                                  <ul
+                                    style="padding-top:0rem; padding-bottom:0rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; margin-top:4.8rem; background-color:#26B99A; color:white; width:30%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center">
+                                    <div>
+                                      <div class="name jwstyle1" style="font-size:2rem; display:flex; justify-content:center; align-items:center;">GDN 지면의 5%</div>
+                                    </div>
+                                  </ul>
+                                </div>
+
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="glyphicons" class="page-header" style="margin-top:0rem; margin-bottom:1.5rem; padding-bottom:0rem;"></div>
+
+                  </div>
+                  <!-- </div> -->
+                  <div class="clearfix"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+          <!-- 반응형광고 BestPractice -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Image Display Campaign > Placement</h3>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                  <div class="x_title">
+                    <h2>Main Asset Size</h2>
+                    <!-- <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul> -->
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="x_title">
+                    <h2>High-Definition(HD) sizes</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+                  <div class="col-md-8 col-sm-8 col-xs-8" style="border-right:2px dotted #EEEEEE">
+                    <div class="row">
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">반응형 광고 이미지 Best Practice - 이미지</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 업로드형 이미지 형식의 게재위 및</div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row" style="margin-bottom:3rem;">
+                          <!-- <div class="col-sm-1" style="padding-right:0rem;">
+                            <div class="weather-icon">
+                              <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                                <ul class="bs-glyphicons-list">
+                                  <li style="width:100%; height:10rem; background-color:white; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                    <span class="fa fa-youtube-play" aria-hidden="true" style="font-size:5rem"></span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div> -->
+
+                          <div class="col-sm-1" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">01</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">이미지 사이즈 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Image Size</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">크기 :</span> 가로형 1개(1200x628) & 정사각형 1개(1200x1200)</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">용량 :</span> 각 최대1MB</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+                          <div class="col-sm-1" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">02</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">CTA 및 클릭 유도 문안 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Call To Action</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">지양요소 :</span> 텍스트나 액션유도 문구가 들어간 이미지는 지양</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">권장 :</span> 텍스트 활용 시 광고의 20% 이하로, 좌우 5% 여백 필수</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+
+
+                          <div class="col-sm-1" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">03</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">이미지 연관성 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Image Association</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; height:5.8469rem; text-align:left;display:flex; justify-content:left; align-items:center; ">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem"></span> 텍스트 & 랜딩페이지와 연관성 있는 이미지 사용</span>
+                                <!-- <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem"></span></div> -->
+                              </blockquote>
+                            </ul>
+                          </div>
+
+
+                          <div class="col-sm-1" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">04</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE; ">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">간결한 이미지 사용 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Using a Simplified Image</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:5.8469rem; text-align:left;display:flex; justify-content:left; align-items:center; ">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">모바일 최적화 :</span> 작은 지면을 고려한 간결한 이미지 사용</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+
+
+                          <div class="col-sm-1" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">05</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:0px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">로고 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">모바일 / PC 모두 노출</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">로고 미업로드 :</span> 이미지에 로고 포함 권장</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">로고 업로드 :</span> 이미지에 로고 포함 지양</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">반응형 광고 이미지 Best Practice - 로고</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 업로드형 이미지 형식의 게재위 및</div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row" style="margin-bottom:3rem;">
+                          <div class="col-sm-2" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">01</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-10" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">이미지 사이즈 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Image Size</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">크기 :</span> 정사각형 1개(1200x1200)</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">용량 :</span> 최대1MB</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+                          <div class="col-sm-2" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">02</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-10" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">이미지 형식 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Image Format</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; height:5.8469rem; text-align:left;display:flex; justify-content:left; align-items:center; ">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">PNG :</span> 투명 배경의 PNG파일 권장</span>
+                                <!-- <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem"></span></div> -->
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                  <div class="x_title">
+                    <h2>Main Asset Size</h2>
+                    <!-- <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul> -->
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="x_title">
+                    <h2>High-Definition(HD) sizes</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+                  <div class="col-md-8 col-sm-8 col-xs-8" style="border-right:2px dotted #EEEEEE">
+                    <div class="row">
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">반응형 광고 이미지 Best Practice - 이미지</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 업로드형 이미지 형식의 게재위 및</div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row" style="margin-bottom:3rem;">
+                          <!-- <div class="col-sm-1" style="padding-right:0rem;">
+                            <div class="weather-icon">
+                              <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                                <ul class="bs-glyphicons-list">
+                                  <li style="width:100%; height:10rem; background-color:white; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                                    <span class="fa fa-youtube-play" aria-hidden="true" style="font-size:5rem"></span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div> -->
+
+                          <div class="col-sm-1" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">01</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-11" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">제목 길이 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Length of Title</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; height:5.8469rem; text-align:left;display:flex; justify-content:left; align-items:center; ">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">광고 제목 :</span> 최대 40자까지 (한글 20자) / 최대5개</span><br />
+                              </blockquote>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+
+                          <div class="col-sm-1" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">02</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-11" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">제목 내용 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Title Content</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">지양요소 :</span> 단순히 제목을 언급하는 것이 아니라, 사용자의 흥미와 영감을 불러 일으키는 제목 사용</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">권장 :</span> 캐로셀 형태에서는 모든 활용 이미지 카드에 통용될 수 있는 제목을 사용</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+
+
+                          <div class="col-sm-1" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">03</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-11" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">랜딩페이지 명시 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Write Landing Page Clearly</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">지양요소 :</span> 유저가 랜딩페이지에서 보게 될 내용을 괄호내 명시</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">권장 :</span> [템플릿], [팁], [무료 다운로드], [인포그래픽] 등 명시시 CTR + 88%</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">반응형 광고 이미지 Best Practice - 로고</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 업로드형 이미지 형식의 게재위 및</div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row" style="margin-bottom:3rem;">
+                          <div class="col-sm-2" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">01</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-10" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">이미지 사이즈 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Image Size</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">크기 :</span> 정사각형 1개(1200x1200)</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">용량 :</span> 최대1MB</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+                          <div class="col-sm-2" style="padding-right:0rem;">
+                            <article class="media event" style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date" style="margin:0rem; height:13.0875rem; width:6rem; background-color:#73879C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">02</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-10" style="padding-left:0rem;">
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">이미지 형식 &nbsp; </span>
+                                  <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Image Format</span>
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; height:5.8469rem; text-align:left;display:flex; justify-content:left; align-items:center; ">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem">PNG :</span> 투명 배경의 PNG파일 권장</span>
+                                <!-- <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> <span class="jwstyle1" style="font-size:1.5rem"></span></div> -->
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Copyright 2022. JungWook KIM. All rights reserved
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <div id="custom_notifications" class="custom-notifications dsp_none">
+    <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+    </ul>
+    <div class="clearfix"></div>
+    <div id="notif-group" class="tabbed_notifications"></div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- Skycons -->
+  <script src="../vendors/skycons/skycons.js"></script>
+  <!-- PNotify -->
+  <!-- <script src="../vendors/pnotify/dist/pnotify.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script> -->
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+
+
+  <!-- Datatables -->
+  <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="../vendors/jszip/dist/jszip.min.js"></script>
+  <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+
+
+</body>
+
+</html>

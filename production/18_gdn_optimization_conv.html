@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dashboard - by정욱</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- bootstrap-progressbar -->
+  <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- PNotify -->
+  <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+  <!-- Datatables -->
+  <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    .jwstyle1 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 500;
+    }
+
+    .jwstyle2 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 400;
+    }
+
+    .jwstyle3 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 300;
+    }
+
+    .jwstyle4 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 200;
+    }
+
+    .jwstyle5 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 100;
+    }
+
+    .jwstyle6 {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
+
+
+  /* 좌측 스크롤바 */
+    .class {
+    width:100px; height: 100px; overflow-y: auto; border: 1px solid #000;} 
+
+
+   
+    .left_col::-webkit-scrollbar { 
+    width: 0.1px; /*스크롤바의 너비*/ } 
+
+    .left_col::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/} 
+
+    .left_col::-webkit-scrollbar-track { 
+    background-color: #222e3c; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}
+
+
+
+  /* 우측 스크롤바 */
+    ::-webkit-scrollbar { 
+    width: 5px; /*스크롤바의 너비*/} 
+
+    ::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/}
+
+    ::-webkit-scrollbar-track { 
+    background-color: #F7F7F7; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}   
+  </style>
+
+
+
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container" style="min-width:1903px">
+      <div class="col-md-3 left_col" style="height:100%; overflow:auto; position:fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="04_Youtube Bumper Ads.html" class="site_title"><i class="glyphicon glyphicon-object-align-bottom"
+                style="border: 0px" ; "border-radius:0%"></i> <span>Dashboard(Ads)</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/Youtube/google logo.gif" alt="img" class="img-circle profile_img"
+                style="height:7rem; width:7rem;">
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>Administrator</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Youtube</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Awareness <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="01_youtube_bumper_ads.html">Bumper Ad</a></li>
+                    <li><a href="02_trueview_for_reach.html">Trueview for Reach</a></li>
+                    <li><a href="03_non-skippable_ad.html">Non-Skippable Ad</a></li>
+                    <li><a href="04_video_reach_campaign.html">Video Reach Campaign</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Consideration <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="05_youtube_instream.html">Trueview Instream</a></li>
+                    <li><a href="06_Infeed_video_ads.html">Infeed Video Ads</a></li>
+                    <li><a href="page_404.html">Video Ads Sequencing</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Action <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="08_video_action_campaign.html">Video Action Campaign</a></li>
+                    <li><a href="09_vac_sitelink_extension.html">VAC sitelink Extension</a></li>
+                    <li><a href="10_vac_with_product_feeds.html">VAC with Product Feeds</a></li>
+                    <li><a href="11_vac_lead_form_extension.html">VAC with Lead Form Extension</a></li>
+                    <li><a href="12_app_deep-linking_on_vac.html">App Deeplinking on VAC</a></li>
+                  </ul>
+                </li>  
+                <li><a><i class="fa fa-youtube-play"></i> Reservation <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="13_youtube_cpm_masthead.html">Masthead</a></li>
+                    <li><a href="page_404.html">Youtube Select</a></li>
+                  </ul>
+                </li>            
+              </ul>
+            </div>
+
+
+            <div class="menu_section">
+              <h3>GDN</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-list-alt"></i> GDN <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="15_gdn_image.html">Image Display Campaign</a></li>
+                    <li><a href="16_gdn_responsive_display.html">Responsive Display Campaign</a></li>
+                    <li><a href="17_gdn_smart_display_campaign.html">Smart Display Campaign</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-list-alt"></i> GDN Optimization<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="18_gdn_optimization_conv.html">Conversion Tracking</a></li>
+                    <li><a href="19_gdn_bidding_strategy.html">Bidding Strategy</a></li>
+                    <li><a href="20_gdn_campaign_structure.html">Campaign structure</a></li>
+                    <li><a href="21_gdn_creative.html">Creative Type</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-list-alt"></i> GDN Targeting<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="page_404.html">Targeting</a></li>
+                  </ul>
+                </li>                               
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+
+            <div class="menu_section">
+              <h3>APP Campaign</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-download"></i> App Campaign <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="22_ac_install.html">AC for install</a></li>
+                    <li><a href="23_ac_install_advanced.html">AC for install Advanced</a></li>
+                    <li><a href="24_ac_for_actions.html">AC for Actions</a></li>
+                    <li><a href="page_404.html">AC for Value</a></li>
+                    <li><a href="page_404.html">AC Engagement</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-download"></i> AC Setting Guide<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="25_ac_ads_play_mapping_guide.html">Play Store Mapping</a></li>
+                    <li><a href="26_ac_3rd_party_mapping_guide.html">Third Party Mapping</a></li>
+                    <li><a href="27_ac_action_mapping_guide.html">SDK Event Mapping</a></li>
+                  </ul>
+                </li>                                            
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+
+            <div class="menu_section">
+              <h3 style="color:tomato">DA Discovery</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-asterisk"></i> DA Discovery <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="page_404.html">DA Discovery</a></li>
+                    <li><a href="page_404.html">Optimization</a></li>
+                  </ul>
+                </li>                                                          
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <!-- <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div> -->
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/GA logo.png" alt="">GA Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="100_ga3_creative_account.html"><i class="fa fa-sign-out pull-right"></i> GA계정 생성</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 초기 세팅(작업중)</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 운영 세팅(작업중)</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false";">
+                  <img src="images/Youtube/GTM logo.png" alt="">GTM Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="50_gtm_account_creation.html"><i class="fa fa-sign-out pull-right"></i> GTM 계정 생성</a></li>
+                  <li><a href="51_gtm_ua_configuration_tag_setting.html"><i class="fa fa-sign-out pull-right"></i> GA 구성 태그</a></li>
+                  <li><a href="53_gtm_ga4_page_view_1.html"><i class="fa fa-sign-out pull-right"></i> GA4 이벤트 태그</a></li>
+                  <li><a href="60_gtm_ga4_view_item_list.html"><i class="fa fa-sign-out pull-right"></i> GA4 전자상거래 태그</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 맞춤 HTML 태그</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/380.png" alt="">Archieve &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="150_archieve_product_guide.html"><i class="fa fa-sign-out pull-right"></i> 상품소개서</a></li>
+                  <li><a href="151_archieve_setting_guide.html"><i class="fa fa-sign-out pull-right"></i> 세팅가이드</a></li>                  
+                  <li><a href="152_archieve_key_policy_guide.html"><i class="fa fa-sign-out pull-right"></i> 주요 정책 가이드</a></li>
+                  <li><a href="153_archieve_monthly_update.html"><i class="fa fa-sign-out pull-right"></i> 월별 신규 업데이트</a></li>
+                  <li><a href="154_archieve_benchmark_data.html"><i class="fa fa-sign-out pull-right"></i> 벤치마크 데이터</a></li>
+                </ul>
+              </li>
+
+              <!-- <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="text-center">
+                      <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left" style="padding-bottom:1rem; padding-top:1rem">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Conversion Tracking > Summary</h3>
+            </div>
+
+            <!-- <div class="title_right">
+              <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="clearfix"></div>
+
+
+
+          <!-- 정의 -->
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Image Display Campaign</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+
+                <div class="bs-example" data-example-id="simple-jumbotron">
+                  <div class="jumbotron">
+                    <h1 class="jwstyle1" style="font-weight:bold">GDN캠페인의 전환 추적 대상 설정</h1>
+                    <p><span class="jwstyle3">성과보고 KPI로 추적하는 이벤트를 대상으로</span><span class="jwstyle1"> 전환 추적 및 전환 최적화 유도</span><br />
+                      <span class="jwstyle3">최종 전환의 CPA가 너무 높을 경우</span><span class="jwstyle1"> 마이크로 전환으로 최적화 유도</span><br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="clearfix"></div>
+
+
+
+          <!-- 세팅프로세스 -->
+
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Conversion Tracking > Main Setting Process</h3>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Product Objective</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-check-square-o"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:2.5rem;">1. 핵심 전환은 '전환에 포함' 설정 필수</div>
+                  <h3 class="jwstyle1" style="font-size:2rem;">캠페인의 최적화 기준으로 설정할 것을 머신에 입력하는 과정</h3>
+                  <!-- <h3 class="jwstyle1" style="font-size:2rem;">웹페이지 방문부터 최종 전환까지의 모든 마이크로 전환 추적 권장</h3> -->
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Bidding/Optimization</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="glyphicon glyphicon-pushpin"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:2.5rem;">2. 마이크로 전환 추적</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">주 전환 목표(높은목표)의 낮은 볼륨으로 인해 최적화가 더디다면, 마이크로 전환(낮은목표)을 포함한 최적화 시도</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Bidding/Optimization</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="glyphicon glyphicon-tags"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:2.5rem;">3. '캠페인 레벨의 전환 액션' 설정</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">캠페인 운영 시 주요 목표가 무엇인지 머신에 알림</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Bidding/Optimization</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-minus-square-o"></i>
+                  </div>
+                  <div class="count jwstyle3" style="font-size:2.5rem;">4. 미포함 전환이라도 이벤트 추적은 권장</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">모든 전환열에서 확인되는 지표를 통해 적정 CPA 단가 파악 가능</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+          <!-- 크리에이티브 가이드 -->
+
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Conversion Tracking > Micro Conversion</h3>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2>Micro Conversion Setting</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">마이크로 전환 추적 세팅</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 전환 추적 대상의 세분화</div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <ul class="messages">
+                        <li style="padding-bottom:0px; position:relative">
+                          <i class="fa fa-home" style="font-size:4.5rem;
+                                        height:4.5rem;
+                                        width: 4.5rem;
+                                        float: left;
+                                        display: inline-block;
+                                        transform:translate(5%, 20%);"></i>
+                          <!-- <div class="message_date">
+                                <h3 class="date text-info">FROM 2021</h3>
+                                <p class="month">AVAILABLE NOW</p>
+                              </div> -->
+                          <div class="message_wrapper" style="padding-left:0.5rem; margin-right:0rem;">
+                            <!-- <h4 class="heading">4,000만원</h4> -->
+                            <h4 class="heading"><span class="jwstyle1" style="font-size:2rem">&nbsp&nbsp&nbsp1. 웹사이트 방문</span>&nbsp&nbsp<span class="jwstyle3" style="font-size:1.5rem">전환을 기대하는 유저의 웹사이트 방문 </span></h4>
+                            <blockquote class="message"><span class="jwstyle3" style="font-size:1.5rem">메인 페이지 조회, 랜딩 페이지(이벤트페이지)조회</span></blockquote>
+                            <br />
+                            <!-- <p class="url">
+                                        <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                        <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                                      </p> -->
+                          </div>
+                        </li>
+
+
+                        <li style="padding-bottom:0px; padding-top:1.5rem; position:relative">
+                          <i class="fa fa-retweet" style="font-size:3.8rem;
+                                        height:4.5rem;
+                                        width: 4.5rem;
+                                        float: left;
+                                        display: inline-block;
+                                        transform:translate(5%, 20%);
+                                        color:red;"></i>
+                          <!-- <div class="message_date">
+                                <h3 class="date text-info">FROM 2021</h3>
+                                <p class="month">AVAILABLE NOW</p>
+                              </div> -->
+                          <div class="message_wrapper" style="padding-left:0.5rem; margin-right:0rem;">
+                            <!-- <h4 class="heading">4,000만원</h4> -->
+                            <h4 class="heading"><span class="jwstyle1" style="font-size:2rem; color:red;">&nbsp&nbsp&nbsp2. 마이크로 전환 발생</span>&nbsp&nbsp<span class="jwstyle3" style="font-size:1.5rem; color:red;">유저가 발생시킨 최종전환 외 전환</span></h4>
+                            <blockquote class="message"><span class="jwstyle3" style="font-size:1.5rem; color:red;">20초 이상 체류, 장바구니 담기, 신청서 진입</span></blockquote>
+                            <br />
+                            <!-- <p class="url">
+                                        <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                        <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                                      </p> -->
+                          </div>
+                        </li>
+
+
+                        <li style="padding-bottom:0px; padding-top:1.5rem; position:relative">
+                          <i class="fa fa-repeat" style="font-size:3.8rem;
+                                        height:4.5rem;
+                                        width: 4.5rem;
+                                        float: left;
+                                        display: inline-block;
+                                        transform:translate(5%, 20%);"></i>
+                          <!-- <div class="message_date">
+                                <h3 class="date text-info">FROM 2021</h3>
+                                <p class="month">AVAILABLE NOW</p>
+                              </div> -->
+                          <div class="message_wrapper" style="padding-left:0.5rem; margin-right:0rem;">
+                            <!-- <h4 class="heading">4,000만원</h4> -->
+                            <h4 class="heading"><span class="jwstyle1" style="font-size:2rem">&nbsp&nbsp&nbsp3. 웹사이트 재방문</span>&nbsp&nbsp<span class="jwstyle3" style="font-size:1.5rem">마이크로 전환만 일으킨 유저 재방문</span></h4>
+                            <blockquote class="message"><span class="jwstyle3" style="font-size:1.5rem">마이크로 전환 완료, 최종 전환 미완료, 페이지 조회</span></blockquote>
+                            <br />
+                            <!-- <p class="url">
+                                        <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                        <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                                      </p> -->
+                          </div>
+                        </li>
+
+                        <li style="padding-bottom:0px; padding-top:1.5rem; position:relative">
+                          <i class="fa fa-flag-checkered" style="font-size:3.8rem;
+                                        height:4.5rem;
+                                        width: 4.5rem;
+                                        float: left;
+                                        display: inline-block;
+                                        transform:translate(5%, 20%);"></i>
+                          <!-- <div class="message_date">
+                                <h3 class="date text-info">FROM 2021</h3>
+                                <p class="month">AVAILABLE NOW</p>
+                              </div> -->
+                          <div class="message_wrapper" style="padding-left:0.5rem; margin-right:0rem;">
+                            <!-- <h4 class="heading">4,000만원</h4> -->
+                            <h4 class="heading"><span class="jwstyle1" style="font-size:2rem">&nbsp&nbsp&nbsp4. 최종 전환</span>&nbsp&nbsp<span class="jwstyle3" style="font-size:1.5rem">광고주 KPI 전환 발생</span></h4>
+                            <blockquote class="message"><span class="jwstyle3" style="font-size:1.5rem">구매 완료, 시승신청 완료, 이벤트 등록, 견적 요청</span></blockquote>
+                            <br />
+                            <!-- <p class="url">
+                                        <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+                                        <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+                                      </p> -->
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-8 col-sm-8 col-xs-8">
+            <div class="x_panel tile" style="min-height:55rem">
+              <div class="x_title">
+                <h2>Google Ads 전환추적</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+              <div class="x_content">
+
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">마케팅 목적별로 마이크로 전환이 다양하게 활용 됨</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 유입 캠페인과 전환 캠페인에 따라 활용하는 전략이 달라 짐</div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-2 col-sm-2 col-xs-2" style="padding-right:0.5rem; padding-left:0rem;">
+
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem; margin-bottom:0.5rem;">
+                    <ul
+                      style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center;">
+                      <div style="width:100%;">
+                        <div class="name jwstyle1" style="font-size:2rem; color:#73879C; display:flex; justify-content:center; align-items:center;">목표</div>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem; margin-bottom:0.5rem;">
+                    <ul
+                      style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center;">
+                      <div style="width:100%;">
+                        <div class="name jwstyle1" style="font-size:2rem; color:#73879C; display:flex; justify-content:center; align-items:center;">전략</div>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem; margin-bottom:0.5rem;">
+                    <ul
+                      style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center;">
+                      <div style="width:100%;">
+                        <div class="name jwstyle1" style="font-size:2rem; color:#73879C; display:flex; justify-content:center; align-items:center;">내용</div>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem; margin-bottom:0.5rem;">
+                    <ul
+                      style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center;">
+                      <div style="width:100%;">
+                        <div class="name jwstyle1" style="font-size:2rem; color:#73879C; display:flex; justify-content:center; align-items:center;">예시</div>
+                      </div>
+                    </ul>
+                  </div>
+
+                </div>
+
+
+
+                <div class="col-md-10 col-sm-10 col-xs-10" style="padding-right:0.5rem;">
+                  <div class="row">
+
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <p>
+                          <div class="name jwstyle1" style="font-size:2rem; color:#73879C; display:flex; justify-content:center; align-items:center;">인지도 제고</div>
+                          <div class="name jwstyle1" style="font-size:1.5rem; color:red; display:flex; justify-content:center; align-items:center;">Increase Awareness</div>
+                          </p>
+                        </div>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <p>
+                          <div class="name jwstyle1" style="font-size:2rem; color:#73879C; display:flex; justify-content:center; align-items:center;">리드 수집</div>
+                          <div class="name jwstyle1" style="font-size:1.5rem; color:red; display:flex; justify-content:center; align-items:center;">Drive Lead-Generation</div>
+                          </p>
+                        </div>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:8rem; border-bottom:0rem; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <p>
+                          <div class="name jwstyle1" style="font-size:2rem; color:#73879C; display:flex; justify-content:center; align-items:center;">온라인 영업</div>
+                          <div class="name jwstyle1" style="font-size:1.5rem; color:red; display:flex; justify-content:center; align-items:center;">Drive Online Sales</div>
+                          </p>
+                        </div>
+                      </ul>
+                    </div>
+
+
+
+
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; color:red;">유입 캠페인 고도화</span>
+                                <!-- <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> -->
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-8 col-xs-8" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; color:red;">전환 캠페인 전략화</span>
+                                <!-- <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> -->
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.7rem;">단순 CPC단가 낮추기를 넘어<br />고가치 트래픽 극대화 KPI 도입</span>
+                                <!-- <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> -->
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-8 col-sm-8 col-xs-8" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.7rem;">최종 전환 액션의 볼륨이 작아 캠페인의 전환 학습이 어려운 경우<br />앞단의 전환 액션을 포함하여 먼저 최적화하고 리마케팅하는 전략</span>
+                                <!-- <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> -->
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem;">웹페이지 20초 이상 체류</span>
+                                <!-- <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> -->
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem;">상담 신청서 진입</span>
+                                <!-- <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> -->
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem;">장바구니 담기</span>
+                                <!-- <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> -->
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+
+
+
+          <!-- Lead Form Extension Composition-->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Conversion Tracking > "Include in 'conversions'" Setting</h3>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile" style="min-height:60.5rem;">
+              <div class="x_title">
+                <h2>Include in 'conversions'</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+              <div class="x_content">
+                <div class="row">
+
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">'전환에 포함' 설정의 의미</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> '전환에 포함'의 의의와 세팅 방법</div>
+                          </div>
+                        </div>
+                        <p></p>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;" src="images/GDN/GDN_Conversion_1.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_content">
+                          <div class="">
+
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">'전환에 포함'이 선택된 액션만이 최적화 기준으로 활용&nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:2.5rem; border-bottom:1px solid #ccc;">
+                              <blockquote class="blockquote-reverse" style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 도구 및 설정 > 전환 > + 새 전환 액션 > 웹사이트 </span>
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 액션 만들기 하단 '전환'에 포함 설정 체크</span></p>
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+
+                    <div class="row">
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">'캠페인 레벨의 전환 액션' 설정의 의미</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> '캠페인 레벨의 전환액션'의 의의와 세팅 방법</div>
+                          </div>
+                        </div>
+                        <p></p>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;" src="images/GDN/GDN_Conversion_5.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_content">
+                          <div class="">
+
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">캠페인 레벨로 전환 액션을 선택 가능 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:2.5rem; border-bottom:1px solid #ccc;">
+                              <blockquote class="blockquote-reverse" style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 계정 수준 '전환에 포함'사용 시 해당 계정이 추적하고 있는 모든 전환을 목표로 캠페인 운영 </span>
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 모든 전환을 목표로 삼는 것이 아닌 특정 전환을 KPI로 지정했다면, 캠페인 레벨의 전환 세팅을 권장</span></p>
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">전환 수 포함 VS 캠페인 목표 세팅의 차이</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 전환 수 포함과 캠페인 목표 세팅의 차이점</div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="x_content">
+
+                      <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                        <blockquote class="blockquote-reverse" style="margin-bottom:0rem; padding:0rem; text-align:left;">
+                          <article class="media event">
+                            <a class="pull-left date" style="height:16rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                              <p class="month jwstyle3">Point</p>
+                              <p class="day jwstyle3">01</p>
+                            </a>
+                            <div class="media-body" style="padding-top:0.5rem; padding-right:1rem;">
+                              <a class="title jwstyle1" href="#" style="background-color:white; color:#73879C; font-size:1.7rem; font-weight:550;">“전환 수 포함” 열을 포함하면 다음 작업 수행 가능</a><br/>
+                              <span class="jwstyle3" style="font-size:1.5rem;"><i class="fa fa-check-square-o"></i> '전환수' 열을 조정하여 가장 중요한 전환 액션에 대한 데이터만 표시</span><br/>
+                              <span class="jwstyle3" style="font-size:1.5rem;"><i class="fa fa-check-square-o"></i> 자동 입찰 전략에서 어떤 전환을 최적화해야 할지 머신에 알림</span><br/>
+                              <span class="jwstyle3" style="font-size:1.5rem;"><i class="fa fa-check-square-o"></i> 이때 전환 수 포함을 “예”로 설정 하였더라도 캠페인에서 목표로 하는 액션 값으로 세팅 하지 않았다면, ‘전환수’열에 포함되지 않고 ‘모든 전환’에 포함 됨</span>
+                            </div>
+                          </article>
+                        </blockquote>
+                      </ul>
+
+                      <ul class="stats-overview" style="padding-left:0rem; ">
+                        <blockquote class="blockquote-reverse" style="margin-bottom:0rem; padding:0rem; text-align:left;">
+                          <article class="media event">
+                            <a class="pull-left date" style="height:14rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                              <p class="month jwstyle3">Point</p>
+                              <p class="day jwstyle3">02</p>
+                            </a>
+                            <div class="media-body" style="padding-top:0.5rem; padding-right:1rem;">
+                              <a class="title jwstyle1" href="#" style="background-color:white; color:#73879C; font-size:1.7rem;">“전환 수 포함” 열을 포함하지 않으면 다음 작업 수행 가능</a><br/>
+                              <span class="jwstyle3" style="font-size:1.5rem;"><i class="fa fa-check-square-o"></i> ‘전환’항목에 포함되지 않더라도, 전환이 일어났을 경우 “모든 전환” 열에는 표시되며 “전환 수” 데이터에는 표시되지 않음</span><br/>
+                              <span class="jwstyle3" style="font-size:1.5rem;"><i class="fa fa-check-square-o"></i> ‘전환' 항목에 포함시키지 않은 전환 액션에 대해서는 입찰 전략이 실행되지 않음 (최적화 진행 X)</span>
+                            </div>
+                          </article>
+                        </blockquote>
+                      </ul>
+
+
+                      <div class="pricing_footer" style="padding:1.5rem; border-top:0px solid #ccc; height:12rem;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+          <!-- Lead Form Extension Composition-->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span>Conversion Tracking > conversion actions at the campaign level</h3>
+            </div>
+          </div>
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile" style="min-height:60.5rem;">
+              <div class="x_title">
+                <h2>Product Feeds Composition</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+
+                    <div class="row">
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">'전환에 포함' 활용 예시</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 광고주별로 최적화를 희망하는 전환이 다름</div>
+                          </div>
+                        </div>
+                        <p></p>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;" src="images/GDN/GDN_Conversion_2.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_content">
+                          <div class="">
+
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">'전환에 포함'하는 것에 적합한 이벤트 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:2.5rem; border-bottom:1px solid #ccc;">
+                              <blockquote class="blockquote-reverse" style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 광고주의 최종 KPI에 가장 가까운 이벤트를 기본으로 포함</span>
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 회원 수 증대가 목표라면 '회원가입완료' 매출 증대라면 '구매 완료' 등</span></p>
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">'마이크로 전환 포함' 활용 예시</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 난이도가 높은 전환 목표로 노출이 줄어드는 경우와 해결방안</div>
+                          </div>
+                        </div>
+                        <p></p>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;" src="images/GDN/GDN_Conversion_3.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_content">
+                          <div class="">
+
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">최종 전환(전환에 포함 목표)의 볼륨이 작아 최적화가 안되는 경우&nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:2.5rem; border-bottom:1px solid #ccc;">
+                              <blockquote class="blockquote-reverse" style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 마이크로 전환을 포함해서 최적화를 시도</span>
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 최종 신청서 작성 완료 뿐만 아니라 약관 동의도 '전환에 포함'하여 최적화</span></p>
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem">
+                            <div class="jwstyle1" style="font-size:2.5rem">주요하지 않은 이벤트 추적의 필요성</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 메인 KPI 전환 액션 외 기타 액션의 전환 추적의 필요성</div>
+                          </div>
+                        </div>
+                        <p></p>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="tile-stats" style="margin-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:auto">
+                                  <img style="width: 100%; display: block;" src="images/GDN/GDN_conversion_4.jpg" alt="image">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_content">
+                          <div class="">
+
+                            <ul class="stats-overview" style="padding-left:0rem; padding-top:1rem; margin-bottom:1rem; border-top:1px solid #ccc; ">
+                              <blockquote style="margin-bottom:0rem; padding-top:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">당장 '전환'에 포함하지 않아도 모든 이벤트 추적을 권장&nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">적정 CPA단가를 알 수 있을 때</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview" style="padding-left:2.5rem; border-bottom:1px solid #ccc;">
+                              <blockquote class="blockquote-reverse" style="margin-bottom:0rem; padding-top:0.5rem; Padding-bottom:0.5rem; text-align:left;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 포함되지 않았던 전환액션을 나중에 포함하게 되더라도, 최근 2주 실적 히스토리가 남아있어 적정 CPA를 파악할 수 있음 </span>
+                                <p><span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 모든 전환수는 '전환'에 포함하지 않은 액션까지 포함해서 보고. 분류기준을 전환액션으로 설정하면 전환액션 벌 전환수와 CPA 계산 가능</span></p>
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+
+
+
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Copyright 2022. JungWook KIM. All rights reserved
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <div id="custom_notifications" class="custom-notifications dsp_none">
+    <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+    </ul>
+    <div class="clearfix"></div>
+    <div id="notif-group" class="tabbed_notifications"></div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- Skycons -->
+  <script src="../vendors/skycons/skycons.js"></script>
+  <!-- PNotify -->
+  <!-- <script src="../vendors/pnotify/dist/pnotify.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script> -->
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+
+
+  <!-- Datatables -->
+  <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="../vendors/jszip/dist/jszip.min.js"></script>
+  <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+
+
+</body>
+
+</html>
