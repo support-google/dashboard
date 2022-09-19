@@ -2994,7 +2994,7 @@ if (typeof NProgress != 'undefined') {
 					calculable: false,
 					xAxis: [{
 					  type: 'category',
-					  data: ['21/07', '21/08', '21/09', '22/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06']
+					  data: ['21/09', '22/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '22/07', '22/08']
 					}],
 					yAxis: [{
 					  type: 'value'
@@ -3002,7 +3002,7 @@ if (typeof NProgress != 'undefined') {
 					series: [{
 					  name: 'CPM(₩)',
 					  type: 'bar',
-					  data: [6097, 6636, 7735, 6635, 7089, 6763, 7308, 7859, 7645, 7417, 6613, 7088],
+					  data: [6635, 7089, 6755, 7307, 7859, 6742, 3484, 6595, 7141, 7132, 7108, 6759],
 					  markPoint: {
 						data: [{
 						  type: 'max',
@@ -3021,7 +3021,7 @@ if (typeof NProgress != 'undefined') {
 					}, {
 					  name: 'CPC(₩)',
 					  type: 'bar',
-					  data: [2044, 2684, 2857, 2655, 3488, 3044, 4380, 3448, 3832, 2973, 2958, 2878],
+					  data: [2655, 3488, 3090, 4381, 3448, 3426, 2477, 3037, 2827, 3751, 3480, 3363],
 					  markPoint: {
 						data: [{
 						  type: 'max',
@@ -3041,8 +3041,8 @@ if (typeof NProgress != 'undefined') {
 				  });
 
 			}
-			  
-			  
+
+						  
 			  
 			  
 			   //echart Radar
@@ -3341,7 +3341,7 @@ if (typeof NProgress != 'undefined') {
 				xAxis: [{
 				  type: 'category',
 				  boundaryGap: false,
-				  data: ['21/07', '21/08', '21/09', '22/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06']
+				  data: ['21/09', '22/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '22/07', '22/08']
 				}],
 				yAxis: [{
 				  type: 'value'
@@ -3357,11 +3357,92 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [0.30, 0.25, 0.27, 0.25, 0.20, 0.22, 0.17, 0.23, 0.20, 0.25, 0.22, 0.25]
+				  data: [0.25, 0.20, 0.22, 0.17, 0.23, 0.20, 0.14, 0.22, 0.25, 0.19, 0.20, 0.20]
 				}]
 			  });
 
 			} 
+
+
+
+
+			if ($('#echart_line_second').length ){ 
+			  
+			  var echartLine = echarts.init(document.getElementById('echart_line_second'), theme);
+
+			  echartLine.setOption({
+				title: {
+				  text: '25%/100% 재생률 비교',
+				  subtext: '최근1년 RAW'
+				},
+				tooltip: {
+				  trigger: 'axis'
+				},
+				legend: {
+				  x: 220,
+				  y: 40,
+				  data: ['25%재생률', '100%재생률']
+				},
+				toolbox: {
+				  show: true,
+				  feature: {
+					magicType: {
+					  show: true,
+					  title: {
+						line: 'Line',
+						bar: 'Bar',
+						stack: 'Stack',
+						tiled: 'Tiled'
+					  },
+					  type: ['line', 'bar', 'stack', 'tiled']
+					},
+					restore: {
+					  show: true,
+					  title: "Restore"
+					},
+					saveAsImage: {
+					  show: true,
+					  title: "Save Image"
+					}
+				  }
+				},
+				calculable: true,
+				xAxis: [{
+				  type: 'category',
+				  boundaryGap: false,
+				  data: ['21/09', '22/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '22/07', '22/08']
+				}],
+				yAxis: [{
+				  type: 'value'
+				}],
+				series: [{
+				  name: '25%재생률',
+				  type: 'line',
+				  smooth: true,
+				  itemStyle: {
+					normal: {
+					  areaStyle: {
+						type: 'default'
+					  }
+					}
+				  },
+				  data: [88.86, 90.01, 89.11, 87.59, 90.13, 89.31, 93.90, 86.19, 85.13, 86.04, 86.12, 86.88]
+				}, {
+				  name: '100%재생률',
+				  type: 'line',
+				  smooth: true,
+				  itemStyle: {
+					normal: {
+					  areaStyle: {
+						type: 'default'
+					  }
+					}
+				  },
+				  data: [79.90, 81.13, 80.49, 78.53, 82.15, 81.14, 87.43, 77.44, 75.65, 78.20, 78.69, 78.99]
+				}]
+			  });
+
+			}  
 			  
 			   //echart Scatter
 			  
