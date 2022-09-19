@@ -2994,7 +2994,7 @@ if (typeof NProgress != 'undefined') {
 					calculable: false,
 					xAxis: [{
 					  type: 'category',
-					  data: ['21/07', '21/08', '21/09', '22/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06']
+					  data: ['21/09', '22/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '21/07', '21/08']
 					}],
 					yAxis: [{
 					  type: 'value'
@@ -3002,7 +3002,7 @@ if (typeof NProgress != 'undefined') {
 					series: [{
 					  name: 'CPV(₩)',
 					  type: 'bar',
-					  data: [94, 97, 92, 89, 77 ,76, 85, 76, 91, 87, 98, 80],
+					  data: [79, 67, 67, 73, 61, 74, 71, 77, 69, 75, 62, 59],
 					  markPoint: {
 						data: [{
 						  type: 'max',
@@ -3010,6 +3010,58 @@ if (typeof NProgress != 'undefined') {
 						}, {
 						  type: 'min',
 						  name: 'CPV 최솟값'
+						}]
+					  },
+					  markLine: {
+						data: [{
+						  type: 'average',
+						  name: '???'
+						}]
+					  }
+					}]
+				  });
+
+			}
+
+
+
+			if ($('#mainb_second').length ){
+			  
+				  var echartBar = echarts.init(document.getElementById('mainb_second'), theme);
+
+				  echartBar.setOption({
+					title: {
+					  text: 'CPM 비교',
+					  subtext: '최근1년 RAW'
+					},
+					tooltip: {
+					  trigger: 'axis'
+					},
+					legend: {
+					  data: ['CPM(₩)']
+					},
+					toolbox: {
+					  show: false
+					},
+					calculable: false,
+					xAxis: [{
+					  type: 'category',
+					  data: ['21/09', '22/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '21/07', '21/08']
+					}],
+					yAxis: [{
+					  type: 'value'
+					}],
+					series: [{
+					  name: 'CPM(₩)',
+					  type: 'bar',
+					  data: [792, 779, 803, 912, 831, 845, 847, 1193, 1091, 1129, 974, 915],
+					  markPoint: {
+						data: [{
+						  type: 'max',
+						  name: 'CPM 최댓값'
+						}, {
+						  type: 'min',
+						  name: 'CPM 최솟값'
 						}]
 					  },
 					  markLine: {
@@ -3338,7 +3390,7 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [1.33, 1.26, 0.94, 0.90, 1.01, 1.07, 1.11, 1.13, 0.95, 1.03, 1.46, 1.51]
+				  data: [1.00, 1.17, 1.20, 1.25, 1.36, 1.14, 1.19, 1.56, 1.59, 1.50, 1.56, 1.56]
 				}]
 			  });
 
