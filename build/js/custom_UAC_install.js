@@ -795,6 +795,23 @@ if (typeof NProgress != 'undefined') {
 			// chart_gauge_02.setTextField(document.getElementById("gauge-text2"));
 		
 		}
+
+		if ($('#chart_gauge_03').length){
+		
+			var chart_gauge_03_elem = document.getElementById('chart_gauge_03');
+			var chart_gauge_03 = new Gauge(chart_gauge_03_elem).setOptions(chart_gauge_settings);
+			
+		}
+		
+		
+		if ($('#gauge-text2').length){
+			
+			chart_gauge_03.maxValue = 10000;
+			chart_gauge_03.animationSpeed = 32;
+			chart_gauge_03.set(8500);
+			// chart_gauge_03.setTextField(document.getElementById("gauge-text2"));
+		
+		}
 	
 	
 	}   
