@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dashboard - by정욱</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- bootstrap-progressbar -->
+  <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- PNotify -->
+  <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+  <!-- Datatables -->
+  <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    .jwstyle1 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 500;
+    }
+
+    .jwstyle2 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 400;
+    }
+
+    .jwstyle3 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 300;
+    }
+
+    .jwstyle4 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 200;
+    }
+
+    .jwstyle5 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 100;
+    }
+
+    .jwstyle6 {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
+
+
+  /* 좌측 스크롤바 */
+    .class {
+    width:100px; height: 100px; overflow-y: auto; border: 1px solid #000;} 
+
+
+   
+    .left_col::-webkit-scrollbar { 
+    width: 0.1px; /*스크롤바의 너비*/ } 
+
+    .left_col::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/} 
+
+    .left_col::-webkit-scrollbar-track { 
+    background-color: #222e3c; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}
+
+
+
+  /* 우측 스크롤바 */
+    ::-webkit-scrollbar { 
+    width: 15px; /*스크롤바의 너비*/} 
+
+    ::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/}
+
+    ::-webkit-scrollbar-track { 
+    background-color: #F7F7F7; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}   
+  </style>
+
+
+
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container" style="min-width:1903px">
+      <div class="col-md-3 left_col" style="height:100%; overflow:auto; position:fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="17_gdn_smart_display_campaign.html" class="site_title"><i class="glyphicon glyphicon-object-align-bottom"
+                style="border: 0px" ; "border-radius:0%"></i> <span>Dashboard(Ads)</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/Youtube/google logo.gif" alt="img" class="img-circle profile_img"
+                style="height:7rem; width:7rem;">
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>Administrator</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Youtube</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Awareness <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="01_youtube_bumper_ads.html">Bumper Ad</a></li>
+                    <li><a href="02_trueview_for_reach.html">Trueview for Reach</a></li>
+                    <li><a href="03_non-skippable_ad.html">Non-Skippable Ad</a></li>
+                    <li><a href="04_video_reach_campaign.html">Video Reach Campaign</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Consideration <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="05_youtube_instream.html">Trueview Instream</a></li>
+                    <li><a href="06_Infeed_video_ads.html">Infeed Video Ads</a></li>
+                    <li><a href="page_404.html">Video Ads Sequencing</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Action <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="08_video_action_campaign.html">Video Action Campaign</a></li>
+                    <li><a href="09_vac_sitelink_extension.html">VAC sitelink Extension</a></li>
+                    <li><a href="10_vac_with_product_feeds.html">VAC with Product Feeds</a></li>
+                    <li><a href="11_vac_lead_form_extension.html">VAC with Lead Form Extension</a></li>
+                    <li><a href="12_app_deep-linking_on_vac.html">App Deeplinking on VAC</a></li>
+                  </ul>
+                </li>  
+                <li><a><i class="fa fa-youtube-play"></i> Reservation <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="13_youtube_cpm_masthead.html">Masthead</a></li>
+                    <li><a href="page_404.html">Youtube Select</a></li>
+                  </ul>
+                </li>            
+              </ul>
+            </div>
+
+
+            <div class="menu_section">
+              <h3>GDN</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-list-alt"></i> GDN <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="15_gdn_image.html">Image Display Campaign</a></li>
+                    <li><a href="16_gdn_responsive_display.html">Responsive Display Campaign</a></li>
+                    <li><a href="17_gdn_smart_display_campaign.html">Smart Display Campaign</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-list-alt"></i> GDN Optimization<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="18_gdn_optimization_conv.html">Conversion Tracking</a></li>
+                    <li><a href="19_gdn_bidding_strategy.html">Bidding Strategy</a></li>
+                    <li><a href="20_gdn_campaign_structure.html">Campaign structure</a></li>
+                    <li><a href="21_gdn_creative.html">Creative Type</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-list-alt"></i> GDN Targeting<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="page_404.html">Targeting</a></li>
+                  </ul>
+                </li>                               
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+
+            <div class="menu_section">
+              <h3>APP Campaign</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-download"></i> AC Product Guide <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="22_ac_guide.html">App Campaign Product Guide</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-download"></i> App Campaign <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="23_ac_install.html">AC for install</a></li>
+                    <li><a href="24_ac_install_advanced.html">AC for install Advanced</a></li>
+                    <li><a href="25_ac_for_actions.html">AC for Actions</a></li>
+                    <li><a href="page_404.html">AC for Value</a></li>
+                    <li><a href="page_404.html">AC Engagement</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-download"></i> AC Setting Guide<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="26_ac_ads_play_mapping_guide.html">Play Store Mapping</a></li>
+                    <li><a href="27_ac_3rd_party_mapping_guide.html">Third Party Mapping</a></li>
+                    <li><a href="28_ac_action_mapping_guide.html">SDK Event Mapping</a></li>
+                  </ul>
+                </li>                                            
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+
+            <div class="menu_section">
+              <h3 style="color:tomato">DA Discovery</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-asterisk"></i> DA Discovery <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="page_404.html">DA Discovery</a></li>
+                    <li><a href="page_404.html">Optimization</a></li>
+                  </ul>
+                </li>                                                          
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <!-- <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div> -->
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/GA logo.png" alt="">GA Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="100_ga3_creative_account.html"><i class="fa fa-sign-out pull-right"></i> GA계정 생성</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 초기 세팅(작업중)</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 운영 세팅(작업중)</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false";">
+                  <img src="images/Youtube/GTM logo.png" alt="">GTM Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="50_gtm_account_creation.html"><i class="fa fa-sign-out pull-right"></i> GTM 계정 생성</a></li>
+                  <li><a href="51_gtm_ua_configuration_tag_setting.html"><i class="fa fa-sign-out pull-right"></i> GA 구성 태그</a></li>
+                  <li><a href="53_gtm_ga4_page_view_1.html"><i class="fa fa-sign-out pull-right"></i> GA4 이벤트 태그</a></li>
+                  <li><a href="60_gtm_ga4_view_item_list.html"><i class="fa fa-sign-out pull-right"></i> GA4 전자상거래 태그</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 맞춤 HTML 태그</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/380.png" alt="">Archieve &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="150_archieve_product_guide.html"><i class="fa fa-sign-out pull-right"></i> 상품소개서</a></li>
+                  <li><a href="151_archieve_setting_guide.html"><i class="fa fa-sign-out pull-right"></i> 세팅가이드</a></li>                  
+                  <li><a href="152_archieve_key_policy_guide.html"><i class="fa fa-sign-out pull-right"></i> 주요 정책 가이드</a></li>
+                  <li><a href="153_archieve_monthly_update.html"><i class="fa fa-sign-out pull-right"></i> 월별 신규 업데이트</a></li>
+                  <li><a href="154_archieve_benchmark_data.html"><i class="fa fa-sign-out pull-right"></i> 벤치마크 데이터</a></li>
+                </ul>
+              </li>
+
+              <!-- <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="text-center">
+                      <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left" style="padding-bottom:1rem; padding-top:1rem">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Smart Display Campaign > Summary</h3>
+            </div>
+
+            <!-- <div class="title_right">
+              <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="clearfix"></div>
+
+
+
+          <!-- 정의 -->
+
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <div class="x_panel" style="height:39.1617rem;">
+              <div class="x_title">
+                <h2>Smart Display Campaign</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+
+                <div class="bs-example" data-example-id="simple-jumbotron">
+                  <div class="jumbotron">
+                    <h1 class="jwstyle1" style="font-weight:bold">Smart Display Campaign</h1>
+                    <p><span class="jwstyle1">머신러닝 기반의 자동화 솔루션을 최대한 활용하여 전환최적화를 하고 싶을 때</span><span class="jwstyle3"> 활용하는 디스플레이 광고</span><br />
+                      <span class="jwstyle1">입찰전략, 타겟팅, 광고 소재 제작이</span><span class="jwstyle3"> 모두 자동화 되어 있는 캠페인</span><br />
+                      <span class="jwstyle3">예산/입찰가/에셋만 설정하면</span><span class="jwstyle1"> 머신러닝을 통해 자동으로 성과를 최적화</span><span class="jwstyle3"> 하는 캠페인 형식</span><br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 광고기상도 -->
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="x_panel tile" style="height:39.1617rem;">
+              <div class="x_title">
+                <h2 class="jwstyle1">광고기상도</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content">
+
+                <!-- list = ["clear-day", "clear-night", "partly-cloudy-day",
+                "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+                "fog"
+                ] -->
+
+                <div class="row">
+                  <div class="col-sm-3" style="margin-top:2rem;">
+                    <div class="weather-icon" style="display:flex; justify-content:center; align-items:center;">
+                      <canvas height="103" width="103" id="sleet"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="weather-text">
+                      <h2 class="jwstyle1">CPM 단가상황 <br /><br />
+                        <div class="count jwstyle1" Style="font-size:4rem;">나쁨</div>
+                      </h2>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3" style="margin-top:2rem;">
+                    <div class="weather-icon" style="display:flex; justify-content:center; align-items:center;">
+                      <canvas height="103" width="103" id="fog"></canvas>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="weather-text">
+                      <h2 class="jwstyle1">CPC 단가상황 <br /><br />
+                        <div class="rain" Style="font-size:2.9rem;">다소나쁨</div>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-sm-12" style="height:3rem;">
+                  <div class="weather-text pull-right">
+                    <h3 class=""> &nbsp</h3>
+                  </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="row weather-days">
+                  <div class="col-sm-6" style="padding-right:0.25rem;">
+                    <!-- <div class="daily-weather">
+                      <h2 class="day jwstyle1" style="margin-bottom:0.5rem;">3월 CPM</h2> -->
+
+
+                    <div class="bs-glyphicons" style="margin-bottom:0.5rem; margin-top:1rem;">
+                      <ul class="bs-glyphicons-list">
+                        <li
+                          style="width:100%; height:3.3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; background-color:#EEEEEE ">
+                          <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                          <h5 class="jwstyle1">CTR 단가(좋음)</h5>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                      <ul class="bs-glyphicons-list">
+                        <li
+                          style="width:100%; height:6rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                          <i class="fa fa-circle" style="font-size:3rem; color:green"></i>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                      <ul class="bs-glyphicons-list">
+                        <li
+                          style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                          <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                          <h5><i>전달대비 0.68 증가</i></h5>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- </div> -->
+                  </div>
+
+
+                  <div class="col-sm-6" style="padding-left:0.25rem; padding-right:0.25rem;">
+                    <!-- <div class="daily-weather">
+                      <h2 class="day jwstyle1" style="margin-bottom:0.5rem;">3월 CPM</h2> -->
+
+
+                    <div class="bs-glyphicons" style="margin-bottom:0.5rem; margin-top:1rem;">
+                      <ul class="bs-glyphicons-list">
+                        <li
+                          style="width:100%; height:3.3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; background-color:#EEEEEE ">
+                          <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                          <h5 class="jwstyle1">집행볼륨(나쁨)</h5>
+                        </li>
+                      </ul>
+                    </div>
+
+
+
+                    <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                      <ul class="bs-glyphicons-list">
+                        <li
+                          style="width:100%; height:6rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                          <i class="fa fa-circle" style="font-size:3rem; color:tomato"></i>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="bs-glyphicons" style="margin-bottom:0rem;">
+                      <ul class="bs-glyphicons-list">
+                        <li
+                          style="width:100%; height:3rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9;  ">
+                          <!-- <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem">CPM 8000</span> -->
+                          <h5><i>전달대비 약 200만원 감소</i></h5>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- </div> -->
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+
+          <!-- 타겟팅 목록 -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Smart Display Campaign > Bidding Details</h3>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2 class="jwstyle1">SDC의 장점 - 자동 입찰</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+              <div class="x_content">
+
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem;">
+                        <div class="jwstyle1" style="font-size:2.5rem;">입찰 과정 분석</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem;"><i class="fa fa-info-circle"></i> 잠재고객 정보 입력 > Google 머신러닝 > 인벤토리, 고객 및 전환 증가</div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+                      <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                          <ul class="bs-glyphicons-list">
+                            <li style="width:100%; height:auto">
+                              <img style="width: 100%; height:7.8rem; display: block;" src="images/GDN/gdn_targeting_01.jpg" alt="image">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem;">오디언스 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">(맞춤) 관심분야 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">(맞춤) 구매의도 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">생애 이벤트 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">리마케팅 / 유사잠재고객</li>
+                          </ul>
+                        </div>                        
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+                      <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                          <ul class="bs-glyphicons-list">
+                            <li style="width:100%; height:auto">
+                              <img style="width: 100%; height:7.8rem; display: block;" src="images/GDN/gdn_targeting_02.jpg" alt="image">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">인구통계학적 특성</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">성별 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">연령별 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">가계 소득 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">상세한 인구통계</li>
+                          </ul>
+                        </div>   
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+                      <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                          <ul class="bs-glyphicons-list">
+                            <li style="width:100%; height:auto">
+                              <img style="width: 100%; height:7.8rem; display: block;" src="images/GDN/gdn_targeting_03.jpg" alt="image">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">컨텐츠 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">주제 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">키워드 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">생애 이벤트 타겟팅</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3">
+                    <div class="row" style="display:flex; flex-direction:column;">
+                      <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                          <ul class="bs-glyphicons-list">
+                            <li style="width:100%; height:auto">
+                              <img style="width: 100%; height:7.8rem; display: block;" src="images/GDN/gdn_targeting_04.jpg" alt="image">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">사용자 행동 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">위치 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">언어 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">요일 / 시간대 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">기기 타겟팅</li>
+                          </ul>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+          <!-- 관심분야 잠재고객 상세 -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Smart Display Campaign > Bidding Details</h3>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2 class="jwstyle1">SDC의 장점 - 자동 입찰</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+              <div class="x_content">
+
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem;">
+                        <div class="jwstyle1" style="font-size:2.5rem;">입찰 과정 분석</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem;"><i class="fa fa-info-circle"></i> 잠재고객 정보 입력 > Google 머신러닝 > 인벤토리, 고객 및 전환 증가</div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+                      <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                          <ul class="bs-glyphicons-list">
+                            <li style="width:100%; height:auto">
+                              <img style="width: 100%; height:17rem; display: block;" src="images/GDN/gdn_targeting_05.jpg" alt="image">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>   
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-9 col-lg-9 col-sm-9" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">은행 및 금융</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Banking and Finance)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">뉴스 및 정치</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(News and Politics)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">미용 및 웰빙</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Beauty and Wellness)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">음식 & 음식점</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Food and Dining)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">스포츠 및 피트니스</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Sport and Fitness)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">인테리어, 조경</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Home and Garden)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">기술</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Technology)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">미디어 & 엔터테인먼트</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Media and Entertainment)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">여행</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Travel)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">라이프스타일 & 취미</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Lifestyle and Hobbies)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">자동차 및 교통</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Vehicles and Transportation)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                               
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div id="glyphicons" class="page-header" style="margin-top:1rem; margin-bottom:0rem; padding-bottom:0rem;"></div>
+                <br />
+
+
+
+
+                <!-- 관심분야 상세2 -->
+                <div class="row">
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem;">오디언스 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle3" style="width:100%; height:5rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:1.5rem;">ABCD</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">(맞춤) 구매의도 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">생애 이벤트 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">리마케팅 / 유사잠재고객</li>
+                          </ul>
+                        </div>                        
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">인구통계학적 특성</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">성별 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">연령별 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">가계 소득 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">상세한 인구통계</li>
+                          </ul>
+                        </div>   
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">컨텐츠 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">주제 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">키워드 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">생애 이벤트 타겟팅</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">사용자 행동 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">위치 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">언어 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">요일 / 시간대 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">기기 타겟팅</li>
+                          </ul>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+
+
+                
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2 class="jwstyle1">SDC의 장점 - 자동 입찰</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+              <div class="x_content">
+
+
+                <div class="row">
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem;">오디언스 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">(맞춤) 관심분야 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">(맞춤) 구매의도 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">생애 이벤트 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#D9EAD3">리마케팅 / 유사잠재고객</li>
+                          </ul>
+                        </div>                        
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">인구통계학적 특성</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">성별 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">연령별 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">가계 소득 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#C9DAF8">상세한 인구통계</li>
+                          </ul>
+                        </div>   
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">컨텐츠 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">주제 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">키워드 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#FFF2CC">생애 이벤트 타겟팅</li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div style="padding-bottom:0.5rem;">
+                          <ul class="stats-overview jumbotron" style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%;">
+                            <div style="text-align:center;">
+                              <div style="width:100%;">
+                                <div class="name jwstyle1" style="font-size:1.7rem; color:#73879C">사용자 행동 기반</div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">위치 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">언어 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">요일 / 시간대 타겟팅</li>
+                          </ul>
+                        </div>
+
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem;">
+                          <ul class="bs-glyphicons-list">
+                            <li class="jwstyle1" style="width:100%; height:8rem; display:flex; justify-content:center; align-items:center; border:1px solid #f9f9f9; font-size:2rem; background-color:#F0F2F3">기기 타겟팅</li>
+                          </ul>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+          <!-- 구매의도 잠재고객 상세 -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Smart Display Campaign > Bidding Details</h3>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2 class="jwstyle1">SDC의 장점 - 자동 입찰</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+              <div class="x_content">
+
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron" style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:0rem;">
+                        <div class="jwstyle1" style="font-size:2.5rem;">입찰 과정 분석</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem;"><i class="fa fa-info-circle"></i> 잠재고객 정보 입력 > Google 머신러닝 > 인벤토리, 고객 및 전환 증가</div>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+
+
+
+                  <div class="col-md-3 col-lg-3 col-sm-3" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+                      <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                          <ul class="bs-glyphicons-list">
+                            <li style="width:100%; height:auto">
+                              <img style="width: 100%; height:23.5rem; display: block;" src="images/GDN/gdn_targeting_06.jpg" alt="image">
+                            </li>
+                          </ul>
+                        </div>
+                      </div>   
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-9 col-lg-9 col-sm-9" style="border-right:1px solid #EEEEEE;">
+                    <div class="row" style="display:flex; flex-direction:column;">
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">의류 및 액세서리</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Apparel & Accessories)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">교육</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Education)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">자동차</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Automotive & Vehicles)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">고용상태</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Employment)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">유아 및 아동용 제품</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Baby and Children’s Products)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">이벤트 티켓</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Event Tickets)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">미용 제품 및 서비스</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Beauty Products and Service)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">금융 서비스</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Financial Services)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">비즈니스 서비스</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Business Services)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">스포츠 및 피트니스</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Sports & Fitness)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">컴퓨터 및 주변장치</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Computers and Peripherals)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">텔레콤</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Telecom)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">소비자 가전</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Consumer Electronics)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">여행</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Travel)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">데이트 서비스</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Dating Services)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0rem;">
+                          <div class="bs-glyphicons" style="padding-right:0.5rem; margin-bottom:0.5rem;">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle1" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">선물, 기념일</span>
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">(Gifts & Occasions)</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                               
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="clearfix"></div>
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+          <!--집행데이터 -->
+
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> Video Action Campaign > Data</h3>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Trueview Instream Advertising Data</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+
+                <p class="text-muted font-13 m-b-30">
+                  <span class="jwstyle3" style="font-size:1.5rem">2021년 DMC 내부 집행 데이터</span>
+                </p>
+                <table id="datatable-buttons" class="table table-striped table-bordered jambo_table">
+                  <thead>
+                    <tr>
+                      <th> 날짜 </th>
+                      <th> 노출 수 </th>
+                      <th> 평균 CPM </th>
+                      <th> 클릭수 </th>
+                      <th> 평균 CPC </th>
+                      <th> 클릭률(CTR) </th>
+                      <th> 전환수 </th>
+                      <th> 평균 CPA </th>
+                      <th> 전환율(CVR) </th>
+                      <th> 소진비용 </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> 2021년 06월 </td>
+                      <td> 9,044,270 </td>
+                      <td> 359 </td>
+                      <td> 23,928 </td>
+                      <td> 136 </td>
+                      <td> 0.26% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 3,251,156 </td>
+                    </tr>
+                    <tr>
+                      <td> 2021년 07월 </td>
+                      <td> 4,288,477 </td>
+                      <td> 870 </td>
+                      <td> 25,927 </td>
+                      <td> 144 </td>
+                      <td> 0.60% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 3,732,217 </td>
+                    </tr>
+                    <tr>
+                      <td> 2021년 08월 </td>
+                      <td> 3,705,485 </td>
+                      <td> 822 </td>
+                      <td> 24,819 </td>
+                      <td> 123 </td>
+                      <td> 0.67% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 3,044,722 </td>
+                    </tr>
+                    <tr>
+                      <td> 2021년 09월 </td>
+                      <td> 1,611,862 </td>
+                      <td> 901 </td>
+                      <td> 9,896 </td>
+                      <td> 147 </td>
+                      <td> 0.61% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 1,451,559 </td>
+                    </tr>
+                    <tr>
+                      <td> 2021년 10월 </td>
+                      <td> 1,276,808 </td>
+                      <td> 1,073 </td>
+                      <td> 8,050 </td>
+                      <td> 170 </td>
+                      <td> 0.63% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 1,370,206 </td>
+                    </tr>
+                    <tr>
+                      <td> 2021년 11월 </td>
+                      <td> 1,596,352 </td>
+                      <td> 1,048 </td>
+                      <td> 9,639 </td>
+                      <td> 174 </td>
+                      <td> 0.60% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 1,673,335 </td>
+                    </tr>
+                    <tr>
+                      <td> 2021년 12월 </td>
+                      <td> 2,940,721 </td>
+                      <td> 691 </td>
+                      <td> 11,103 </td>
+                      <td> 183 </td>
+                      <td> 0.38% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 2,032,593 </td>
+                    </tr>
+                    <tr>
+                      <td> 2022년 01월 </td>
+                      <td> 4,906,469 </td>
+                      <td> 427 </td>
+                      <td> 10,049 </td>
+                      <td> 208 </td>
+                      <td> 0.20% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 2,094,149 </td>
+                    </tr>
+                    <tr>
+                      <td> 2022년 02월 </td>
+                      <td> 4,242,804 </td>
+                      <td> 496 </td>
+                      <td> 16,168 </td>
+                      <td> 130 </td>
+                      <td> 0.38% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 2,105,982 </td>
+                    </tr>
+                    <tr>
+                      <td> 2022년 03월 </td>
+                      <td> 6,701,978 </td>
+                      <td> 422 </td>
+                      <td> 19,693 </td>
+                      <td> 144 </td>
+                      <td> 0.29% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 2,831,504 </td>
+                    </tr>
+                    <tr>
+                      <td> 2022년 04월 </td>
+                      <td> 4,160,053 </td>
+                      <td> 777 </td>
+                      <td> 18,683 </td>
+                      <td> 173 </td>
+                      <td> 0.45% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 3,231,555 </td>
+                    </tr>
+                    <tr>
+                      <td> 2022년 05월 </td>
+                      <td> 3,409,241 </td>
+                      <td> 891 </td>
+                      <td> 12,453 </td>
+                      <td> 244 </td>
+                      <td> 0.37% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 3,038,499 </td>
+                    </tr>
+                    <tr>
+                      <td> 2022년 06월 </td>
+                      <td> 9,044,270 </td>
+                      <td> 359 </td>
+                      <td> 23,928 </td>
+                      <td> 136 </td>
+                      <td> 0.26% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 3,251,156 </td>
+                    </tr>
+                    <tr>
+                      <td> 2022년 07월 </td>
+                      <td> 4,288,477 </td>
+                      <td> 870 </td>
+                      <td> 25,927 </td>
+                      <td> 144 </td>
+                      <td> 0.60% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 3,732,217 </td>
+                    </tr>
+                    <tr>
+                      <td> 2022년 08월 </td>
+                      <td> 777,418 </td>
+                      <td> 2,246 </td>
+                      <td> 9,946 </td>
+                      <td> 176 </td>
+                      <td> 1.28% </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> 0.00% </td>
+                      <td> 1,746,235 </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Copyright 2022. JungWook KIM. All rights reserved
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+
+    </div>
+  </div>
+
+  <div id="custom_notifications" class="custom-notifications dsp_none">
+    <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+    </ul>
+    <div class="clearfix"></div>
+    <div id="notif-group" class="tabbed_notifications"></div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- Skycons -->
+  <script src="../vendors/skycons/skycons.js"></script>
+  <!-- ECharts -->
+  <script src="../vendors/echarts/dist/echarts.min.js"></script>
+  <script src="../vendors/echarts/map/js/world.js"></script>
+  <!-- PNotify -->
+  <!-- <script src="../vendors/pnotify/dist/pnotify.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script> -->
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom_sdc gdn.js"></script>
+
+
+  <!-- Datatables -->
+  <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="../vendors/jszip/dist/jszip.min.js"></script>
+  <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+
+
+</body>
+
+</html>
