@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Google Dashboard(미전팀)</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- bootstrap-progressbar -->
+  <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- PNotify -->
+  <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+  <!-- Datatables -->
+  <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    .jwstyle1 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 500;
+    }
+
+    .jwstyle2 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 400;
+    }
+
+    .jwstyle3 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 300;
+    }
+
+    .jwstyle4 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 200;
+    }
+
+    .jwstyle5 {
+      font-family: 'IBM Plex Sans KR', sans-serif;
+      font-weight: 100;
+    }
+
+    .jwstyle6 {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
+
+
+  /* 좌측 스크롤바 */
+
+  .class {
+    width:100px; height: 100px; overflow-y: auto; border: 1px solid #000;} 
+
+
+   
+    .left_col::-webkit-scrollbar { 
+    width: 0.1px; /*스크롤바의 너비*/ } 
+
+    .left_col::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/} 
+
+    .left_col::-webkit-scrollbar-track { 
+    background-color: #222e3c; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}
+
+
+
+  /* 우측 스크롤바 */
+    ::-webkit-scrollbar { 
+    width: 15px; /*스크롤바의 너비*/} 
+
+    ::-webkit-scrollbar-thumb { 
+    background-color: #222e3c; /*스크롤바의 색상*/ 
+    border-radius: 10px; /*스크롤바 라운드*/}
+
+    ::-webkit-scrollbar-track { 
+    background-color: #F7F7F7; /*스크롤바 트랙 색상*/ 
+    border-radius: 10px; /*스크롤바 트랙 라운드*/ 
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2); /*스크롤바 트랙 안쪽 그림자*/}   
+  </style>
+
+
+
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container" style="min-width:1903px">
+      <div class="col-md-3 left_col" style="height:100%; overflow:auto; position:fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="05_youtube_instream.html" class="site_title"><i class="glyphicon glyphicon-object-align-bottom"
+                style="border: 0px" ; "border-radius:0%"></i> <span>Dashboard(Ads)</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/Youtube/google logo.gif" alt="img" class="img-circle profile_img"
+                style="height:7rem; width:7rem;">
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>Administrator</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Youtube</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Awareness <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="01_youtube_bumper_ads.html">Bumper Ad</a></li>
+                    <li><a href="02_trueview_for_reach.html">Trueview for Reach</a></li>
+                    <li><a href="03_non-skippable_ad.html">Non-Skippable Ad</a></li>
+                    <li><a href="04_video_reach_campaign.html">Video Reach Campaign</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Consideration <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="05_youtube_instream.html">Trueview Instream</a></li>
+                    <li><a href="06_Infeed_video_ads.html">Infeed Video Ads</a></li>
+                    <li><a href="page_404.html">Video Ads Sequencing</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-youtube-play"></i> Auction - Action <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="08_video_action_campaign.html">Video Action Campaign</a></li>
+                    <li><a href="09_vac_sitelink_extension.html">VAC sitelink Extension</a></li>
+                    <li><a href="10_vac_with_product_feeds.html">VAC with Product Feeds</a></li>
+                    <li><a href="11_vac_lead_form_extension.html">VAC with Lead Form Extension</a></li>
+                    <li><a href="12_app_deep-linking_on_vac.html">App Deeplinking on VAC</a></li>
+                  </ul>
+                </li>  
+                <li><a><i class="fa fa-youtube-play"></i> Reservation <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="13_youtube_cpm_masthead.html">Masthead</a></li>
+                    <li><a href="page_404.html">Youtube Select</a></li>
+                  </ul>
+                </li>            
+              </ul>
+            </div>
+
+
+            <div class="menu_section">
+              <h3>GDN</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-list-alt"></i> GDN <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="15_gdn_image.html">Image Display Campaign</a></li>
+                    <li><a href="16_gdn_responsive_display.html">Responsive Display Campaign</a></li>
+                    <li><a href="17_gdn_smart_display_campaign.html">Smart Display Campaign</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-list-alt"></i> GDN Optimization<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="18_gdn_optimization_conv.html">Conversion Tracking</a></li>
+                    <li><a href="19_gdn_bidding_strategy.html">Bidding Strategy</a></li>
+                    <li><a href="20_gdn_campaign_structure.html">Campaign structure</a></li>
+                    <li><a href="21_gdn_creative.html">Creative Type</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-list-alt"></i> GDN Targeting<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="22_gdn_targeting.html">Targeting</a></li>
+                  </ul>
+                </li>                               
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+
+            <div class="menu_section">
+              <h3>APP Campaign</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-download"></i> AC Product Guide <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="23_ac_guide.html">App Campaign Product Guide</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-download"></i> App Campaign <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="24_ac_install.html">AC for install</a></li>
+                    <li><a href="25_ac_install_advanced.html">AC for install Advanced</a></li>
+                    <li><a href="26_ac_for_actions.html">AC for Actions</a></li>
+                    <li><a href="page_404.html">AC for Value</a></li>
+                    <li><a href="page_404.html">AC Engagement</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-download"></i> AC Setting Guide<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="27_ac_ads_play_mapping_guide.html">Play Store Mapping</a></li>
+                    <li><a href="28_ac_3rd_party_mapping_guide.html">Third Party Mapping</a></li>
+                    <li><a href="29_ac_action_mapping_guide.html">SDK Event Mapping</a></li>
+                  </ul>
+                </li>                                            
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+
+            <div class="menu_section">
+              <h3>DA Discovery</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-asterisk"></i> DA Discovery <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="30_da_discovery.html">DA Discovery</a></li>
+                    <li><a href="31_da_discovery_bidding_strategy.html">Bidding Strategy</a></li>
+                    <li><a href="32_da_discovery_Targeting.html">Targeting</a></li>
+                  </ul>
+                </li>                                                          
+                <!-- <li><a href="javascript:void(0)"><i class="fa fa-list-alt"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <!-- <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div> -->
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/GA logo.png" alt="">GA Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="100_ga3_creative_account.html"><i class="fa fa-sign-out pull-right"></i> GA계정 생성</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 초기 세팅(작업중)</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 운영 세팅(작업중)</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false";">
+                  <img src="images/Youtube/GTM logo.png" alt="">GTM Dashboard &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="50_gtm_account_creation.html"><i class="fa fa-sign-out pull-right"></i> GTM 계정 생성</a></li>
+                  <li><a href="51_gtm_ua_configuration_tag_setting.html"><i class="fa fa-sign-out pull-right"></i> GA 구성 태그</a></li>
+                  <li><a href="53_gtm_ga4_page_view_1.html"><i class="fa fa-sign-out pull-right"></i> GA4 이벤트 태그</a></li>
+                  <li><a href="60_gtm_ga4_view_item_list.html"><i class="fa fa-sign-out pull-right"></i> GA4 전자상거래 태그</a></li>
+                  <li><a href="page_404.html"><i class="fa fa-sign-out pull-right"></i> GA4 맞춤 HTML 태그</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/Youtube/380.png" alt="">Archieve &nbsp<span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="150_archieve_product_guide.html"><i class="fa fa-sign-out pull-right"></i> 상품소개서</a></li>
+                  <li><a href="151_archieve_setting_guide.html"><i class="fa fa-sign-out pull-right"></i> 세팅가이드</a></li>                  
+                  <li><a href="152_archieve_key_policy_guide.html"><i class="fa fa-sign-out pull-right"></i> 주요 정책 가이드</a></li>
+                  <li><a href="153_archieve_monthly_update.html"><i class="fa fa-sign-out pull-right"></i> 월별 신규 업데이트</a></li>
+                  <li><a href="154_archieve_benchmark_data.html"><i class="fa fa-sign-out pull-right"></i> 벤치마크 데이터</a></li>
+                </ul>
+              </li>
+
+              <!-- <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="text-center">
+                      <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="row">
+
+
+          <div class="page-title">
+            <div class="title_left" style="padding-bottom:1rem; padding-top:1rem">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> DA Discovery > Summary</h3>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+          <!-- 정의 -->
+
+          <div class="col-md-12 col-sm-12 col-xs-12" >
+            <div class="x_panel" style="height:39.1617rem;">
+              <div class="x_title">
+                <h2 class="jwstyle1">DA Discovery 소개</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+
+                <div class="bs-example" data-example-id="simple-jumbotron">
+                  <div class="jumbotron">
+                    <h1 class="jwstyle1" style="font-weight:bold">DA Discovery - Bidding Strategy</h1>
+                    <p><span class="jwstyle1">스마트 입찰 전략 (타겟CPA, 전환수최대화, 전환가치최대화, tROAS)</span> <span class="jwstyle3">활용</span><br/>
+                    <span class="jwstyle1">전환가치 최대화, tROAS</span> <span class="jwstyle3">는 최근 도입되었으며, <span class="jwstyle1">전환기반 입찰전략 운영 후</span> 넘어가는 것을 추천</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- 주요포인트 -->
+
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="x_panel tile fixed_height_200">
+              <div class="x_title">
+                <h2 class="jwstyle1">마케팅 목표</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-gavel"></i>
+                  </div>
+                  <div class="count jwstyle1" style="font-size:3rem;">전환목표</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">전환을 고려하는 유저에 적합</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="x_panel tile fixed_height_200 overflow_hidden">
+              <div class="x_title">
+                <h2 class="jwstyle1">과금/최적화 방식</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="glyphicon glyphicon-equalizer"></i></div>
+                  <div class="count jwstyle1" style="font-size:3rem;">과금방식 : CPC</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;">전환 최적화 : tCPA/Max CONV</h3>
+                  <h3 class="jwstyle1" style="font-size:2rem;">가치 최적화 : tROAS</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="x_panel tile fixed_height_200">
+              <div class="x_title">
+                <h2 class="jwstyle1">지원 소재</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="fa fa-krw"></i>
+                  </div>
+                  <div class="count jwstyle1" style="font-size:3rem;">소재 : IMG/캐러셀</div>
+
+                  <h3 class="jwstyle1" style="font-size:1.8rem;"><i class="fa fa-check-square-o"></i> 단일 이미지 광고</h3>
+                  <h3 class="jwstyle1" style="font-size:1.8rem;"><i class="fa fa-check-square-o"></i> 캐러셀 광고</h3>
+                  <h3 class="jwstyle1" style="font-size:1.8rem;"><i class="fa fa-check-square-o"></i> 리드 폼 광고 확장</h3>
+                  <!-- <p>Lorem ipsum psdea itgum rixt.</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="x_panel tile fixed_height_200 overflow_hidden">
+              <div class="x_title">
+                <h2 class="jwstyle1">추가기능</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="tile-stats" style="border:0px">
+                  <div class="icon"><i class="glyphicon glyphicon-equalizer"></i></div>
+                  <div class="count jwstyle1" style="font-size:3rem;">리드 폼 광고 / GMC</div>
+
+                  <h3 class="jwstyle1" style="font-size:2rem;"><i class="fa fa-check-square-o"></i> 리드폼 : 리드 수집에 적합</h3>
+                  <h3 class="jwstyle1" style="font-size:2rem;"><i class="fa fa-check-square-o"></i> GMC : 매출 극대화에 적합</h3>
+                  <p>Lorem ipsum psdea itgum rixt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+
+
+
+
+                    <!-- 입찰방법-->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> DA Discovery > Bidding Type</h3>
+            </div>
+          </div>
+
+
+
+
+          <!-- 입찰전략상세 -->
+          <div class="col-md-12 col-sm-8 col-xs-8">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2 class="jwstyle1">전환수 최적화 입찰전략</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+
+
+              <div class="x_content">
+                <div class="row">
+
+
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="row">
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron"
+                            style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                            <div class="jwstyle3" style="font-size:1.5rem">일반 경매형(Auction Type) 입찰전략</div>
+                            <div class="jwstyle1" style="font-size:2.5rem">전환수 최대화 입찰전략</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 전환 기반 최적화
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row" style="margin-bottom:3rem;">
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:13.0875rem; width:6rem; background-color:#1ABB9C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">01</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">상품 목표 : 전환 수 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Product Goals</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0.5rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:5.8469rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">목표 :</span> 정해진 예산 내에 전환단 단가(CPA)와
+                                  상관없이 가장 효율적인 전환을 확보하는 것이 목표</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:13.0875rem; width:6rem; background-color:#1ABB9C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">02</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">캠페인 목표 : 전환 수 > 전환 단가 &nbsp;
+                                  </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Campaign Goals</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0.5rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:5.8469rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 전환
+                                  확보가 목표이지만 전환 단가보다 전환 볼륨이 중요한 경우</span><br />
+                                <!-- <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 타겟 CPA로 운영하다가 볼륨 확장이 필요할 때</span> -->
+                              </blockquote>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:20.8078rem; width:6rem; background-color:#1ABB9C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">03</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">입찰 전략 : 자동 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Auto Bidding Strategy</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0.5rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:13.5672rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  머신러닝을 사용하여 입찰가를 자동으로 최적화하고 각 입찰에 따라 입찰가를 맞춤설정하는 실시간 입찰 기능을 제공</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 예산
+                                  내에서 가장 많은 전환수를 확보하는 로직으로 작동</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:20.8078rem; width:6rem; background-color:#1ABB9C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">04</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE; ">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">입찰가 조정 : 불가 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Bid Adjustment</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0.5rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:13.5672rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">볼륨중시 :</span> 타겟 CPA를 활용하지 않는 입찰방식이며,
+                                  전환수 극대화를 목표로 예산 지출</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">가이드라인 설정 불가 :</span> 캠페인 생성 시 각 전환에 대해
+                                  지불하고자 하는 평균 비용을 설정 불가</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:15.6609rem; width:6rem; background-color:#1ABB9C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">05</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">전환추적 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Conversion tracking</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:8.4203rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">AOS :</span> 앱 설치(Playstore 기준) <br />
+                                  First Open(타사 앱 분석)</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">iOS :</span> First Open(타사 앱
+                                  분석)</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:15.6609rem; width:6rem; background-color:#1ABB9C; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">06</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">일별 최소 전환, 예산 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Minimum Conv/Budget</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:8.4203rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">일 예산 :</span> tCPI X 50
+                                  이상</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">일 평균 전환 수 :</span> 10회 이상</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="row">
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bs-example" data-example-id="simple-jumbotron">
+                          <div class="jumbotron"
+                            style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                            <div class="jwstyle3" style="font-size:1.5rem">일반 경매형(Auction Type) 입찰전략</div>
+                            <div class="jwstyle1" style="font-size:2.5rem">타겟 CPA</div>
+                            <br>
+                            <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 전환 기반 최적화
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:13.0875rem; width:6rem; background-color:#337AB7; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">01</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">상품 목표 : 전환 수 + 타겟 CPA &nbsp;
+                                  </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Product Goals</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0.5rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:5.8469rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">목표 :</span> 목표로 하는 전환당 단가(CPA)를 유지하면서
+                                  예산 내에서 최대한 많은 전환확보가 목표</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:13.0875rem; width:6rem; background-color:#337AB7; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">02</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">캠페인 목표 : 전환 수 + 전환 단가 &nbsp;
+                                  </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Campaign Goals</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0.5rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:5.8469rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 전환
+                                  확보가 목표이고 이미 인지하고 있는 전환당 단가(CPA)가 있는 경우</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:20.8078rem; width:6rem; background-color:#337AB7; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">03</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">입찰 전략 : 자동 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Auto Bidding Strategy</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0.5rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:13.5672rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 고객이
+                                  광고주의 제품 또는 서비스에 맞는 Google 검색을 할 때, 입찰 광고의 전환 가능성에 따라 타겟 CPA를 사용하여 입찰가를 설정</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i> 일부
+                                  CPA가 tCPA보다 높거나 낮을 수 있지만, 설정된 tCPA와 성과가 최대한 같아지도록 조절</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:20.8078rem; width:6rem; background-color:#337AB7; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">04</p>
+                              </a>
+                            </article>
+                          </div>
+
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE; ">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">입찰가 조정 : 가능 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Bid Adjustment</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:0.5rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:13.5672rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">단가+볼륨 중시 :</span> 타겟 CPA는 전환 1회에 대해
+                                  지불하고자 하는 평균 금액</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">가이드라인 설정 :</span> 캠페인 생성 시 각 전환에 대해
+                                  지불하고자 하는 평균 비용을 설정</span>
+                              </blockquote>
+                          </div>
+                          <div class="clearfix"></div>
+
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:15.6609rem; width:6rem; background-color:#337AB7; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">05</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">전환추적 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Conversion tracking</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:8.4203rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">AOS :</span> 앱 설치(Playstore 기준) /
+                                  First Open(타사 앱 분석)</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">iOS :</span> First Open(타사 앱
+                                  분석)</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+
+
+                          <div class="col-sm-1" style="padding-right:0.5rem;">
+                            <article class="media event"
+                              style="display:flex; justify-content:center; align-items:center;">
+                              <a class="pull-left date"
+                                style="margin:0rem; height:15.6609rem; width:6rem; background-color:#337AB7; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                <p class="month jwstyle3" style="font-size:1.5rem;">Point</p>
+                                <p class="day jwstyle3" style="font-size:3rem;">06</p>
+                              </a>
+                            </article>
+                          </div>
+
+                          <div class="col-sm-5" style="padding-left:0rem;">
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; padding-top:1rem; border-top:1px solid #EEEEEE;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0rem; padding-right:0rem; padding-bottom:0rem;">
+                                <span style="width:100%;">
+                                  <span class="name jwstyle1" style="font-size:2rem;">일별 최소 전환, 예산 &nbsp; </span>
+                                  <!-- <span class="value text-success jwstyle3" style="font-size:1.5rem; font-weight:300">Minimum Conv/Budget</span> -->
+                                </span>
+                              </blockquote>
+                            </ul>
+
+                            <ul class="stats-overview"
+                              style="padding-left:0rem; border-bottom:1px solid #EEEEEE; padding-bottom:1rem; margin-bottom:2rem;">
+                              <blockquote
+                                style="margin-bottom:0rem; padding-top:0.2rem; padding-right:0rem; Padding-bottom:0.5rem; text-align:left; height:8.4203rem;">
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">일 예산 :</span> tCPI X 50
+                                  이상</span><br />
+                                <span class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-check-square-o"></i>
+                                  <span class="jwstyle1" style="font-size:1.5rem">일 평균 전환 수 :</span> 10회 이상</span>
+                              </blockquote>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+    
+
+
+
+
+
+          <!-- 게재위치 -->
+          <div class="page-title" style="margin-top:6rem">
+            <div class="title_left">
+              <h3><span class="fa fa-check" aria-hidden="true"></span> DA Discovery > Bidding / Targeting
+              </h3>
+            </div>
+          </div>
+          
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile">
+              <div class="x_title">
+                <h2 class="jwstyle1">입찰 전략</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+          
+          
+          
+              <div class="x_content">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron"
+                        style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                        <div class="jwstyle3" style="font-size:1.5rem">DA Discovery Bidding Strategy</div>
+                        <div class="jwstyle1" style="font-size:2.5rem">DA Discovery - 디스커버리 캠페인의 두 가지 입찰 전략</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 전환수 최대화 / 타겟 CPA</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+          
+          
+          
+          
+                <div class="col-md-12 col-sm-12 col-xs-12" style="padding-right:0.5rem;">
+                  <div class="row">
+          
+                    <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:3rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1"
+                            style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center;">입찰방식</div>
+                        </div>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:3rem; border-bottom:0rem; display:flex;">
+                        <div style="width:100%; display:flex; justify-content:center; align-items:center;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C;">전환수 최대화</div>
+                          <!-- <p>
+                                  <div class="name jwstyle1"
+                                    style="font-size:1.5rem; color:red; display:flex; justify-content:center;">Google Ads에 전환 으로
+                                    집계</div>
+                                  </p> -->
+                        </div>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:3rem; border-bottom:0rem; display:flex;">
+                        <div style="width:100%; display:flex; justify-content:center; align-items:center;">
+                          <div class="name jwstyle1"
+                            style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center;">타겟 CPA</div>
+                        </div>
+                      </ul>
+                    </div>         
+
+          
+          
+          
+                    <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:3rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">최적화 방향성</div>
+                        </div>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true"
+                                  style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp일 예산을 모두 소진하며 타겟 CPA에 관계 없이
+                                  최대한 많은 전환 수를 만들어내는 입찰 전략</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true"
+                                  style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp설정한 타겟 CPA 한도 내에서 가능한 만큼의 전환을  안정적으로 만들어내는 입찰 전략</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:19.2766rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">최적화 방향성</div>
+                        </div>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                        <ul class="bs-glyphicons-list">
+                          <li style="width:100%; height:auto">
+                            <img style="width: 100%; display: block;" src="images/da_discovery/da_discovery_asset_11.jpg" alt="image">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                        <ul class="bs-glyphicons-list">
+                          <li style="width:100%; height:auto">
+                            <img style="width: 100%; display: block;" src="images/da_discovery/da_discovery_asset_12.jpg" alt="image">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:6rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">권장 일 예산</div>
+                        </div>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                               <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                <i class="fa fa-check-square-o"></i>&nbsp평균 CPA*의 최소 10배 이상</span>  
+                               <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                &nbsp*캠페인 라이브 후 결정되는 CPA</span>  
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-5 col-sm-5 col-xs-5" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true"
+                                  style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp타겟 CPA의 최소 15배 이상</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:6rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">예산 부족</div>
+                        </div>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-10 col-sm-10 col-xs-10" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                               <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                <i class="fa fa-check-square-o"></i>&nbsp캠페인의 전환 성과가 저조한 대표적인 원인은 예산부족</span>  
+                               <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                <i class="fa fa-check-square-o"></i>&nbsp권장 일 예산을 준수하여 각 입찰 전략이 목적을 달성할 수 있는 환경을 조성해주는 것이 가장 중요</span>  
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+
+
+
+              <div class="x_content" style="margin-top:5rem; margin-bottom:1.5rem;">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="bs-example" data-example-id="simple-jumbotron">
+                      <div class="jumbotron"
+                        style="padding-top:1rem; padding-bottom:1rem; padding-left:3rem; padding-right:3rem; margin-bottom:1rem">
+                        <div class="jwstyle1" style="font-size:2.5rem">DA Discovery - 입찰 전략 결정을 위한 Key Question</div>
+                        <br>
+                        <div class="jwstyle3" style="font-size:1.5rem"><i class="fa fa-info-circle"></i> 신규 캠페인 / 기존 캠페인</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+          
+          
+          
+          
+                <div class="col-md-6 col-sm-6 col-xs-6" style="padding-right:1.5rem; border-right:1px solid #EEEEEE;">
+                  <div class="row">          
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:3rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1"
+                            style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center;"></div>
+                        </div>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-9 col-sm-9 col-xs-9" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:3rem; border-bottom:0rem; display:flex;">
+                        <div style="width:100%; display:flex; justify-content:center; align-items:center;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C;">새로운 디스커버리 캠페인</div>
+                          <!-- <p>
+                                  <div class="name jwstyle1"
+                                    style="font-size:1.5rem; color:red; display:flex; justify-content:center;">Google Ads에 전환 으로
+                                    집계</div>
+                                  </p> -->
+                        </div>
+                      </ul>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:9.5rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">캠페인 이력</div>
+                        </div>
+                      </ul>
+                    </div>       
+
+
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:6rem;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem;">디스커버리 캠페인을<br />운영해본 경험이 있나요?</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:blueviolet">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-down"></i>&nbsp예</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:tomato">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-right"></i>&nbsp아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp 전환수 최대화</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:9.5rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">전환당 비용</div>
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">(CPA)</div>
+                        </div>
+                      </ul>
+                    </div>       
+
+
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li
+                                  style="width:100%; height:6rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true"
+                                    style="font-size:1.5rem; display:flex; justify-content:center; align-items:center;">구체적인 CPA 목표가 있나요?</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:blueviolet">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-down"></i>&nbsp예</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:tomato">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-right"></i>&nbsp아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp 전환수 최대화</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:9.5rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">일 예산</div>
+                        </div>
+                      </ul>
+                    </div>       
+
+
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:6rem;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem;">타겟 CPA의 최소 15배 이상의<br />일 예산을 투자할 수 있나요?</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:blueviolet">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-down"></i>&nbsp예</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:tomato">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-right"></i>&nbsp아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp 전환수 최대화</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:9.5rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">최종</div>
+                        </div>
+                      </ul>
+                    </div>       
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-check-square-o"></i>&nbsp 타겟 CPA</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                               <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:left; align-items:center; font-weight:bolder; color:tomato">&nbsp&nbsp&nbsp
+                                CPA가 안정되지 않을 경우</span> 
+                               <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                타겟 CPA 또는 일 예산을 높이거나 전환수 최대화로 변경</span>  
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:2rem; padding-right:0.5rem;">
+                  <div class="row">          
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:3rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1"
+                            style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center;"></div>
+                        </div>
+                      </ul>
+                    </div>
+          
+                    <div class="col-md-9 col-sm-9 col-xs-9" style="padding-left:0rem; padding-right:0.5rem; margin-bottom:0.5rem;">
+                      <ul
+                        style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:3rem; border-bottom:0rem; display:flex;">
+                        <div style="width:100%; display:flex; justify-content:center; align-items:center;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C;">전환 수 최대화로 운영중인 디스커버리 캠페인</div>
+                          <!-- <p>
+                                  <div class="name jwstyle1"
+                                    style="font-size:1.5rem; color:red; display:flex; justify-content:center;">Google Ads에 전환 으로
+                                    집계</div>
+                                  </p> -->
+                        </div>
+                      </ul>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:9.5rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">캠페인 이력</div>
+                        </div>
+                      </ul>
+                    </div>       
+
+
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:6rem;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem;">최근 변경 후 3주가 경과했고,<br />40건 이상의 전환이 쌓였나요?</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:blueviolet">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-down"></i>&nbsp예</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:tomato">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-right"></i>&nbsp아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp 입찰 전략 유지</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:9.5rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">전환당 비용</div>
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">(CPA)</div>
+                        </div>
+                      </ul>
+                    </div>       
+
+
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:6rem;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem;">최근 3주간 CPA의 등락이<br />심하지 않고 안정화 되었나요?</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:blueviolet">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-down"></i>&nbsp예</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:tomato">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-right"></i>&nbsp아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp 입찰 전략 유지</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:9.5rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">일 예산</div>
+                        </div>
+                      </ul>
+                    </div>       
+
+
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:6rem;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem;">평균 CPA의 최소 15배 이상의<br />일 예산을 투자할 수 있나요?</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:blueviolet">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-down"></i>&nbsp예</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:3rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:center; align-items:center; color:tomato">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-arrow-right"></i>&nbsp아니오</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li
+                                style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                <span class="jwstyle3" aria-hidden="true" style="font-size:2rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                  <i class="fa fa-check-square-o"></i>&nbsp 입찰 전략 유지</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; margin-bottom:0.5rem; padding-right:0.5rem;">
+                      <ul style="padding-top:0.5rem; padding-bottom:0.5rem; padding-right:0rem; padding-left:0rem; margin-bottom:0rem; background-color: #EEEEEE; width:100%; height:9.5rem;
+                                 border-bottom:0rem; position: relative; display:flex; justify-content:center; align-items:center;">
+                        <div style="width:100%;">
+                          <div class="name jwstyle1" style="font-size:1.8rem; color:#73879C; display:flex; justify-content:center; align-items:center;">최종</div>
+                        </div>
+                      </ul>
+                    </div>       
+
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left:0rem; padding-right:0rem;">
+                        <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                          <div class="bs-docs-section">
+                            <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                              <ul class="bs-glyphicons-list">
+                                <li style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                                  <span class="jwstyle3" aria-hidden="true" style="font-size:1.8rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                    <i class="fa fa-check-square-o"></i>&nbsp 타겟 CPA로 변경</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="padding-left:0rem; padding-right:0.5rem;">
+                      <div class="tile-stats" style="margin-bottom:0rem; padding-bottom:0rem; border:0px">
+                        <div class="bs-docs-section">
+                          <div class="bs-glyphicons" style="margin-bottom:0.5rem">
+                            <ul class="bs-glyphicons-list">
+                              <li style="width:100%; height:9.5rem; display:flex; flex-direction:column; justify-content:center; align-items:left;">
+                               <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:left; align-items:center; font-weight:bolder; color:tomato">&nbsp&nbsp&nbsp
+                                타겟 CPA 설정 가이드</span> 
+                               <span class="jwstyle3" aria-hidden="true" style="font-size:1.5rem; display:flex; justify-content:left; align-items:center;">&nbsp&nbsp&nbsp
+                                평균 CPA의 120%로 시작한 후, 1~2주에 10%씩 조절</span>  
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">Copyright 2022. JungWook KIM. All rights reserved</a>
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <div id="custom_notifications" class="custom-notifications dsp_none">
+    <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+    </ul>
+    <div class="clearfix"></div>
+    <div id="notif-group" class="tabbed_notifications"></div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- Skycons -->
+  <script src="../vendors/skycons/skycons.js"></script>
+  <!-- ECharts -->
+  <script src="../vendors/echarts/dist/echarts.min.js"></script>
+  <script src="../vendors/echarts/map/js/world.js"></script>
+  <!-- PNotify -->
+  <!-- <script src="../vendors/pnotify/dist/pnotify.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script> -->
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom_instream.js"></script>
+
+
+  <!-- Datatables -->
+  <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="../vendors/jszip/dist/jszip.min.js"></script>
+  <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+
+
+</body>
+
+</html>
