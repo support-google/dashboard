@@ -3002,7 +3002,7 @@ if (typeof NProgress != 'undefined') {
 					series: [{
 					  name: 'CPM(₩)',
 					  type: 'bar',
-					  data: [4956, 5195, 6909, 7800, 6709, 4903, 4847, 5007, 5720, 5149, 4768, 4992, 4373, 4901],
+					  data: [2077, 1964, 2314, 2614, 2134, 1683, 2014, 2201, 2111, 1891, 1897, 1930, 2034, 2187],
 					  markPoint: {
 						data: [{
 						  type: 'max',
@@ -3021,7 +3021,7 @@ if (typeof NProgress != 'undefined') {
 					}, {
 					  name: 'CPC(₩)',
 					  type: 'bar',
-					  data: [987, 1704, 2151, 2002, 1574, 1591, 1394, 1346, 1516, 1314, 1320, 1311, 1357, 1227],
+					  data: [371, 302, 274, 409, 339, 278, 329, 376, 390, 287, 376, 327, 898, 414],
 					  markPoint: {
 						data: [{
 						  type: 'max',
@@ -3046,53 +3046,72 @@ if (typeof NProgress != 'undefined') {
 
 			if ($('#mainb_second').length ){
 			  
-				  var echartBar = echarts.init(document.getElementById('mainb_second'), theme);
+				var echartBar = echarts.init(document.getElementById('mainb_second'), theme);
 
-				  echartBar.setOption({
-					title: {
-					  text: 'CPV 비교',
-					  subtext: '최근1년 RAW'
+				echartBar.setOption({
+				  title: {
+					text: 'CPM/CPC 비교',
+					subtext: '최근1년 RAW'
+				  },
+				  tooltip: {
+					trigger: 'axis'
+				  },
+				  legend: {
+					data: ['CPM(₩)', 'CPC(₩)']
+				  },
+				  toolbox: {
+					show: false
+				  },
+				  calculable: false,
+				  xAxis: [{
+					type: 'category',
+					data: ['21/09', '21/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '22/07', '22/08', '22/09', '22/10']
+				  }],
+				  yAxis: [{
+					type: 'value'
+				  }],
+				  series: [{
+					name: 'CPM(₩)',
+					type: 'bar',
+					data: [2081, 1959, 2383, 2623, 2153, 1675, 2112, 2235, 2114, 1975, 1969, 1985, 2044, 2209],
+					markPoint: {
+					  data: [{
+						type: 'max',
+						name: 'CPM 최댓값'
+					  }, {
+						type: 'min',
+						name: 'CPC 최솟값'
+					  }]
 					},
-					tooltip: {
-					  trigger: 'axis'
+					markLine: {
+					  data: [{
+						type: 'average',
+						name: '???'
+					  }]
+					}
+				  }, {
+					name: 'CPC(₩)',
+					type: 'bar',
+					data: [376, 309, 308, 417, 352, 278, 335, 384, 402, 306, 397, 337, 428, 440],
+					markPoint: {
+					  data: [{
+						type: 'max',
+						name: 'CPA 최댓값'
+					  }, {
+						type: 'min',
+						name: 'CPA 최솟값'
+					  }]
 					},
-					legend: {
-					  data: ['CPV(₩)']
-					},
-					toolbox: {
-					  show: false
-					},
-					calculable: false,
-					xAxis: [{
-					  type: 'category',
-					  data: ['21/09', '21/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '21/07', '21/08', '21/09', '22/10']
-					}],
-					yAxis: [{
-					  type: 'value'
-					}],
-					series: [{
-					  name: 'CPV(₩)',
-					  type: 'bar',
-					  data: [94, 84, 85, 76, 81, 71, 76, 72, 64, 73, 61, 54, 53, 58],
-					  markPoint: {
-						data: [{
-						  type: 'max',
-						  name: '최댓값'
-						}, {
-						  type: 'min',
-						  name: '최솟값'
-						}]
-					  },
-					  markLine: {
-						data: [{
-						  type: 'average',
-						  name: '평균'
-						}]
-					  }
-					}]
-				  });
+					markLine: {
+					  data: [{
+						type: 'average',
+						name: '???'
+					  }]
+					}
+				  }]
+				});
 
-			}
+		  }
 
 
 
@@ -3360,8 +3379,8 @@ if (typeof NProgress != 'undefined') {
 
 			  echartLine.setOption({
 				title: {
-				  text: 'CTR 비교',
-				  subtext: 'Subtitle'
+				  text: 'CTR(%) 비교',
+				  subtext: '최근 1년 RAW'
 				},
 				tooltip: {
 				  trigger: 'axis'
@@ -3414,7 +3433,7 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [0.50, 0.30, 0.32, 0.39, 0.43, 0.31, 0.35, 0.37, 0.38, 0.39, 0.36, 0.38, 0.32, 0.40]
+				  data: [0.56, 0.65, 0.85, 0.64, 0.63, 0.61, 0.61, 0.58, 0.54, 0.66, 0.50, 0.59, 0.51, 0.53]
 				}]
 			  });
 
@@ -3429,7 +3448,7 @@ if (typeof NProgress != 'undefined') {
 			  echartLine.setOption({
 				title: {
 				  text: '전환수/CPA 비교',
-				  subtext: 'Subtitle'
+				  subtext: '최근 1년 RAW'
 				},
 				tooltip: {
 				  trigger: 'axis'
@@ -3437,7 +3456,7 @@ if (typeof NProgress != 'undefined') {
 				legend: {
 				  x: 220,
 				  y: 40,
-				  data: ['전환수', 'CPA']
+				  data: ['전환수(단위:만)', 'CPA']
 				},
 				toolbox: {
 				  show: true,
@@ -3466,13 +3485,13 @@ if (typeof NProgress != 'undefined') {
 				xAxis: [{
 				  type: 'category',
 				  boundaryGap: false,
-				  data: ['21/10', '21/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '21/07', '21/08', '21/09', '22/10']
+				  data: ['21/09', '21/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '21/07', '21/08', '21/09', '22/10']
 				}],
 				yAxis: [{
 				  type: 'value'
 				}],
 				series: [{
-				  name: '전환수',
+				  name: '전환수(단위:만)',
 				  type: 'line',
 				  smooth: true,
 				  itemStyle: {
@@ -3482,7 +3501,7 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [8825, 13332, 19302, 26250, 54324, 39669, 56811, 66870, 57020, 60138, 74406, 93917, 102130, 389736]
+				  data: [602, 375, 566, 969, 734, 714, 342, 438, 781, 661, 666, 384, 512, 434]
 				}, {
 				  name: 'CPA',
 				  type: 'line',
@@ -3494,7 +3513,7 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [40409, 22175, 34648, 32806, 16874, 19339, 15843, 13737, 15207, 14667, 16021, 11599, 9028, 3205]
+				  data: [102, 90, 82, 55, 49, 53, 115, 94, 53, 63, 67, 123, 73, 109]
 				}]
 			  });
 
@@ -3507,8 +3526,8 @@ if (typeof NProgress != 'undefined') {
 
 			  echartLine.setOption({
 				title: {
-				  text: 'CVR 비교',
-				  subtext: 'Subtitle'
+				  text: 'CVR(%) 비교',
+				  subtext: '최근 1년 RAW'
 				},
 				tooltip: {
 				  trigger: 'axis'
@@ -3561,7 +3580,7 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [0.01, 0.02, 0.02, 0.02, 0.04, 0.03, 0.03, 0.04, 0.04, 0.04, 0.03, 0.04, 0.05, 0.15]
+				  data: [364, 335, 335, 748, 690, 521, 286, 398, 729, 455, 565, 265, 543, 378]
 				}]
 			  });
 
@@ -3575,8 +3594,8 @@ if (typeof NProgress != 'undefined') {
 
 			  echartLine.setOption({
 				title: {
-				  text: 'VTR 비교',
-				  subtext: 'Subtitle'
+				  text: 'CTR(%) 비교',
+				  subtext: '최근 1년 RAW'
 				},
 				tooltip: {
 				  trigger: 'axis'
@@ -3629,11 +3648,227 @@ if (typeof NProgress != 'undefined') {
 					  }
 					}
 				  },
-				  data: [5.28, 6.15, 8.16, 10.27, 8.24, 6.93, 6.35, 6.99, 8.99, 7.06, 7.84, 9.25, 8.19, 8.38]
+				  data: [0.55, 0.63, 0.47, 0.63, 0.61, 0.60, 0.63, 0.58, 0.53, 0.64, 0.50, 0.59, 0.48, 0.50]
 				}]
 			  });
 
 			} 
+
+
+
+			if ($('#echart_line_fifth').length ){ 
+			  
+				var echartLine = echarts.init(document.getElementById('echart_line_fifth'), theme);
+  
+				echartLine.setOption({
+				  title: {
+					text: '전환수/CPA 비교',
+					subtext: '최근 1년 RAW'
+				  },
+				  tooltip: {
+					trigger: 'axis'
+				  },
+				  legend: {
+					x: 220,
+					y: 40,
+					data: ['전환수(단위:만)', 'CPA']
+				  },
+				  toolbox: {
+					show: true,
+					feature: {
+					  magicType: {
+						show: true,
+						title: {
+						  line: 'Line',
+						  bar: 'Bar',
+						  stack: 'Stack',
+						  tiled: 'Tiled'
+						},
+						type: ['line', 'bar', 'stack', 'tiled']
+					  },
+					  restore: {
+						show: true,
+						title: "Restore"
+					  },
+					  saveAsImage: {
+						show: true,
+						title: "Save Image"
+					  }
+					}
+				  },
+				  calculable: true,
+				  xAxis: [{
+					type: 'category',
+					boundaryGap: false,
+					data: ['21/09', '21/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '21/07', '21/08', '21/09', '22/10']
+				  }],
+				  yAxis: [{
+					type: 'value'
+				  }],
+				  series: [{
+					name: '전환수(단위:만)',
+					type: 'line',
+					smooth: true,
+					itemStyle: {
+					  normal: {
+						areaStyle: {
+						  type: 'default'
+						}
+					  }
+					},
+					data: [574, 340, 516, 912, 689, 681, 284, 429, 765, 632, 645, 367, 473, 418]
+				  }, {
+					name: 'CPA',
+					type: 'line',
+					smooth: true,
+					itemStyle: {
+					  normal: {
+						areaStyle: {
+						  type: 'default'
+						}
+					  }
+					},
+					data: [104, 90, 86, 56, 49, 52, 123, 87, 50, 61, 64, 121, 72, 104]
+				  }]
+				});
+  
+			  } 
+
+
+
+			  if ($('#echart_line_sixth').length ){ 
+			  
+				var echartLine = echarts.init(document.getElementById('echart_line_sixth'), theme);
+  
+				echartLine.setOption({
+				  title: {
+					text: 'CVR(%) 비교',
+					subtext: '최근 1년 RAW'
+				  },
+				  tooltip: {
+					trigger: 'axis'
+				  },
+				  legend: {
+					x: 220,
+					y: 40,
+					data: ['CVR']
+				  },
+				  toolbox: {
+					show: true,
+					feature: {
+					  magicType: {
+						show: true,
+						title: {
+						  line: 'Line',
+						  bar: 'Bar',
+						  stack: 'Stack',
+						  tiled: 'Tiled'
+						},
+						type: ['line', 'bar', 'stack', 'tiled']
+					  },
+					  restore: {
+						show: true,
+						title: "Restore"
+					  },
+					  saveAsImage: {
+						show: true,
+						title: "Save Image"
+					  }
+					}
+				  },
+				  calculable: true,
+				  xAxis: [{
+					type: 'category',
+					boundaryGap: false,
+					data: ['21/09', '21/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '22/07', '22/08', '21/09', '22/10']
+				  }],
+				  yAxis: [{
+					type: 'value'
+				  }],
+				  series: [{
+					name: 'CTR',
+					type: 'line',
+					smooth: true,
+					itemStyle: {
+					  normal: {
+						areaStyle: {
+						  type: 'default'
+						}
+					  }
+					},
+					data: [361, 342, 359, 741, 724, 531, 273, 439, 803, 503, 619, 278, 595, 421]
+				  }]
+				});
+  
+			  } 
+
+
+
+			  if ($('#echart_line_seventh').length ){ 
+			  
+				var echartLine = echarts.init(document.getElementById('echart_line_seventh'), theme);
+  
+				echartLine.setOption({
+				  title: {
+					text: 'VTR 비교',
+					subtext: '최근 1년 RAW'
+				  },
+				  tooltip: {
+					trigger: 'axis'
+				  },
+				  legend: {
+					x: 220,
+					y: 40,
+					data: ['VTR']
+				  },
+				  toolbox: {
+					show: true,
+					feature: {
+					  magicType: {
+						show: true,
+						title: {
+						  line: 'Line',
+						  bar: 'Bar',
+						  stack: 'Stack',
+						  tiled: 'Tiled'
+						},
+						type: ['line', 'bar', 'stack', 'tiled']
+					  },
+					  restore: {
+						show: true,
+						title: "Restore"
+					  },
+					  saveAsImage: {
+						show: true,
+						title: "Save Image"
+					  }
+					}
+				  },
+				  calculable: true,
+				  xAxis: [{
+					type: 'category',
+					boundaryGap: false,
+					data: ['21/09', '21/10', '21/11', '21/12', '22/01', '22/02', '22/03', '22/04', '22/05', '22/06', '22/07', '22/08', '21/09', '22/10']
+				  }],
+				  yAxis: [{
+					type: 'value'
+				  }],
+				  series: [{
+					name: 'CTR',
+					type: 'line',
+					smooth: true,
+					itemStyle: {
+					  normal: {
+						areaStyle: {
+						  type: 'default'
+						}
+					  }
+					},
+					data: [5.28, 6.15, 8.16, 10.27, 8.24, 6.93, 6.35, 6.99, 8.99, 7.06, 7.84, 9.25, 8.19, 8.38]
+				  }]
+				});
+  
+			  } 
 			  
 			   //echart Scatter
 			  
